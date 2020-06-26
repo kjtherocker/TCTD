@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeTCTD_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xDC02563E,
-				0xF35688F2,
+				0x80624D1B,
+				0xC8153F05,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);
