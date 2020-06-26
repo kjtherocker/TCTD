@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\TCTD.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{4FC4851B-32DB-421C-AFD9-C2B8B4450DFC}</UniqueIdentifier>
+      <UniqueIdentifier>{3B32C89D-511F-449C-9B88-53DA6BFE2F33}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TCTD.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{FEA39F7B-86E0-46BB-B642-4E02A899546A}</UniqueIdentifier>
+      <UniqueIdentifier>{2693D7BE-CF1C-45D9-B837-4F9C86C5AC6B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,7 +24,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\TCTD">
-      <UniqueIdentifier>{233DC3B8-47D5-4F78-AB38-FB3CAE562407}</UniqueIdentifier>
+      <UniqueIdentifier>{04CCE5E2-9680-4CA6-BD27-22448F05EDFD}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\TCTD\TCTD.Build.cs">
       <Filter>Source\TCTD</Filter>
