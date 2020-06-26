@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\TCTD.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC4851B-32DB-421C-AFD9-C2B8B4450DFC}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TCTD.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TCTDEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FEA39F7B-86E0-46BB-B642-4E02A899546A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TCTD">
+      <UniqueIdentifier>{233DC3B8-47D5-4F78-AB38-FB3CAE562407}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TCTD\TCTD.Build.cs">
+      <Filter>Source\TCTD</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TCTD\TCTD.cpp">
+      <Filter>Source\TCTD</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TCTD\TCTD.h">
+      <Filter>Source\TCTD</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TCTD\TCTDGameModeBase.cpp">
+      <Filter>Source\TCTD</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TCTD\TCTDGameModeBase.h">
+      <Filter>Source\TCTD</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

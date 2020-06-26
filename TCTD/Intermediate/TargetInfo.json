@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "TCTD",
+			"Path": "F:\\TCTD\\TCTD\\Source\\TCTD.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TCTDEditor",
+			"Path": "F:\\TCTD\\TCTD\\Source\\TCTDEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
