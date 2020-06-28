@@ -69,9 +69,6 @@ void APlayerPawn::RaycastToCheckIfNodeIsFree()
 	//GEngine->AddOnScreenDebugMessage(-1,5.f, FColor::Green,  TEXT("MouseClicked"));
 	UWorld* world = GetWorld();
 
-
-	//This is just a reimplementation of FMath::LinePlaneIntersection that just takes certain shortcuts because the plane's normal is (0,0,1):
-
     FVector WorldLocation;
 	FVector WorldDirection;
 	float DistanceAboveGround = 10.0f;
@@ -96,34 +93,20 @@ void APlayerPawn::RaycastToCheckIfNodeIsFree()
 
 	FCollisionQueryParams * TraceParams = new FCollisionQueryParams();
 
-	if(GetWorld()->LineTraceSingleByChannel(*hitResult, StartPoint, EndPoint, ECC_Visibility, * TraceParams))
+	if(world->LineTraceSingleByChannel(*hitResult, StartPoint, EndPoint, ECC_Visibility, * TraceParams))
 	{
 		GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Blue,
 			FString::Printf(TEXT("You Hit: %s"), *hitResult->Actor->GetName()));
 
 		
 
-			 ATowerNode* TowerNodeTemp =  Cast<ATowerNode>(hitResult->Actor);
-		 	 TowerNodeTemp->SpawnTurret(ToSpawn);
-		 	
+			ATowerNode* TowerNodeTemp =  Cast<ATowerNode>(hitResult->Actor);
+			if(TowerNodeTemp != nullptr)
+			{
+				TowerNodeTemp->SpawnTurret(ToSpawn);
+			}
 		 
 	}
 }
 
-void APlayerPawn::SpawnTurret(FVector aPostion)
-{
-
-	UWorld* world = GetWorld();
-
-	if(world)
-	{	
-		FVector m_SpawnPos = aPostion;
-		FRotator m_Rotator = GetActorRotation();
-
-		AEnemy_Base* m_EnemyToSpawn;
-		m_EnemyToSpawn = Cast<AEnemy_Base>(world->SpawnActor<AActor>(ToSpawn, m_SpawnPos, m_Rotator));
-		m_EnemyToSpawn->SetActorLocation(aPostion);
-	}
-	
-}
 

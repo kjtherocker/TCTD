@@ -42,33 +42,33 @@ void ASpawner::Tick(float DeltaTime)
 
 void ASpawner::SpawnEnemy()
 {
-//	UWorld* world = GetWorld();
+	UWorld* world = GetWorld();
 
 
-//if(EnemySpawnlist == nullptr)
-//{
-//	return;
-//}
-//
-//if(EnemySpawnlist->ListOfEnemys.Num() == 0)
-//{
-//	return;	
-//}
+	if(EnemySpawnlist[0] == nullptr)
+	{
+		return;
+	}
 	
-	//if(world == nullptr)
-	//{
-	//	return;
-	//}
-//
-	//
-	//SpawnEnemyPosition = GetActorLocation();
-	//FRotator m_Rotator = GetActorRotation();
+	if(EnemySpawnlist.Num() == 0)
+	{
+		return;	
+	}
+	
+	if(world == nullptr)
+	{
+		return;
+	}
 
-	//AEnemy* m_EnemyToSpawn;
+	
+	SpawnEnemyPosition = GetActorLocation();
+	FRotator m_Rotator = GetActorRotation();
 
-	//m_EnemyToSpawn = Cast<AEnemy>(world->SpawnActor<AActor>(EnemySpawnlist->ListOfEnemys[0], SpawnEnemyPosition, m_Rotator));
-	//EnemySpawnlist->ListOfEnemys.RemoveAt(0);
-	//m_EnemyToSpawn->SetWaypoints(Waypoints);
+	AEnemy_Base* m_EnemyToSpawn;
+
+	m_EnemyToSpawn = Cast<AEnemy_Base>(world->SpawnActor<AActor>(EnemySpawnlist[0], SpawnEnemyPosition, m_Rotator));
+	EnemySpawnlist.RemoveAt(0);
+	m_EnemyToSpawn->SetWaypoints(Waypoints);
 	
 	
 }

@@ -21,6 +21,14 @@
         <e p="TCTD" t="Include">
           <e p="Enemy_Base.cpp" t="Include" />
           <e p="Enemy_Base.h" t="Include" />
+          <e p="Enemy_Large.cpp" t="Include" />
+          <e p="Enemy_Large.h" t="Include" />
+          <e p="Enemy_Speed.cpp" t="Include" />
+          <e p="Enemy_Speed.h" t="Include" />
+          <e p="Enemy_Standard.cpp" t="Include" />
+          <e p="Enemy_Standard.h" t="Include" />
+          <e p="MyPlayerPawn.cpp" t="Include" />
+          <e p="MyPlayerPawn.h" t="Include" />
           <e p="PlayerPawn.cpp" t="Include" />
           <e p="PlayerPawn.h" t="Include" />
           <e p="Projectile.cpp" t="Include" />

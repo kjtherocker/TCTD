@@ -48,7 +48,5 @@ public:
 
 	virtual void RaycastToCheckIfNodeIsFree();
 	
-
-	virtual void SpawnTurret(FVector aPosition);
 	
 };
