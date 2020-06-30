@@ -3,6 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Components/WidgetComponent.h"
+#include "Components/ProgressBar.h"
+#include "Blueprint/UserWidget.h"
 #include "GameFramework/Actor.h"
 #include "Enemy_Base.generated.h"
 
@@ -36,18 +39,25 @@ protected:
 	virtual void Death();
 
 	int MaxHealth;
-
+    
+    UWidgetComponent* Healthbar;
+	UProgressBar* ProgressBar;	
+	
 
 public:	
 
+
 	
-     TArray<ATurret*> TowersAttackingEnemys;
+    TArray<ATurret*> TowersAttackingEnemys;
 	
     UPROPERTY(VisibleAnywhere)
     int CurrentHealth;
-
+	
+	UPROPERTY(VisibleAnywhere)
 	TArray<FVector> Waypoints;
 
+	
+	
 	UPROPERTY(EditAnywhere)
     FVector GoToWaypoint;
 
@@ -63,6 +73,8 @@ public:
 	UPROPERTY(EditAnywhere)
     float AngleToWaypoint;
 
+
+	
 	UFUNCTION()
     virtual void TakeDamage(int aDamageTaken);
 	

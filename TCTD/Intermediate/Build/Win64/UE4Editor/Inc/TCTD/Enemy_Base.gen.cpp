@@ -100,6 +100,11 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_GoToWaypoint;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Waypoints_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Waypoints;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Waypoints_Inner;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentHealth_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_CurrentHealth;
@@ -157,6 +162,14 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_GoToWaypoint = { "GoToWaypoint", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, GoToWaypoint), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_GoToWaypoint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_GoToWaypoint_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Waypoints_MetaData[] = {
+		{ "Category", "Enemy_Base" },
+		{ "ModuleRelativePath", "Enemy_Base.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Waypoints = { "Waypoints", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, Waypoints), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Waypoints_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Waypoints_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Waypoints_Inner = { "Waypoints", nullptr, (EPropertyFlags)0x0000000000020000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_CurrentHealth_MetaData[] = {
 		{ "Category", "Enemy_Base" },
 		{ "ModuleRelativePath", "Enemy_Base.h" },
@@ -169,6 +182,8 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemySpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Testo,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_GoToWaypoint,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Waypoints,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Waypoints_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_CurrentHealth,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AEnemy_Base_Statics::StaticCppClassTypeInfo = {
@@ -198,7 +213,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy_Base, 2176680935);
+	IMPLEMENT_CLASS(AEnemy_Base, 3151001429);
 	template<> TCTD_API UClass* StaticClass<AEnemy_Base>()
 	{
 		return AEnemy_Base::StaticClass();

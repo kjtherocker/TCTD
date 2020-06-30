@@ -1,6 +1,8 @@
 {
 	"SourceFiles": [
 		"F:\\TCTD\\TCTD\\Source\\TCTD\\TCTD.Build.cs",
+		"F:\\TCTD\\TCTD\\Plugins\\Developer\\RiderLink\\Source\\RD\\RD.Build.cs",
+		"F:\\TCTD\\TCTD\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\RiderLink.Build.cs",
 		"F:\\TCTD\\TCTD\\Source\\TCTD.Target.cs",
 		"F:\\TCTD\\TCTD\\Source\\TCTDEditor.Target.cs"
 	],

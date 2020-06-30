@@ -3,12 +3,15 @@
 
 #include "Enemy_Base.h"
 
+#include "Components/ProgressBar.h"
+
 // Sets default values
 AEnemy_Base::AEnemy_Base()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	BaseMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("EnemyStaticMesh"));
+
 	
 	MaxHealth = 45;
 	CurrentHealth = MaxHealth;
@@ -22,18 +25,24 @@ AEnemy_Base::AEnemy_Base()
 void AEnemy_Base::BeginPlay()
 {
 	Super::BeginPlay();
+
 	
+	TArray<UWidgetComponent*> EnemyUi;
+	GetComponents<UWidgetComponent>(EnemyUi);
+	if(EnemyUi.IsValidIndex(0) == true)
+	{
+		Healthbar = EnemyUi[0];
+		if(UUserWidget* widget = Healthbar->GetUserWidgetObject())
+		{
+			ProgressBar = Cast<UProgressBar>(widget->GetWidgetFromName("EnemyHealthbar"));
+			ProgressBar->Percent = 0.3f;
+		}
+
+	}
 }
 
 void AEnemy_Base::MoveToWaypoint(float aDeltaTime)
 {
-	if(Waypoints.IsValidIndex(0) == false)
-	{
-		return;
-	}
-
-
-
 	if(WaypointsAreSet == false)
 	{
 		return;
@@ -53,7 +62,6 @@ void AEnemy_Base::MoveToWaypoint(float aDeltaTime)
 	
 	CurrentPosition.X += sin(AngleToWaypoint) * EnemySpeed * aDeltaTime;
 	CurrentPosition.Y += cos(AngleToWaypoint) * EnemySpeed * aDeltaTime;
-	
 	
 	SetActorLocation(CurrentPosition);
 }
@@ -80,10 +88,6 @@ void AEnemy_Base::SetWaypoints(TArray<FVector> aWaypointList)
 	
 	Waypoints.RemoveAt(0);
 
-	
-
-
-
 	WaypointsAreSet = true;
 }
 
@@ -99,7 +103,8 @@ void AEnemy_Base::EnemyGotToGoal()
 void AEnemy_Base::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	
+	MoveToWaypoint(DeltaTime);
 }
 
 void AEnemy_Base::SetTurretReferences(ATurret* aAddToList)

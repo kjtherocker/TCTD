@@ -22,15 +22,8 @@ void ASpawner::BeginPlay()
     UWorld* world = GetWorld();
     
     FTimerHandle handle;
-
-	//UClass * Temp = EnemySpawnList->GetClass();
-
-	//EnemySpawnlist->SetEnemyReferences(*this);
-	//EnemySpawnlist->WaveSetup();
 	
-    world->GetTimerManager().SetTimer(handle,this,&ASpawner::SpawnEnemy,5.0f,true);
-
-	
+    world->GetTimerManager().SetTimer(handle,this,&ASpawner::SpawnEnemy,5.0f,false);
 }
 
 // Called every frame
@@ -42,34 +35,18 @@ void ASpawner::Tick(float DeltaTime)
 
 void ASpawner::SpawnEnemy()
 {
-	UWorld* world = GetWorld();
-
-
-	if(EnemySpawnlist[0] == nullptr)
-	{
-		return;
-	}
-	
-	if(EnemySpawnlist.Num() == 0)
-	{
-		return;	
-	}
-	
-	if(world == nullptr)
-	{
-		return;
-	}
-
-	
-	SpawnEnemyPosition = GetActorLocation();
+	SpawnEnemyPosition = GetActorLocation() + SpawnEnemyPosition;
 	FRotator m_Rotator = GetActorRotation();
 
 	AEnemy_Base* m_EnemyToSpawn;
 
-	m_EnemyToSpawn = Cast<AEnemy_Base>(world->SpawnActor<AActor>(EnemySpawnlist[0], SpawnEnemyPosition, m_Rotator));
-	EnemySpawnlist.RemoveAt(0);
+	m_EnemyToSpawn = Cast<AEnemy_Base>(GetWorld()->SpawnActor<AActor>(Enemy_Standard, SpawnEnemyPosition, m_Rotator));
+
+	if(m_EnemyToSpawn == nullptr)
+	{
+		return;
+	}
+	
 	m_EnemyToSpawn->SetWaypoints(Waypoints);
-	
-	
 }
 

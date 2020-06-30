@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Enemy_Base.h"
 #include "Enemy_Standard.generated.h"
 
 UCLASS()
-class TCTD_API AEnemy_Standard : public AActor
+class TCTD_API AEnemy_Standard : public AEnemy_Base
 {
 	GENERATED_BODY()
 	

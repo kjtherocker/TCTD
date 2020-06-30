@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Speed() {}
 // Cross Module References
 	TCTD_API UClass* Z_Construct_UClass_AEnemy_Speed_NoRegister();
 	TCTD_API UClass* Z_Construct_UClass_AEnemy_Speed();
-	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	TCTD_API UClass* Z_Construct_UClass_AEnemy_Base();
 	UPackage* Z_Construct_UPackage__Script_TCTD();
 // End Cross Module References
 	void AEnemy_Speed::StaticRegisterNativesAEnemy_Speed()
@@ -35,7 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Speed() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_AEnemy_Speed_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AActor,
+		(UObject* (*)())Z_Construct_UClass_AEnemy_Base,
 		(UObject* (*)())Z_Construct_UPackage__Script_TCTD,
 	};
 #if WITH_METADATA
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Speed() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy_Speed, 3239460336);
+	IMPLEMENT_CLASS(AEnemy_Speed, 317446763);
 	template<> TCTD_API UClass* StaticClass<AEnemy_Speed>()
 	{
 		return AEnemy_Speed::StaticClass();

@@ -36,9 +36,6 @@ public:
 	 UStaticMeshComponent* m_Mesh;
 
 	UPROPERTY(EditAnywhere)
-        TArray<TSubclassOf<AActor>> EnemySpawnlist;
-	
-	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> Enemy_Standard;
 
 	UPROPERTY(EditAnywhere)
