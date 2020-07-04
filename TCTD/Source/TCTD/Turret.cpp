@@ -18,7 +18,8 @@ void ATurret::BeginPlay()
 {
 	Super::BeginPlay();
 
-
+	EnemyDeathEvent.AddDynamic(this, &ATurret::EnemyWasKilled);
+	
 	SphereTrigger->OnComponentBeginOverlap.AddDynamic(this, &ATurret::OnBeginOverlap);
 	SphereTrigger->OnComponentEndOverlap.AddDynamic(this, &ATurret::OnEndOverlap);
 	
@@ -62,15 +63,32 @@ void ATurret::ShootAtEnemy()
 
 void ATurret::EnemyWasKilled(FString aName)
 {
-//	for (int i = 0 ; i < EnemyInRange.Num() ; i++)
-//	{
-//		if(EnemyInRange[i]->GetName() == aName)
-//		{
-//			EnemyInRange.RemoveAt(i);
-//		}
-//	}
-//
-//	EnemyToAttack = Cast<AEnemy>(EnemyInRange[0]);
+
+	GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Orange,
+        FString::Printf(TEXT("EnteredFunction Was Killed with event: %s"), *aName));
+	for (int i = 0 ; i < EnemyInRange.Num() ; i++)
+	{
+		if(EnemyInRange[i]->GetName() == aName)
+		{
+			EnemyInRange.RemoveAt(i);
+
+			if(EnemyToAttack->GetName() == aName)
+			{
+				EnemyToAttack = nullptr;
+			}
+		}
+	}
+
+	if(EnemyInRange.IsValidIndex(0) == false)
+	{
+		return;
+	}
+	
+	if(EnemyToAttack == nullptr)
+	{
+		EnemyToAttack = Cast<AEnemy_Base>(EnemyInRange[0]);
+		EnemyToAttack->EnemyDeathEvent.AddDynamic(this, &ATurret::EnemyWasKilled);
+	}
 }
 
 void ATurret::OnBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
@@ -84,10 +102,11 @@ void ATurret::OnBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherA
 			return;
 		}
 	
-		EnemyInRange.Add(Enemy);
+		AddEnemyInRange(Enemy);
 		if(EnemyInRange.Num() == 1)
 		{
 			EnemyToAttack = Enemy;
+			EnemyToAttack->EnemyDeathEvent.AddDynamic(this, &ATurret::EnemyWasKilled);
 		}
 	}
 }
@@ -105,4 +124,21 @@ void ATurret::OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 			}
 		}
 	}
+}
+
+void ATurret::AddEnemyInRange(AEnemy_Base* Enemy)
+{
+	
+	if(EnemyInRange.Num() != 0)
+	{
+		for (int i = 0 ; i < EnemyInRange.Num() ; i++)
+		{
+			if(EnemyInRange[i]->GetName() == Enemy->GetName())
+			{
+				return;
+			}
+		}
+	}
+
+	EnemyInRange.Add(Enemy);
 }

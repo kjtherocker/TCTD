@@ -10,6 +10,9 @@
 #include "Enemy_Base.generated.h"
 
 class ATurret;
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FEnemyDeath, FString , Enemyname);
+
+
 UCLASS()
 class TCTD_API AEnemy_Base : public AActor
 {
@@ -35,7 +38,7 @@ protected:
 	virtual void Tick(float DeltaTime) override;
 
 
-	virtual void SetTurretReferences(ATurret* aAddToList);	
+
 	virtual void Death();
 
 	
@@ -48,7 +51,8 @@ public:
 
 
 	
-    TArray<ATurret*> TowersAttackingEnemys;
+	UPROPERTY()
+	FEnemyDeath EnemyDeathEvent;
 
 	float MaxHealth;
 	
@@ -63,9 +67,6 @@ public:
 	UPROPERTY(EditAnywhere)
     FVector GoToWaypoint;
 
-	UPROPERTY(VisibleAnywhere)
-    FVector Testo;
-
 	UPROPERTY(EditAnywhere)
     float EnemySpeed;
 			
@@ -75,11 +76,11 @@ public:
 	UPROPERTY(EditAnywhere)
     float AngleToWaypoint;
 
-
+	bool WaypointsAreSet;
 	
 	UFUNCTION()
     virtual void TakeDamage(int aDamageTaken);
 	
-	bool WaypointsAreSet;
+
 
 };

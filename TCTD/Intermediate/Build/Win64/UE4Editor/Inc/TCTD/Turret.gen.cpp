@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeTurret() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	TCTD_API UFunction* Z_Construct_UDelegateFunction_TCTD_EnemyDeath__DelegateSignature();
 	TCTD_API UClass* Z_Construct_UClass_AEnemy_Base_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
@@ -251,6 +252,10 @@ void EmptyLinkFunctionForGeneratedCodeTurret() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EnemyDeathEvent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_EnemyDeathEvent;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EnemyToAttack_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_EnemyToAttack;
@@ -291,6 +296,12 @@ void EmptyLinkFunctionForGeneratedCodeTurret() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATurret_Statics::NewProp_EnemyDeathEvent_MetaData[] = {
+		{ "ModuleRelativePath", "Turret.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_ATurret_Statics::NewProp_EnemyDeathEvent = { "EnemyDeathEvent", nullptr, (EPropertyFlags)0x0010000000080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATurret, EnemyDeathEvent), Z_Construct_UDelegateFunction_TCTD_EnemyDeath__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_ATurret_Statics::NewProp_EnemyDeathEvent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATurret_Statics::NewProp_EnemyDeathEvent_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATurret_Statics::NewProp_EnemyToAttack_MetaData[] = {
 		{ "Category", "Turret" },
 		{ "ModuleRelativePath", "Turret.h" },
@@ -328,6 +339,7 @@ void EmptyLinkFunctionForGeneratedCodeTurret() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATurret_Statics::NewProp_SphereTrigger = { "SphereTrigger", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATurret, SphereTrigger), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATurret_Statics::NewProp_SphereTrigger_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATurret_Statics::NewProp_SphereTrigger_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATurret_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATurret_Statics::NewProp_EnemyDeathEvent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATurret_Statics::NewProp_EnemyToAttack,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATurret_Statics::NewProp_ProjectileSpawnOffset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATurret_Statics::NewProp_ProjectileRef,
@@ -362,7 +374,7 @@ void EmptyLinkFunctionForGeneratedCodeTurret() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATurret, 3467383936);
+	IMPLEMENT_CLASS(ATurret, 1922738699);
 	template<> TCTD_API UClass* StaticClass<ATurret>()
 	{
 		return ATurret::StaticClass();

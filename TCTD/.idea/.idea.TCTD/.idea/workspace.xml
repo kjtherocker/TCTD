@@ -4,7 +4,6 @@
     <list default="true" id="4765604f-55d1-43d8-98ad-325414de9f06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCTD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCTD/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor.modules" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor.modules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/MyEnemy_Standard.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/MyEnemy_Standard.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Scenes/TCTD.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/TCTD.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Scenes/TCTD_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/TCTD_BuiltData.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" afterDir="false" />
@@ -15,6 +14,7 @@
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/EnemyHealthbar.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/EnemyHealthbar.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/EnemyHealthbar.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/EnemyHealthbar.gen.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Base.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Base.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Base.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Base.cpp.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Base.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Base.gen.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Large.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Large.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Large.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Large.gen.cpp.obj" afterDir="false" />
@@ -36,41 +36,27 @@
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Turret.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Turret.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Turret.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Turret.gen.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Base.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Base.gen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Base.generated.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Base.generated.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Large.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Large.gen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Speed.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Speed.gen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Standard.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Standard.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Projectile.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Projectile.gen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/TCTD.init.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/TCTD.init.gen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Turret.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Turret.gen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UE4Editor.modules" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UE4Editor.modules" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/AutoScreenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/AutoScreenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto2.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto2.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto3.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto3.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/PackageRestoreData.json" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/PackageRestoreData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-3DD801544D23346C10C8D5B60F968C32/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-6D1489A64D57DCDDE14F109E40A190CB/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-7DA0D52A4CFDA79C0B90B98E739C566E/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-C8E18221451EDE020B3B8FAD3E640727/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-CAF3A1FF419E5B73F047598D6F16D7A1/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-DEB1CBEA4E70FA573263BD91323E5F5D/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-E06E758843A18C03A2D9159790CE0E3E/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-EC1569A74EF41B23331FFD94577A71AE/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-F20C0AC24BF072EFA24209882DD0AC08/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-F83320EF40D680670CC26BA17ED616CC/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-FC5BFBC44C5DBB49AB17AF8003A45EDA/CrashReportClient.ini" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Config/Windows/EditorPerProjectUserSettings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/Windows/EditorPerProjectUserSettings.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.06.28-01.35.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.06.28-01.41.17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.06.28-01.43.51.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.06.28-01.45.31.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.06.28-02.26.45.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/TCTD.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.04-16.22.41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.04-16.35.31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.04-16.36.31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.04-16.40.16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/TCTD_2.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TCTD/Enemy_Base.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Enemy_Base.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TCTD/Enemy_Base.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Enemy_Base.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TCTD/Projectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Projectile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TCTD/Projectile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Projectile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TCTD/Spawner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Spawner.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TCTD/Turret.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Turret.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TCTD/Turret.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Turret.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,16 +110,16 @@
         <option value="$PROJECT_DIR$/Source/TCTD/Enemy_Standard.h" />
         <option value="$PROJECT_DIR$/Source/TCTD/Enemy_Large.h" />
         <option value="$PROJECT_DIR$/Source/TCTD/Spawner.h" />
-        <option value="$PROJECT_DIR$/Source/TCTD/Spawner.cpp" />
         <option value="$PROJECT_DIR$/../../UE_4.25/Engine/Source/Runtime/UMG/Public/Components/ProgressBar.h" />
         <option value="$PROJECT_DIR$/Source/TCTD/EnemyHealthbar.h" />
         <option value="$PROJECT_DIR$/Source/TCTD/EnemyHealthbar.cpp" />
         <option value="$PROJECT_DIR$/Source/TCTD/Projectile.h" />
-        <option value="$PROJECT_DIR$/Source/TCTD/Turret.cpp" />
-        <option value="$PROJECT_DIR$/Source/TCTD/Turret.h" />
         <option value="$PROJECT_DIR$/Source/TCTD/Projectile.cpp" />
-        <option value="$PROJECT_DIR$/Source/TCTD/Enemy_Base.cpp" />
         <option value="$PROJECT_DIR$/Source/TCTD/Enemy_Base.h" />
+        <option value="$PROJECT_DIR$/Source/TCTD/Enemy_Base.cpp" />
+        <option value="$PROJECT_DIR$/Source/TCTD/Spawner.cpp" />
+        <option value="$PROJECT_DIR$/Source/TCTD/Turret.h" />
+        <option value="$PROJECT_DIR$/Source/TCTD/Turret.cpp" />
       </list>
     </option>
   </component>
@@ -144,12 +130,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.5362554" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.4599567" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.53571427" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.45941558" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="XThreadsFramesViewSplitterKey" value="0.25929752" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
     <configuration name="TCTD" type="CppProject" factoryName="C++ Project">
@@ -284,7 +271,11 @@
       <workItem from="1593560394972" duration="1802000" />
       <workItem from="1593567161117" duration="785000" />
       <workItem from="1593878501114" duration="1742000" />
-      <workItem from="1593880289704" duration="1241000" />
+      <workItem from="1593880289704" duration="1783000" />
+      <workItem from="1593882139384" duration="1750000" />
+      <workItem from="1593886500037" duration="1781000" />
+      <workItem from="1593888346321" duration="1789000" />
+      <workItem from="1593890333901" duration="877000" />
     </task>
     <servers />
   </component>
@@ -297,118 +288,142 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="485" height="436" key="DebuggerActiveHint" timestamp="1593475248645">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="728" height="616" key="DebuggerActiveHint" timestamp="1593891008047">
+      <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="485" height="436" key="DebuggerActiveHint/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475248645" />
-    <state width="1879" height="180" key="GridCell.Tab.0.bottom" timestamp="1593881360396">
+    <state width="728" height="616" key="DebuggerActiveHint/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891008047" />
+    <state width="1879" height="180" key="GridCell.Tab.0.bottom" timestamp="1593891021425">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.0.bottom/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336143" />
     <state width="1237" height="375" key="GridCell.Tab.0.bottom/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767003" />
-    <state width="1879" height="180" key="GridCell.Tab.0.bottom/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360396" />
-    <state width="1879" height="180" key="GridCell.Tab.0.center" timestamp="1593881360395">
+    <state width="1879" height="180" key="GridCell.Tab.0.bottom/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021425" />
+    <state width="1879" height="180" key="GridCell.Tab.0.center" timestamp="1593891021425">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.0.center/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336143" />
     <state width="1237" height="375" key="GridCell.Tab.0.center/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767002" />
-    <state width="1879" height="180" key="GridCell.Tab.0.center/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360395" />
-    <state width="1879" height="180" key="GridCell.Tab.0.left" timestamp="1593881360395">
+    <state width="1879" height="180" key="GridCell.Tab.0.center/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021425" />
+    <state width="1879" height="180" key="GridCell.Tab.0.left" timestamp="1593891021425">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.0.left/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336143" />
     <state width="1237" height="375" key="GridCell.Tab.0.left/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767002" />
-    <state width="1879" height="180" key="GridCell.Tab.0.left/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360395" />
-    <state width="1879" height="180" key="GridCell.Tab.0.right" timestamp="1593881360396">
+    <state width="1879" height="180" key="GridCell.Tab.0.left/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021425" />
+    <state width="1879" height="180" key="GridCell.Tab.0.right" timestamp="1593891021425">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.0.right/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336143" />
     <state width="1237" height="375" key="GridCell.Tab.0.right/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767002" />
-    <state width="1879" height="180" key="GridCell.Tab.0.right/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360396" />
-    <state width="1879" height="180" key="GridCell.Tab.1.bottom" timestamp="1593881360396">
+    <state width="1879" height="180" key="GridCell.Tab.0.right/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021425" />
+    <state width="1879" height="180" key="GridCell.Tab.1.bottom" timestamp="1593891021426">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.1.bottom/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336144" />
     <state width="1237" height="375" key="GridCell.Tab.1.bottom/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767003" />
-    <state width="1879" height="180" key="GridCell.Tab.1.bottom/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360396" />
-    <state width="1879" height="180" key="GridCell.Tab.1.center" timestamp="1593881360396">
+    <state width="1879" height="180" key="GridCell.Tab.1.bottom/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021426" />
+    <state width="1879" height="180" key="GridCell.Tab.1.center" timestamp="1593891021426">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.1.center/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336144" />
     <state width="1237" height="375" key="GridCell.Tab.1.center/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767003" />
-    <state width="1879" height="180" key="GridCell.Tab.1.center/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360396" />
-    <state width="1879" height="180" key="GridCell.Tab.1.left" timestamp="1593881360396">
+    <state width="1879" height="180" key="GridCell.Tab.1.center/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021426" />
+    <state width="1879" height="180" key="GridCell.Tab.1.left" timestamp="1593891021426">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.1.left/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336143" />
     <state width="1237" height="375" key="GridCell.Tab.1.left/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767003" />
-    <state width="1879" height="180" key="GridCell.Tab.1.left/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360396" />
-    <state width="1879" height="180" key="GridCell.Tab.1.right" timestamp="1593881360396">
+    <state width="1879" height="180" key="GridCell.Tab.1.left/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021425" />
+    <state width="1879" height="180" key="GridCell.Tab.1.right" timestamp="1593891021426">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.1.right/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336144" />
     <state width="1237" height="375" key="GridCell.Tab.1.right/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767003" />
-    <state width="1879" height="180" key="GridCell.Tab.1.right/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360396" />
-    <state width="1879" height="180" key="GridCell.Tab.2.bottom" timestamp="1593881360397">
+    <state width="1879" height="180" key="GridCell.Tab.1.right/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021426" />
+    <state width="1879" height="180" key="GridCell.Tab.2.bottom" timestamp="1593891021426">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.2.bottom/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336144" />
     <state width="1237" height="375" key="GridCell.Tab.2.bottom/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767003" />
-    <state width="1879" height="180" key="GridCell.Tab.2.bottom/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360397" />
-    <state width="1879" height="180" key="GridCell.Tab.2.center" timestamp="1593881360396">
+    <state width="1879" height="180" key="GridCell.Tab.2.bottom/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021426" />
+    <state width="1879" height="180" key="GridCell.Tab.2.center" timestamp="1593891021426">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.2.center/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336144" />
     <state width="1237" height="375" key="GridCell.Tab.2.center/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767003" />
-    <state width="1879" height="180" key="GridCell.Tab.2.center/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360396" />
-    <state width="1879" height="180" key="GridCell.Tab.2.left" timestamp="1593881360396">
+    <state width="1879" height="180" key="GridCell.Tab.2.center/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021426" />
+    <state width="1879" height="180" key="GridCell.Tab.2.left" timestamp="1593891021426">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.2.left/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336144" />
     <state width="1237" height="375" key="GridCell.Tab.2.left/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767003" />
-    <state width="1879" height="180" key="GridCell.Tab.2.left/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360396" />
-    <state width="1879" height="180" key="GridCell.Tab.2.right" timestamp="1593881360396">
+    <state width="1879" height="180" key="GridCell.Tab.2.left/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021426" />
+    <state width="1879" height="180" key="GridCell.Tab.2.right" timestamp="1593891021426">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.2.right/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336144" />
     <state width="1237" height="375" key="GridCell.Tab.2.right/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767003" />
-    <state width="1879" height="180" key="GridCell.Tab.2.right/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360396" />
-    <state width="1879" height="180" key="GridCell.Tab.3.bottom" timestamp="1593881360397">
+    <state width="1879" height="180" key="GridCell.Tab.2.right/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021426" />
+    <state width="1879" height="180" key="GridCell.Tab.3.bottom" timestamp="1593891021426">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.3.bottom/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336144" />
     <state width="1237" height="375" key="GridCell.Tab.3.bottom/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767004" />
-    <state width="1879" height="180" key="GridCell.Tab.3.bottom/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360397" />
-    <state width="1879" height="180" key="GridCell.Tab.3.center" timestamp="1593881360397">
+    <state width="1879" height="180" key="GridCell.Tab.3.bottom/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021426" />
+    <state width="1879" height="180" key="GridCell.Tab.3.center" timestamp="1593891021426">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.3.center/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336144" />
     <state width="1237" height="375" key="GridCell.Tab.3.center/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767003" />
-    <state width="1879" height="180" key="GridCell.Tab.3.center/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360397" />
-    <state width="1879" height="180" key="GridCell.Tab.3.left" timestamp="1593881360397">
+    <state width="1879" height="180" key="GridCell.Tab.3.center/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021426" />
+    <state width="1879" height="180" key="GridCell.Tab.3.left" timestamp="1593891021426">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.3.left/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336144" />
     <state width="1237" height="375" key="GridCell.Tab.3.left/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767003" />
-    <state width="1879" height="180" key="GridCell.Tab.3.left/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360397" />
-    <state width="1879" height="180" key="GridCell.Tab.3.right" timestamp="1593881360397">
+    <state width="1879" height="180" key="GridCell.Tab.3.left/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021426" />
+    <state width="1879" height="180" key="GridCell.Tab.3.right" timestamp="1593891021426">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state width="1237" height="231" key="GridCell.Tab.3.right/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593475336144" />
     <state width="1237" height="375" key="GridCell.Tab.3.right/3840.226.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593879767004" />
-    <state width="1879" height="180" key="GridCell.Tab.3.right/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593881360397" />
-    <state x="4295" y="227" width="1008" height="958" key="search.everywhere.popup" timestamp="1593879440571">
+    <state width="1879" height="180" key="GridCell.Tab.3.right/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593891021426" />
+    <state x="4457" y="353" key="run.anything.popup" timestamp="1593888698800">
+      <screen x="3840" y="226" width="1920" height="960" />
+    </state>
+    <state x="4457" y="353" key="run.anything.popup/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593888698800" />
+    <state x="4295" y="227" width="1008" height="958" key="search.everywhere.popup" timestamp="1593889699934">
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593476053512" />
     <state x="4295" y="210" width="1008" height="958" key="search.everywhere.popup/3840.209.1920.960/0.0.1280.680@3840.209.1920.960" timestamp="1593309393485" />
-    <state x="4295" y="227" width="1008" height="958" key="search.everywhere.popup/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593879440571" />
+    <state x="4295" y="227" width="1008" height="958" key="search.everywhere.popup/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593889699934" />
     <state x="263" y="154" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1593480157948">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="263" y="154" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593480157948" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TCTD/Turret.cpp</url>
+          <line>81</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TCTD/Turret.cpp</url>
+          <line>70</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TCTD/Turret.cpp</url>
+          <line>100</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="CppProject">
         <watch expression="aDamageTaken" />

@@ -1,9 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+#include "Turret.h"
 #include "Enemy_Base.h"
 
-#include "Components/ProgressBar.h"
 
 // Sets default values
 AEnemy_Base::AEnemy_Base()
@@ -37,6 +36,8 @@ void AEnemy_Base::BeginPlay()
 		}
 
 	}
+
+
 
 }
 
@@ -102,24 +103,18 @@ void AEnemy_Base::EnemyGotToGoal()
 void AEnemy_Base::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	
 	MoveToWaypoint(DeltaTime);
 }
 
-void AEnemy_Base::SetTurretReferences(ATurret* aAddToList)
-{
-	TowersAttackingEnemys.Add(aAddToList);
-}
 
 
 void AEnemy_Base::Death()
 {
-	for(int i = 0 ; i < TowersAttackingEnemys.Num(); i++)
-	{
-		//TowersAttackingEnemys[i]->EnemyWasKilled(GetName());		
-	}
-	
-	Destroy(true);
+
+	EnemyDeathEvent.Broadcast(GetName());
+	SetActorHiddenInGame(true);
+	PrimaryActorTick.bCanEverTick = false;
+	//Destroy(true);
 }
 
 void AEnemy_Base::TakeDamage(int aDamageTaken)
@@ -129,8 +124,6 @@ void AEnemy_Base::TakeDamage(int aDamageTaken)
 	
 	float PercentageOfHealthRemaining = CurrentHealth/ MaxHealth;
 
-	GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Orange,
-    FString::Printf(TEXT("Percentage of health left for the enemy %f"), PercentageOfHealthRemaining));
 
 	if(ProgressBar != nullptr)
 	{

@@ -32,6 +32,9 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	AEnemy_Base* EnemyToAttack;
+
+	UPROPERTY()
+	FEnemyDeath EnemyDeathEvent;
 	
 protected:
 	// Called when the game starts or when spawned
@@ -53,6 +56,8 @@ public:
 	UFUNCTION()
 	virtual void OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 		int32 OtherBodyIndex);
-	
+
+
+	void AddEnemyInRange(AEnemy_Base* Enemy);
 	
 };

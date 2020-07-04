@@ -23,7 +23,7 @@ void ASpawner::BeginPlay()
     
     FTimerHandle handle;
 	
-    world->GetTimerManager().SetTimer(handle,this,&ASpawner::SpawnEnemy,5.0f,false);
+    world->GetTimerManager().SetTimer(handle,this,&ASpawner::SpawnEnemy,5.0f,true);
 }
 
 // Called every frame
@@ -35,12 +35,12 @@ void ASpawner::Tick(float DeltaTime)
 
 void ASpawner::SpawnEnemy()
 {
-	SpawnEnemyPosition = GetActorLocation() + SpawnEnemyPosition;
+	FVector ActorSpawnPosition = GetActorLocation() + SpawnEnemyPosition;
 	FRotator m_Rotator = GetActorRotation();
 
 	AEnemy_Base* m_EnemyToSpawn;
 
-	m_EnemyToSpawn = Cast<AEnemy_Base>(GetWorld()->SpawnActor<AActor>(Enemy_Standard, SpawnEnemyPosition, m_Rotator));
+	m_EnemyToSpawn = Cast<AEnemy_Base>(GetWorld()->SpawnActor<AActor>(Enemy_Standard, ActorSpawnPosition, m_Rotator));
 
 	if(m_EnemyToSpawn == nullptr)
 	{
