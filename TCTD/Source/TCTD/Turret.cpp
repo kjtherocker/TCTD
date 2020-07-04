@@ -26,13 +26,59 @@ void ATurret::BeginPlay()
 	FTimerHandle handle;
     GetWorld()->GetTimerManager().SetTimer(handle,this,&ATurret::ShootAtEnemy,1.0f,true);
 	ProjectileSpawnOffset = 76;
+
+	NumberOfProjectiles = 3;
+	
+	for(int i = 0 ; i < NumberOfProjectiles;i++)
+	{
+		ProjectilePool.Add(AddProjectileToPool());
+	}
+	
 }
 
 // Called every frame
 void ATurret::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+}
 
+AProjectile* ATurret::GetProjectileFormPool()
+{
+
+	for(int i = 0; i < ProjectilePool.Num() -1; i++)
+	{
+		if(ProjectilePool[i]->ProjectileState == false)
+		{
+			return ProjectilePool[i];
+		}
+	}
+	
+	ProjectilePool.Add(AddProjectileToPool());
+	return ProjectilePool[ProjectilePool.Num() - 1];
+}
+
+void ATurret::DeActivateProjectile()
+{
+	for(int i = 0; i < ProjectilePool.Num() - 1; i++)
+	{
+		ProjectilePool[i]->Deactivate();
+	}
+}
+
+AProjectile* ATurret::AddProjectileToPool()
+{
+	AProjectile* ProjectileTemp;
+	
+	FVector SpawnPosition = GetActorLocation();
+	FRotator m_Rotator = GetActorRotation();
+	
+	SpawnPosition.Z += ProjectileSpawnOffset;
+	
+	ProjectileTemp =  
+    Cast<AProjectile>(GetWorld()->SpawnActor<AActor>(ProjectileRef, SpawnPosition, m_Rotator));
+	ProjectileTemp->Deactivate();
+
+	return ProjectileTemp;
 }
 
 void ATurret::ShootAtEnemy()
@@ -48,14 +94,15 @@ void ATurret::ShootAtEnemy()
 	}
 	
 	FVector SpawnPosition = GetActorLocation();
-	FRotator m_Rotator = GetActorRotation();
+	FRotator Rotator = GetActorRotation();
 	
 	SpawnPosition.Z += ProjectileSpawnOffset;
 
 	AProjectile* ProjectileTemp;
         
-	ProjectileTemp =  
-	Cast<AProjectile>(GetWorld()->SpawnActor<AActor>(ProjectileRef, SpawnPosition, m_Rotator));
+	ProjectileTemp =  GetProjectileFormPool();
+	ProjectileTemp->SetActorLocation(SpawnPosition);
+
 	
 	ProjectileTemp->Activate(EnemyToAttack);
 
@@ -64,8 +111,6 @@ void ATurret::ShootAtEnemy()
 void ATurret::EnemyWasKilled(FString aName)
 {
 
-	GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Orange,
-        FString::Printf(TEXT("EnteredFunction Was Killed with event: %s"), *aName));
 	for (int i = 0 ; i < EnemyInRange.Num() ; i++)
 	{
 		if(EnemyInRange[i]->GetName() == aName)
@@ -86,6 +131,7 @@ void ATurret::EnemyWasKilled(FString aName)
 	
 	if(EnemyToAttack == nullptr)
 	{
+		DeActivateProjectile();
 		EnemyToAttack = Cast<AEnemy_Base>(EnemyInRange[0]);
 		EnemyToAttack->EnemyDeathEvent.AddDynamic(this, &ATurret::EnemyWasKilled);
 	}
@@ -128,7 +174,6 @@ void ATurret::OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 
 void ATurret::AddEnemyInRange(AEnemy_Base* Enemy)
 {
-	
 	if(EnemyInRange.Num() != 0)
 	{
 		for (int i = 0 ; i < EnemyInRange.Num() ; i++)

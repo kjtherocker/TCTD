@@ -11,7 +11,6 @@ AProjectile::AProjectile()
 	ProjectileSpeed = 500.0f;
 	ProjectileDamage = 4;
 	m_Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mainmesh"));
-	ProjectileState = true;
 }
 
 // Called when the game starts or when spawned

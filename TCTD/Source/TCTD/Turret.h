@@ -35,6 +35,11 @@ public:
 
 	UPROPERTY()
 	FEnemyDeath EnemyDeathEvent;
+
+	TArray<AProjectile*> ProjectilePool; 
+
+	int NumberOfProjectiles;
+	
 	
 protected:
 	// Called when the game starts or when spawned
@@ -59,5 +64,11 @@ public:
 
 
 	void AddEnemyInRange(AEnemy_Base* Enemy);
+	
+	AProjectile* AddProjectileToPool();
+
+	AProjectile* GetProjectileFormPool();
+	
+	void DeActivateProjectile();
 	
 };
