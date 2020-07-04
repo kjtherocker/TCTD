@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectile() {}
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	TCTD_API UClass* Z_Construct_UClass_AEnemy_Base_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(AProjectile::execOnBeginOverlap)
 	{
@@ -147,6 +148,10 @@ void EmptyLinkFunctionForGeneratedCodeProjectile() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileDamage_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_ProjectileDamage;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EnemyToAttack_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_EnemyToAttack;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -182,16 +187,22 @@ void EmptyLinkFunctionForGeneratedCodeProjectile() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectile_Statics::NewProp_ProjectileDamage_MetaData[] = {
 		{ "Category", "Projectile" },
-		{ "Comment", "//UPROPERTY(EditAnywhere)\n//AEnemy* EnemyToAttack; \n" },
 		{ "ModuleRelativePath", "Projectile.h" },
-		{ "ToolTip", "UPROPERTY(EditAnywhere)\nAEnemy* EnemyToAttack;" },
 	};
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AProjectile_Statics::NewProp_ProjectileDamage = { "ProjectileDamage", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectile, ProjectileDamage), METADATA_PARAMS(Z_Construct_UClass_AProjectile_Statics::NewProp_ProjectileDamage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectile_Statics::NewProp_ProjectileDamage_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectile_Statics::NewProp_EnemyToAttack_MetaData[] = {
+		{ "Category", "Projectile" },
+		{ "ModuleRelativePath", "Projectile.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectile_Statics::NewProp_EnemyToAttack = { "EnemyToAttack", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProjectile, EnemyToAttack), Z_Construct_UClass_AEnemy_Base_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProjectile_Statics::NewProp_EnemyToAttack_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProjectile_Statics::NewProp_EnemyToAttack_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AProjectile_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectile_Statics::NewProp_ProjectileSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectile_Statics::NewProp_m_Mesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectile_Statics::NewProp_ProjectileDamage,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectile_Statics::NewProp_EnemyToAttack,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AProjectile_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AProjectile>::IsAbstract,
@@ -220,7 +231,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AProjectile, 1489491771);
+	IMPLEMENT_CLASS(AProjectile, 1928666361);
 	template<> TCTD_API UClass* StaticClass<AProjectile>()
 	{
 		return AProjectile::StaticClass();

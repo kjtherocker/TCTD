@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Standard() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy_Standard, 2435775327);
+	IMPLEMENT_CLASS(AEnemy_Standard, 1691539731);
 	template<> TCTD_API UClass* StaticClass<AEnemy_Standard>()
 	{
 		return AEnemy_Standard::StaticClass();

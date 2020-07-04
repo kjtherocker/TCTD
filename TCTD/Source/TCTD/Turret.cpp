@@ -11,8 +11,6 @@ ATurret::ATurret()
 	PrimaryActorTick.bCanEverTick = true;
 	SphereTrigger = CreateDefaultSubobject<USphereComponent>(TEXT("SphereTrigger"));
 
-
-	//SphereTrigger->SetRelativeLocation(this->GetActorLocation());
 }
 
 // Called when the game starts or when spawned
@@ -20,13 +18,13 @@ void ATurret::BeginPlay()
 {
 	Super::BeginPlay();
 
-	//SphereTrigger = GetComponents<USphereComponent>(SphereTrigger);
+
 	SphereTrigger->OnComponentBeginOverlap.AddDynamic(this, &ATurret::OnBeginOverlap);
 	SphereTrigger->OnComponentEndOverlap.AddDynamic(this, &ATurret::OnEndOverlap);
 	
 	FTimerHandle handle;
     GetWorld()->GetTimerManager().SetTimer(handle,this,&ATurret::ShootAtEnemy,1.0f,true);
-	ProjectileSpawnOffset = 111;
+	ProjectileSpawnOffset = 76;
 }
 
 // Called every frame
@@ -43,10 +41,10 @@ void ATurret::ShootAtEnemy()
 		return;
 	}
 
-	//if(EnemyToAttack == nullptr)
-	//{
-	//	return;
-	//}
+	if(EnemyToAttack == nullptr)
+	{
+		return;
+	}
 	
 	FVector SpawnPosition = GetActorLocation();
 	FRotator m_Rotator = GetActorRotation();
@@ -58,7 +56,7 @@ void ATurret::ShootAtEnemy()
 	ProjectileTemp =  
 	Cast<AProjectile>(GetWorld()->SpawnActor<AActor>(ProjectileRef, SpawnPosition, m_Rotator));
 	
-	//ProjectileTemp->Activate(EnemyToAttack);
+	ProjectileTemp->Activate(EnemyToAttack);
 
 }
 
@@ -89,7 +87,7 @@ void ATurret::OnBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherA
 		EnemyInRange.Add(Enemy);
 		if(EnemyInRange.Num() == 1)
 		{
-			//EnemyToAttack = Enemy;
+			EnemyToAttack = Enemy;
 		}
 	}
 }

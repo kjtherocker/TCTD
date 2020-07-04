@@ -25,8 +25,6 @@ AEnemy_Base::AEnemy_Base()
 void AEnemy_Base::BeginPlay()
 {
 	Super::BeginPlay();
-
-	
 	TArray<UWidgetComponent*> EnemyUi;
 	GetComponents<UWidgetComponent>(EnemyUi);
 	if(EnemyUi.IsValidIndex(0) == true)
@@ -35,10 +33,11 @@ void AEnemy_Base::BeginPlay()
 		if(UUserWidget* widget = Healthbar->GetUserWidgetObject())
 		{
 			ProgressBar = Cast<UProgressBar>(widget->GetWidgetFromName("EnemyHealthbar"));
-			ProgressBar->Percent = 0.3f;
+			ProgressBar->SetPercent(1.0f);
 		}
 
 	}
+
 }
 
 void AEnemy_Base::MoveToWaypoint(float aDeltaTime)
@@ -125,8 +124,19 @@ void AEnemy_Base::Death()
 
 void AEnemy_Base::TakeDamage(int aDamageTaken)
 {
+
 	CurrentHealth -= aDamageTaken;
 	
+	float PercentageOfHealthRemaining = CurrentHealth/ MaxHealth;
+
+	GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Orange,
+    FString::Printf(TEXT("Percentage of health left for the enemy %f"), PercentageOfHealthRemaining));
+
+	if(ProgressBar != nullptr)
+	{
+		ProgressBar->SetPercent(PercentageOfHealthRemaining);
+	}	
+
 	if(CurrentHealth <= 0)
 	{
 		Death();

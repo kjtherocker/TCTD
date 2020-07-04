@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Speed() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy_Speed, 317446763);
+	IMPLEMENT_CLASS(AEnemy_Speed, 93439353);
 	template<> TCTD_API UClass* StaticClass<AEnemy_Speed>()
 	{
 		return AEnemy_Speed::StaticClass();

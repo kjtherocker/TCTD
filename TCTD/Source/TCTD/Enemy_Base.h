@@ -38,7 +38,7 @@ protected:
 	virtual void SetTurretReferences(ATurret* aAddToList);	
 	virtual void Death();
 
-	int MaxHealth;
+	
     
     UWidgetComponent* Healthbar;
 	UProgressBar* ProgressBar;	
@@ -49,9 +49,11 @@ public:
 
 	
     TArray<ATurret*> TowersAttackingEnemys;
+
+	float MaxHealth;
 	
     UPROPERTY(VisibleAnywhere)
-    int CurrentHealth;
+    float CurrentHealth;
 	
 	UPROPERTY(VisibleAnywhere)
 	TArray<FVector> Waypoints;

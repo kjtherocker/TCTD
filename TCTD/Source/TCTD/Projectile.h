@@ -21,8 +21,8 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
-	//UPROPERTY(EditAnywhere)
-	//AEnemy* EnemyToAttack; 
+	UPROPERTY(EditAnywhere)
+	AEnemy_Base* EnemyToAttack; 
 
 	UPROPERTY(EditAnywhere)
 	int ProjectileDamage;
