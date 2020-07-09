@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeSpawner() {}
 	TCTD_API UClass* Z_Construct_UClass_ASpawner();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_TCTD();
+	TCTD_API UClass* Z_Construct_UClass_APlayerPawn_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
@@ -71,6 +72,10 @@ void EmptyLinkFunctionForGeneratedCodeSpawner() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerPawn_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PlayerPawn;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SpawnEnemyPosition_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_SpawnEnemyPosition;
@@ -112,6 +117,13 @@ void EmptyLinkFunctionForGeneratedCodeSpawner() {}
 		{ "ModuleRelativePath", "Spawner.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpawner_Statics::NewProp_PlayerPawn_MetaData[] = {
+		{ "Category", "Spawner" },
+		{ "ModuleRelativePath", "Spawner.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpawner_Statics::NewProp_PlayerPawn = { "PlayerPawn", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpawner, PlayerPawn), Z_Construct_UClass_APlayerPawn_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASpawner_Statics::NewProp_PlayerPawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpawner_Statics::NewProp_PlayerPawn_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASpawner_Statics::NewProp_SpawnEnemyPosition_MetaData[] = {
 		{ "Category", "Spawner" },
@@ -157,6 +169,7 @@ void EmptyLinkFunctionForGeneratedCodeSpawner() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpawner_Statics::NewProp_m_Mesh = { "m_Mesh", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ASpawner, m_Mesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASpawner_Statics::NewProp_m_Mesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASpawner_Statics::NewProp_m_Mesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpawner_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawner_Statics::NewProp_PlayerPawn,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawner_Statics::NewProp_SpawnEnemyPosition,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawner_Statics::NewProp_Waypoints,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpawner_Statics::NewProp_Waypoints_Inner,
@@ -192,7 +205,7 @@ void EmptyLinkFunctionForGeneratedCodeSpawner() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASpawner, 2677535507);
+	IMPLEMENT_CLASS(ASpawner, 2085109982);
 	template<> TCTD_API UClass* StaticClass<ASpawner>()
 	{
 		return ASpawner::StaticClass();

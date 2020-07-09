@@ -10,7 +10,7 @@ ATurret::ATurret()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	SphereTrigger = CreateDefaultSubobject<USphereComponent>(TEXT("SphereTrigger"));
-
+	Cost = 40;
 }
 
 // Called when the game starts or when spawned
@@ -24,10 +24,10 @@ void ATurret::BeginPlay()
 	SphereTrigger->OnComponentEndOverlap.AddDynamic(this, &ATurret::OnEndOverlap);
 	
 	FTimerHandle handle;
-    GetWorld()->GetTimerManager().SetTimer(handle,this,&ATurret::ShootAtEnemy,1.0f,true);
+    GetWorld()->GetTimerManager().SetTimer(handle,this,&ATurret::ShootAtEnemy,2.5f,true);
 	ProjectileSpawnOffset = 76;
 
-	NumberOfProjectiles = 3;
+	NumberOfProjectiles = 2;
 	
 	for(int i = 0 ; i < NumberOfProjectiles;i++)
 	{
@@ -45,7 +45,7 @@ void ATurret::Tick(float DeltaTime)
 AProjectile* ATurret::GetProjectileFormPool()
 {
 
-	for(int i = 0; i < ProjectilePool.Num() -1; i++)
+	for(int i = 0; i < ProjectilePool.Num(); i++)
 	{
 		if(ProjectilePool[i]->ProjectileState == false)
 		{
@@ -54,16 +54,18 @@ AProjectile* ATurret::GetProjectileFormPool()
 	}
 	
 	ProjectilePool.Add(AddProjectileToPool());
-	return ProjectilePool[ProjectilePool.Num() - 1];
+	return ProjectilePool[ProjectilePool.Num()];
 }
 
 void ATurret::DeActivateProjectile()
 {
-	for(int i = 0; i < ProjectilePool.Num() - 1; i++)
+	for(int i = 0; i < ProjectilePool.Num(); i++)
 	{
 		ProjectilePool[i]->Deactivate();
 	}
 }
+
+
 
 AProjectile* ATurret::AddProjectileToPool()
 {
@@ -132,9 +134,39 @@ void ATurret::EnemyWasKilled(FString aName)
 	if(EnemyToAttack == nullptr)
 	{
 		DeActivateProjectile();
-		EnemyToAttack = Cast<AEnemy_Base>(EnemyInRange[0]);
+		CalculateClosestEnemy();
 		EnemyToAttack->EnemyDeathEvent.AddDynamic(this, &ATurret::EnemyWasKilled);
 	}
+}
+
+void ATurret::CalculateClosestEnemy()
+{
+	if(!EnemyInRange.IsValidIndex(0))
+	{
+		return;
+	}
+	
+	AEnemy_Base* EnemyTemp = Cast<AEnemy_Base>(EnemyInRange[0]);
+	
+	if(EnemyInRange.Num() > 1)
+	{
+		for (int i = 0; i < EnemyInRange.Num(); i++)
+		{
+			AEnemy_Base* IterativeEnemy = Cast<AEnemy_Base>(EnemyInRange[i]);
+
+
+			float EnemyA = abs(IterativeEnemy->DistanceLeftInLevel);
+			float EnemyB = abs(EnemyTemp->DistanceLeftInLevel);
+			
+			if(EnemyA < EnemyB )
+			{
+				EnemyTemp = IterativeEnemy;
+			}
+		}
+	}
+	
+	EnemyToAttack = EnemyTemp;
+	EnemyToAttack->EnemyDeathEvent.AddDynamic(this, &ATurret::EnemyWasKilled);
 }
 
 void ATurret::OnBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
@@ -149,11 +181,8 @@ void ATurret::OnBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherA
 		}
 	
 		AddEnemyInRange(Enemy);
-		if(EnemyInRange.Num() == 1)
-		{
-			EnemyToAttack = Enemy;
-			EnemyToAttack->EnemyDeathEvent.AddDynamic(this, &ATurret::EnemyWasKilled);
-		}
+		Enemy->EnemyDeathEvent.AddDynamic(this, &ATurret::EnemyWasKilled);
+		CalculateClosestEnemy();
 	}
 }
 
@@ -169,6 +198,7 @@ void ATurret::OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 				EnemyInRange.RemoveAt(i);
 			}
 		}
+		CalculateClosestEnemy();
 	}
 }
 
@@ -186,4 +216,5 @@ void ATurret::AddEnemyInRange(AEnemy_Base* Enemy)
 	}
 
 	EnemyInRange.Add(Enemy);
+	
 }

@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayerPawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyPlayerPawn, 3252083163);
+	IMPLEMENT_CLASS(AMyPlayerPawn, 2329043270);
 	template<> TCTD_API UClass* StaticClass<AMyPlayerPawn>()
 	{
 		return AMyPlayerPawn::StaticClass();

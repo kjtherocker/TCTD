@@ -35,10 +35,15 @@ public:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> ToSpawn;
 
+	UPROPERTY(EditAnywhere)
+    AActor* BasicTurret;
+
 	UPROPERTY(VisibleAnywhere)
 	FVector2D CurrentPosition;
 	FVector2D OldPosition; 
 
+	UPROPERTY(EditAnywhere)
+	int CurrentMoney;
 
 	APlayerController* PlayerController;
 	

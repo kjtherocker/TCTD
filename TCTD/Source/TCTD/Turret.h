@@ -39,7 +39,8 @@ public:
 	TArray<AProjectile*> ProjectilePool; 
 
 	int NumberOfProjectiles;
-	
+
+	int Cost;
 	
 protected:
 	// Called when the game starts or when spawned
@@ -70,5 +71,7 @@ public:
 	AProjectile* GetProjectileFormPool();
 	
 	void DeActivateProjectile();
+
+	void CalculateClosestEnemy();
 	
 };

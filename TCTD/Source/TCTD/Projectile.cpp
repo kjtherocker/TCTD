@@ -11,6 +11,7 @@ AProjectile::AProjectile()
 	ProjectileSpeed = 500.0f;
 	ProjectileDamage = 4;
 	m_Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mainmesh"));
+	SetActorTickEnabled(false);
 }
 
 // Called when the game starts or when spawned
@@ -59,15 +60,16 @@ void AProjectile::Activate(AEnemy_Base* aEnemy)
 	EnemyToAttack = aEnemy;
 	
 	SetActorHiddenInGame(false);
-	PrimaryActorTick.bCanEverTick = true;
+	SetActorTickEnabled(true);
 	ProjectileState = true;
 }
 
 void AProjectile::Deactivate()
 {
+	EnemyToAttack = nullptr;
 	SetActorHiddenInGame(true);
 	ProjectileState = false;
-	PrimaryActorTick.bCanEverTick = false;
+	SetActorTickEnabled(false);
 }
 
 void AProjectile::OnBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
@@ -87,9 +89,9 @@ void AProjectile::OnBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* Ot
 
 	if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr))
 	{
-		Deactivate();
-		Cast<AEnemy_Base>(OtherActor)->TakeDamage(ProjectileDamage);
 		
+		Cast<AEnemy_Base>(OtherActor)->TakeDamage(ProjectileDamage);
+		Deactivate();
 	}
 
 }

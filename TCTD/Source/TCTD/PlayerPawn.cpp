@@ -15,7 +15,7 @@ APlayerPawn::APlayerPawn()
 	PlayerCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("PlayerCamera"));
 
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
-	
+	CurrentMoney = 100;
 }
 
 // Called when the game starts or when spawned
@@ -98,14 +98,19 @@ void APlayerPawn::RaycastToCheckIfNodeIsFree()
 		GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Blue,
 			FString::Printf(TEXT("You Hit: %s"), *hitResult->Actor->GetName()));
 
-		
+		//ATurret* Turret = Cast<ATurret>(BasicTurret);
 
+
+		if(CurrentMoney >= 50)
+		{
+			CurrentMoney -= 50;
+			
 			ATowerNode* TowerNodeTemp =  Cast<ATowerNode>(hitResult->Actor);
 			if(TowerNodeTemp != nullptr)
 			{
 				TowerNodeTemp->SpawnTurret(ToSpawn);
 			}
-		 
+		}
 	}
 }
 

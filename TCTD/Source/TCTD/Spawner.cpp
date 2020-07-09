@@ -22,7 +22,7 @@ void ASpawner::BeginPlay()
     UWorld* world = GetWorld();
     
     FTimerHandle handle;
-	
+
     world->GetTimerManager().SetTimer(handle,this,&ASpawner::SpawnEnemy,5.0f,true);
 }
 

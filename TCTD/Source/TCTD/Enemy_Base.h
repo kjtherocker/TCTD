@@ -39,9 +39,13 @@ protected:
 
 
 
-	virtual void Death();
+	virtual void DeActivate();
 
+	virtual void Activate();
+
+	virtual void SetUpHealthbar();
 	
+	virtual float CalculateDistanceFromStartToEnd();
     
     UWidgetComponent* Healthbar;
 	UProgressBar* ProgressBar;	
@@ -62,6 +66,8 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	TArray<FVector> Waypoints;
 
+	UPROPERTY(VisibleAnywhere)
+	float DistanceToNextWaypoint;
 	
 	
 	UPROPERTY(EditAnywhere)
@@ -73,8 +79,13 @@ public:
 	UPROPERTY(VisibleAnywhere)
      UStaticMeshComponent* BaseMesh;
 	
-	UPROPERTY(EditAnywhere)
     float AngleToWaypoint;
+	
+	UPROPERTY(VisibleAnywhere)
+	float AllWaypointDistances;
+	
+	UPROPERTY(VisibleAnywhere)
+    float DistanceLeftInLevel;
 
 	bool WaypointsAreSet;
 	

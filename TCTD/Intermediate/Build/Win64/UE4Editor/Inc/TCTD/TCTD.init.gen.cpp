@@ -25,7 +25,7 @@ void EmptyLinkFunctionForGeneratedCodeTCTD_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x349968F8,
+				0x723F7931,
 				0x22FB8F47,
 				METADATA_PARAMS(nullptr, 0)
 			};

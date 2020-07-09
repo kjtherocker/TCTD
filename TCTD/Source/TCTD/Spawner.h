@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "UObject/ObjectMacros.h"
 #include "Enemy_Base.h"
-
+#include "PlayerPawn.h"
 
 
 #include "Spawner.generated.h"
@@ -51,11 +51,13 @@ public:
 	UPROPERTY(EditAnywhere)
 	FVector SpawnEnemyPosition;
 
-
-	
+	UPROPERTY(EditAnywhere)
+	APlayerPawn* PlayerPawn; 
 	
 	
 	UFUNCTION()
 	virtual void SpawnEnemy();
+
+	
 
 };

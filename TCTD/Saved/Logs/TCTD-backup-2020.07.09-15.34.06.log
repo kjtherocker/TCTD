@@ -1,0 +1,1716 @@
+﻿Log file open, 07/09/20 11:07:25
+LogInit: Display: Running engine for game: TCTD
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 3.161299
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin RiderLink
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-13594126
+LogInit: Engine Version: 4.25.1-13594126+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 1903) (), CPU: AMD Ryzen 3 2200G with Radeon Vega Graphics    , GPU: NVIDIA GeForce GTX 1660 Ti
+LogInit: Compiled (64-bit): Jun  2 2020 02:10:36
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: F:/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [F:/TCTD/TCTD/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [F:/TCTD/TCTD/Saved/Config/Windows/Engine.ini]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [F:/TCTD/TCTD/Saved/Config/Windows/Engine.ini]
+[2020.07.09-15.07.26:442][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [F:/TCTD/TCTD/Saved/Config/Windows/Engine.ini]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [F:/TCTD/TCTD/Saved/Config/Windows/Engine.ini]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.07.09-15.07.26:442][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [F:/TCTD/TCTD/Saved/Config/Windows/Engine.ini]
+[2020.07.09-15.07.26:442][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [F:/TCTD/TCTD/Saved/Config/Windows/Engine.ini]
+[2020.07.09-15.07.26:450][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.07.09-15.07.26:450][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.07.09-15.07.26:451][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.07.09-15.07.26:452][  0]LogInit: Selected Device Profile: [Windows]
+[2020.07.09-15.07.26:452][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.07.09-15.07.26:452][  0]LogHAL: Display: Platform has ~ 31 GB [33225981952 / 34359738368 / 31], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.07.09-15.07.26:452][  0]LogInit: Going up to parent DeviceProfile []
+[2020.07.09-15.07.26:452][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.07.09-15.07.26:452][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.07.09-15.07.26:453][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [F:/TCTD/TCTD/Saved/Config/Windows/Scalability.ini]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2020.07.09-15.07.26:454][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [F:/TCTD/TCTD/Saved/Config/Windows/Engine.ini]
+[2020.07.09-15.07.26:454][  0]LogInit: Computer: DESKTOP-4CJ4ISN
+[2020.07.09-15.07.26:454][  0]LogInit: User: kylej
+[2020.07.09-15.07.26:454][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.07.09-15.07.26:454][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.07.09-15.07.26:455][  0]LogMemory: Memory total: Physical=30.9GB (31GB approx)
+[2020.07.09-15.07.26:455][  0]LogMemory: Platform Memory Stats for Windows
+[2020.07.09-15.07.26:455][  0]LogMemory: Process Physical Memory: 114.58 MB used, 114.59 MB peak
+[2020.07.09-15.07.26:455][  0]LogMemory: Process Virtual Memory: 95.72 MB used, 95.72 MB peak
+[2020.07.09-15.07.26:455][  0]LogMemory: Physical Memory: 20118.14 MB used,  11568.63 MB free, 31686.77 MB total
+[2020.07.09-15.07.26:455][  0]LogMemory: Virtual Memory: 5127.76 MB used,  134212600.00 MB free, 134217728.00 MB total
+[2020.07.09-15.07.26:464][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.07.09-15.07.26:525][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2020.07.09-15.07.26:526][  0]LogInit: Using OS detected language (en-US).
+[2020.07.09-15.07.26:526][  0]LogInit: Using OS detected locale (en-US).
+[2020.07.09-15.07.26:530][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2020.07.09-15.07.26:795][  0]LogInit: Setting process to per monitor DPI aware
+[2020.07.09-15.07.26:847][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.07.09-15.07.26:847][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.07.09-15.07.27:029][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.07.09-15.07.27:029][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.07.09-15.07.27:029][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.07.09-15.07.27:029][  0]LogD3D11RHI: D3D11 adapters:
+[2020.07.09-15.07.27:143][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1660 Ti' (Feature Level 11_0)
+[2020.07.09-15.07.27:143][  0]LogD3D11RHI:       5991/0/15843 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2020.07.09-15.07.27:146][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.07.09-15.07.27:146][  0]LogD3D11RHI:       0/0/15843 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.07.09-15.07.27:146][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.07.09-15.07.27:166][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.07.09-15.07.27:166][  0]LogD3D11RHI:     GPU DeviceId: 0x2182 (for the marketing name, search the web for "GPU Device Id")
+[2020.07.09-15.07.27:166][  0]LogWindows: EnumDisplayDevices:
+[2020.07.09-15.07.27:166][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1660 Ti' (P:0 D:1)
+[2020.07.09-15.07.27:167][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1660 Ti' (P:1 D:1)
+[2020.07.09-15.07.27:167][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1660 Ti' (P:0 D:0)
+[2020.07.09-15.07.27:167][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1660 Ti' (P:0 D:0)
+[2020.07.09-15.07.27:167][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2020.07.09-15.07.27:167][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1660 Ti
+[2020.07.09-15.07.27:167][  0]LogD3D11RHI:   Driver Version: 445.87 (internal:26.21.14.4587, unified:445.87)
+[2020.07.09-15.07.27:167][  0]LogD3D11RHI:      Driver Date: 4-3-2020
+[2020.07.09-15.07.27:167][  0]LogRHI: Texture pool is 4193 MB (70% of 5991 MB)
+[2020.07.09-15.07.27:241][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2020.07.09-15.07.27:243][  0]LogD3D11RHI: [Aftermath] Enabled and primed
+[2020.07.09-15.07.27:243][  0]LogD3D11RHI: Async texture creation enabled
+[2020.07.09-15.07.27:243][  0]LogD3D11RHI: Array index from any shader is supported
+[2020.07.09-15.07.27:246][  0]LogD3D11RHI: HDR output is supported on display 0 (NvId: 0x80061087).
+[2020.07.09-15.07.27:290][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2020.07.09-15.07.27:735][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.07.09-15.07.27:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.07.09-15.07.27:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.07.09-15.07.27:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.07.09-15.07.27:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.07.09-15.07.27:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.07.09-15.07.27:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.07.09-15.07.27:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.07.09-15.07.27:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.07.09-15.07.27:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.07.09-15.07.27:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.07.09-15.07.27:801][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.07.09-15.07.27:801][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.07.09-15.07.27:816][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2020.07.09-15.07.27:830][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.07.09-15.07.27:843][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.07.09-15.07.27:857][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.07.09-15.07.27:871][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.07.09-15.07.27:884][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.07.09-15.07.27:898][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.07.09-15.07.27:938][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.07.09-15.07.27:938][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.07.09-15.07.27:959][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.07.09-15.07.27:959][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.07.09-15.07.27:973][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.07.09-15.07.27:987][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.07.09-15.07.28:002][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.07.09-15.07.28:016][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.07.09-15.07.28:016][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.07.09-15.07.28:032][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.07.09-15.07.28:138][  0]LogShaderCompilers: Guid format shader working directory is 24 characters bigger than the processId version (../../../../TCTD/TCTD/Intermediate/Shaders/WorkingDirectory/56764/).
+[2020.07.09-15.07.28:138][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/kylej/AppData/Local/Temp/UnrealShaderWorkingDir/F46F85E5466BC56EDA72A998B09B9E9C/'.
+[2020.07.09-15.07.28:139][  0]LogXGEController: Cleaning working directory: C:/Users/kylej/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2020.07.09-15.07.28:139][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.07.09-15.07.28:139][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.07.09-15.07.28:139][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.07.09-15.07.29:119][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.07.09-15.07.29:178][  0]LogDerivedDataCache: Loaded boot cache 0.06s 75MB C:/Users/kylej/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2020.07.09-15.07.29:178][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/kylej/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2020.07.09-15.07.29:178][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../TCTD/TCTD/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.07.09-15.07.29:178][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.07.09-15.07.29:178][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../TCTD/TCTD/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.07.09-15.07.29:178][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.07.09-15.07.29:191][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.07.09-15.07.29:191][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.07.09-15.07.29:191][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.07.09-15.07.29:193][  0]LogDerivedDataCache: Using Local data cache path C:/Users/kylej/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.07.09-15.07.29:193][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.07.09-15.07.29:193][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.07.09-15.07.29:256][  0]LogSlate: Using FreeType 2.10.0
+[2020.07.09-15.07.29:256][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.07.09-15.07.29:287][  0]LogAssetRegistry: FAssetRegistry took 0.0032 seconds to start up
+[2020.07.09-15.07.29:592][  0]LogInit: Selected Device Profile: [Windows]
+[2020.07.09-15.07.29:744][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.07.09-15.07.29:744][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.07.09-15.07.29:744][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.07.09-15.07.29:744][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.07.09-15.07.29:744][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.07.09-15.07.29:771][  0]LogNetVersion: TCTD 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 3815092598)
+[2020.07.09-15.07.30:322][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (0000013509968480), frame # 0
+[2020.07.09-15.07.30:322][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000135098B11C0), frame # 0
+[2020.07.09-15.07.30:324][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000013509901E00), frame # 0
+[2020.07.09-15.07.30:393][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.060579 seconds
+[2020.07.09-15.07.30:399][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2020.07.09-15.07.30:399][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2020.07.09-15.07.30:400][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.07.09-15.07.30:975][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.07.09-15.07.30:983][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.07.09-15.07.31:054][  0]FLogRiderLinkModule: INIT START
+[2020.07.09-15.07.31:054][  0]FLogRiderLinkModule: INIT FINISH
+[2020.07.09-15.07.31:149][  0]SourceControl: Source control is disabled
+[2020.07.09-15.07.31:149][  0]SourceControl: Source control is disabled
+[2020.07.09-15.07.31:155][  0]SourceControl: Source control is disabled
+[2020.07.09-15.07.31:162][  0]SourceControl: Source control is disabled
+[2020.07.09-15.07.31:175][  0]SourceControl: Source control is disabled
+[2020.07.09-15.07.31:597][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.07.09-15.07.31:635][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.07.09-15.07.31:635][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.07.09-15.07.31:730][  0]LogOcInput: OculusInput pre-init called
+[2020.07.09-15.07.31:747][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.07.09-15.07.31:748][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.07.09-15.07.31:854][  0]LogEngine: Initializing Engine...
+[2020.07.09-15.07.31:855][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.07.09-15.07.31:856][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2020.07.09-15.07.31:857][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.07.09-15.07.32:032][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.07.09-15.07.32:042][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.07.09-15.07.32:043][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000013511853C00), frame # 0
+[2020.07.09-15.07.32:043][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001351184F880), frame # 0
+[2020.07.09-15.07.32:065][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.09-15.07.32:065][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.09-15.07.32:065][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.09-15.07.32:065][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.09-15.07.32:065][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.09-15.07.32:065][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.09-15.07.32:065][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.09-15.07.32:065][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.09-15.07.32:065][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.09-15.07.32:065][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.09-15.07.32:089][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.09-15.07.32:089][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.07.09-15.07.32:218][  0]LogAudioMixer: Display: Using Audio Device Headset Earphone (Razer Audio Controller - Chat)
+[2020.07.09-15.07.32:221][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.09-15.07.32:224][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.09-15.07.32:224][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.09-15.07.32:226][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.09-15.07.32:232][  0]LogInit: FAudioDevice initialized.
+[2020.07.09-15.07.32:232][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.07.09-15.07.32:327][  0]LogDerivedDataCache: Saved boot cache 0.10s 75MB C:/Users/kylej/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2020.07.09-15.07.32:340][  0]LogInit: Texture streaming: Enabled
+[2020.07.09-15.07.32:370][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.07.09-15.07.32:370][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={BC3642AD-4707-E392-DACF-C6B8F81D7CD3}
+[2020.07.09-15.07.32:370][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.07.09-15.07.32:372][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.07.09-15.07.32:443][  0]LogInit: Transaction tracking system initialized
+[2020.07.09-15.07.32:483][  0]BlueprintLog: New page: Editor Load
+[2020.07.09-15.07.32:602][  0]LocalizationService: Localization service is disabled
+[2020.07.09-15.07.32:827][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.07.09-15.07.32:828][  0]LogCook: Display: Mobile HDR setting 1
+[2020.07.09-15.07.33:051][  0]LogFileCache: Scanning file cache for directory 'F:/TCTD/TCTD/Content/' took 0.01s
+[2020.07.09-15.07.33:481][  0]SourceControl: Source control is disabled
+[2020.07.09-15.07.33:481][  0]LogUnrealEdMisc: Loading editor; pre map load, took 12.005
+[2020.07.09-15.07.33:481][  0]Cmd: MAP LOAD FILE="../../../../TCTD/TCTD/Content/Scenes/TCTD.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.07.09-15.07.33:482][  0]LightingResults: New page: Lighting Build
+[2020.07.09-15.07.33:482][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.07.09-15.07.33:483][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.07.33:483][  0]MapCheck: New page: Map Check
+[2020.07.09-15.07.33:483][  0]LightingResults: New page: Lighting Build
+[2020.07.09-15.07.33:525][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000013511853C00), frame # 0
+[2020.07.09-15.07.33:525][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001351184F880), frame # 0
+[2020.07.09-15.07.33:526][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2020.07.09-15.07.33:694][  0]LogAIModule: Creating AISystem for world TCTD
+[2020.07.09-15.07.33:694][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000135046D8600), frame # 0
+[2020.07.09-15.07.33:694][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000013509C116C0), frame # 0
+[2020.07.09-15.07.33:701][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.07.09-15.07.33:755][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2020.07.09-15.07.33:757][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.07.09-15.07.33:757][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.109ms to complete.
+[2020.07.09-15.07.33:757][  0]LogFileHelpers: Loading map 'TCTD' took 0.276
+[2020.07.09-15.07.33:760][  0]LogUnrealEdMisc: Total Editor Startup Time, took 12.283
+[2020.07.09-15.07.33:967][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.07.33:977][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.07.33:986][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.07.33:996][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.07.34:006][  0]LogCollectionManager: Loaded 0 collections in 0.001215 seconds
+[2020.07.09-15.07.34:030][  0]LogFileCache: Scanning file cache for directory 'F:/TCTD/TCTD/Saved/Collections/' took 0.00s
+[2020.07.09-15.07.34:030][  0]LogFileCache: Scanning file cache for directory 'F:/TCTD/TCTD/Content/Developers/kylej/Collections/' took 0.00s
+[2020.07.09-15.07.34:030][  0]LogFileCache: Scanning file cache for directory 'F:/TCTD/TCTD/Content/Collections/' took 0.00s
+[2020.07.09-15.07.34:030][  0]LogContentBrowser: Native class hierarchy populated in 0.0147 seconds. Added 3439 classes and 823 folders.
+[2020.07.09-15.07.34:035][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.07.09-15.07.34:091][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.07.09-15.07.34:143][  0]LogSlate: Took 0.000225 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.07.09-15.07.34:148][  0]LogSlate: Took 0.000219 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.07.09-15.07.34:151][  0]LogSlate: Took 0.000185 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.07.09-15.07.34:232][  0]LogRenderer: Reallocating scene render targets to support 1064x552 Format 10 NumSamples 1 (Frame:1).
+[2020.07.09-15.07.34:362][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.07.09-15.07.34:362][  0]LogLoad: (Engine Initialization) Total time: 12.89 seconds
+[2020.07.09-15.07.34:362][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.07.09-15.07.34:427][  0]LogAssetRegistry: Asset discovery search completed in 5.1411 seconds
+[2020.07.09-15.07.34:433][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
+[2020.07.09-15.07.34:449][  0]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.09-15.07.34:451][  0]PIE: New page: PIE session: TCTD (Jul 9, 2020, 7:07:34 AM)
+[2020.07.09-15.07.34:452][  0]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.07.09-15.07.34:454][  0]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2020.07.09-15.07.34:455][  0]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.07.34:460][  0]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005211s)
+[2020.07.09-15.07.34:461][  0]LogAIModule: Creating AISystem for world TCTD
+[2020.07.09-15.07.34:461][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000013529378C00), frame # 0
+[2020.07.09-15.07.34:461][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000135047A0540), frame # 0
+[2020.07.09-15.07.34:462][  0]LogPlayLevel: PIE: World Init took: (0.001671s)
+[2020.07.09-15.07.34:462][  0]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/TCTD.TCTD to /Game/Scenes/UEDPIE_0_TCTD.TCTD (0.007111s)
+[2020.07.09-15.07.34:471][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2020.07.09-15.07.34:475][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.09-15.07.34:475][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.09-15.07.34:475][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.09-15.07.34:475][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.09-15.07.34:475][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.09-15.07.34:475][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.09-15.07.34:475][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.09-15.07.34:475][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.09-15.07.34:476][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.09-15.07.34:476][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.09-15.07.34:484][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.09-15.07.34:484][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.07.09-15.07.34:565][  0]LogAudioMixer: Display: Using Audio Device Headset Earphone (Razer Audio Controller - Chat)
+[2020.07.09-15.07.34:566][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.09-15.07.34:566][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.09-15.07.34:566][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.09-15.07.34:566][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.09-15.07.34:570][  0]LogInit: FAudioDevice initialized.
+[2020.07.09-15.07.34:653][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.07.34:653][  0]LogLoad: Game class is 'GameModeBase'
+[2020.07.09-15.07.34:657][  0]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_TCTD.TCTD up for play (max tick rate 0) at 2020.07.09-11.07.34
+[2020.07.09-15.07.34:657][  0]LogWorld: Bringing up level for play took: 0.002321
+[2020.07.09-15.07.34:657][  0]LogOnline: OSS: Creating online subsystem instance for: :Context_1
+[2020.07.09-15.07.34:659][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2020.07.09-15.07.34:661][  0]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
+[2020.07.09-15.07.34:665][  0]PIE: Server logged in
+[2020.07.09-15.07.34:666][  0]PIE: Play in editor total start time 0.232 seconds.
+[2020.07.09-15.07.34:669][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.07.09-15.07.34:769][  1]LogRenderer: Reallocating scene render targets to support 1280x688 Format 10 NumSamples 1 (Frame:1).
+[2020.07.09-15.07.35:574][ 32]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.07.35:575][ 32]LogWorld: BeginTearingDown for /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.07.35:575][ 32]LogSlate: Window 'TCTD Preview [NetMode: Standalone] (64-bit/Windows) ' being destroyed
+[2020.07.09-15.07.35:578][ 32]LogWorld: UWorld::CleanupWorld for TCTD, bSessionEnded=true, bCleanupResources=true
+[2020.07.09-15.07.35:579][ 32]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.07.35:586][ 32]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.09-15.07.35:588][ 32]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.07.35:628][ 32]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000135047A0540), frame # 32
+[2020.07.09-15.07.35:629][ 32]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000013529378C00), frame # 32
+[2020.07.09-15.07.35:630][ 32]LogUObjectHash: Compacting FUObjectHashTables data took   1.00ms
+[2020.07.09-15.07.35:656][ 33]LogPlayLevel: Display: Destroying online subsystem :Context_1
+[2020.07.09-15.07.36:983][142]Candidate modules for hot reload:
+[2020.07.09-15.07.36:983][142]  TCTD
+[2020.07.09-15.07.36:983][142]Launching UnrealBuildTool... [F:/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TCTD,5585 TCTDEditor Win64 Development -Project="F:/TCTD/TCTD/TCTD.uproject" "F:/TCTD/TCTD/TCTD.uproject"  -IgnoreJunk]
+[2020.07.09-15.07.36:990][142]Warning: Starting HotReload took  0.0s.
+[2020.07.09-15.07.44:958][292]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.07.09-15.07.52:349][314]CompilerResultsLog: New page: Compilation - Jul 9, 2020, 7:07:52 AM
+[2020.07.09-15.07.52:349][314]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\TCTD).
+[2020.07.09-15.07.52:349][314]CompilerResultsLog: Building TCTDEditor...
+[2020.07.09-15.07.52:349][314]CompilerResultsLog: Using Visual Studio 2019 14.25.28614 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.07.09-15.07.52:350][314]CompilerResultsLog: Building 4 actions with 4 processes...
+[2020.07.09-15.07.52:350][314]CompilerResultsLog:   [1/4] Enemy_Base.cpp
+[2020.07.09-15.07.52:350][314]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(93): warning C4263: 'void AEnemy_Base::TakeDamage(int)': member function does not override any base class virtual member function
+[2020.07.09-15.07.52:351][314]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(97): warning C4264: 'float AActor::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': no override available for virtual member function from base 'AActor'; function is hidden
+[2020.07.09-15.07.52:351][314]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(2675): note: see declaration of 'AActor::TakeDamage'
+[2020.07.09-15.07.52:351][314]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/LocalPlayer.h(28): note: see declaration of 'AActor'
+[2020.07.09-15.07.52:352][314]CompilerResultsLog:   [2/4] UE4Editor-TCTD-5585.lib
+[2020.07.09-15.07.52:352][314]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-5585.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-5585.exp
+[2020.07.09-15.07.52:352][314]CompilerResultsLog:   [3/4] UE4Editor-TCTD-5585.dll
+[2020.07.09-15.07.52:352][314]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-5585.suppressed.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-5585.suppressed.exp
+[2020.07.09-15.07.52:352][314]CompilerResultsLog:   [4/4] TCTDEditor.target
+[2020.07.09-15.07.52:352][314]CompilerResultsLog: Total time in Parallel executor: 12.60 seconds
+[2020.07.09-15.07.52:353][314]CompilerResultsLog: Total execution time: 14.87 seconds
+[2020.07.09-15.07.52:353][314]LogMainFrame: MainFrame: Module compiling took 15.377 seconds
+[2020.07.09-15.07.52:384][314]LogContentBrowser: Native class hierarchy updated for 'TCTD' in 0.0005 seconds. Added 12 classes and 2 folders.
+[2020.07.09-15.07.52:386][314]Display: HotReload successful (6 functions remapped  0 scriptstructs remapped)
+[2020.07.09-15.07.52:457][314]LogContentBrowser: Native class hierarchy populated in 0.0182 seconds. Added 3439 classes and 823 folders.
+[2020.07.09-15.07.52:457][314]Display: HotReload took 15.5s.
+[2020.07.09-15.08.04:986][345]LogHotReload: New module detected: UE4Editor-TCTD-0184.dll
+[2020.07.09-15.08.07:819][354]LogHotReload: Starting Hot-Reload from IDE
+[2020.07.09-15.08.07:834][354]LogSlate: Took 0.000786 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.07.09-15.08.07:890][354]LogContentBrowser: Native class hierarchy updated for 'TCTD' in 0.0005 seconds. Added 12 classes and 2 folders.
+[2020.07.09-15.08.07:891][354]Display: HotReload successful (6 functions remapped  0 scriptstructs remapped)
+[2020.07.09-15.08.07:952][354]LogContentBrowser: Native class hierarchy populated in 0.0124 seconds. Added 3439 classes and 823 folders.
+[2020.07.09-15.08.07:958][354]Display: HotReload took  0.1s.
+[2020.07.09-15.09.29:412][593]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.07.09-15.14.12:016][435]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.07.09-15.15.08:417][601]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Scenes/TCTD" FILE="../../../../TCTD/TCTD/Content/Scenes/TCTD.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.07.09-15.15.08:436][601]LogUObjectHash: Compacting FUObjectHashTables data took   1.36ms
+[2020.07.09-15.15.08:467][601]LogSavePackage: Moving '../../../../TCTD/TCTD/Saved/TCTD1B05E3154003D9B6F0212DBB9588F31D.tmp' to '../../../../TCTD/TCTD/Content/Scenes/TCTD.umap'
+[2020.07.09-15.15.08:495][601]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Scenes/TCTD_BuiltData" FILE="../../../../TCTD/TCTD/Content/Scenes/TCTD_BuiltData.uasset" SILENT=true
+[2020.07.09-15.15.08:513][601]LogSavePackage: Moving '../../../../TCTD/TCTD/Saved/TCTD_BuiltData26938DF04318B07594F89B9C4C8533E3.tmp' to '../../../../TCTD/TCTD/Content/Scenes/TCTD_BuiltData.uasset'
+[2020.07.09-15.15.08:535][601]AssetCheck: New page: Asset Save: multiple assets
+[2020.07.09-15.15.08:535][601]LogContentValidation: Display: Validating World /Game/Scenes/TCTD.TCTD
+[2020.07.09-15.15.08:535][601]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Scenes/TCTD_BuiltData.TCTD_BuiltData
+[2020.07.09-15.15.09:929][729]Candidate modules for hot reload:
+[2020.07.09-15.15.09:929][729]  TCTD
+[2020.07.09-15.15.09:929][729]Launching UnrealBuildTool... [F:/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TCTD,2196 TCTDEditor Win64 Development -Project="F:/TCTD/TCTD/TCTD.uproject" "F:/TCTD/TCTD/TCTD.uproject"  -IgnoreJunk]
+[2020.07.09-15.15.09:937][729]Warning: Starting HotReload took  0.0s.
+[2020.07.09-15.15.33:598][291]CompilerResultsLog: New page: Compilation - Jul 9, 2020, 7:15:33 AM
+[2020.07.09-15.15.33:598][291]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\TCTD).
+[2020.07.09-15.15.33:598][291]CompilerResultsLog: Building TCTDEditor...
+[2020.07.09-15.15.33:598][291]CompilerResultsLog: Using Visual Studio 2019 14.25.28614 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.07.09-15.15.33:598][291]CompilerResultsLog: Building 4 actions with 4 processes...
+[2020.07.09-15.15.33:598][291]CompilerResultsLog:   [1/4] Enemy_Base.cpp
+[2020.07.09-15.15.33:599][291]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(93): warning C4263: 'void AEnemy_Base::TakeDamage(int)': member function does not override any base class virtual member function
+[2020.07.09-15.15.33:599][291]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(97): warning C4264: 'float AActor::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': no override available for virtual member function from base 'AActor'; function is hidden
+[2020.07.09-15.15.33:599][291]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(2675): note: see declaration of 'AActor::TakeDamage'
+[2020.07.09-15.15.33:599][291]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/LocalPlayer.h(28): note: see declaration of 'AActor'
+[2020.07.09-15.15.33:599][291]CompilerResultsLog:   [2/4] UE4Editor-TCTD-2196.lib
+[2020.07.09-15.15.33:599][291]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-2196.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-2196.exp
+[2020.07.09-15.15.33:599][291]CompilerResultsLog:   [3/4] UE4Editor-TCTD-2196.dll
+[2020.07.09-15.15.33:599][291]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-2196.suppressed.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-2196.suppressed.exp
+[2020.07.09-15.15.33:599][291]CompilerResultsLog:   [4/4] TCTDEditor.target
+[2020.07.09-15.15.33:599][291]CompilerResultsLog: Total time in Parallel executor: 21.47 seconds
+[2020.07.09-15.15.33:599][291]CompilerResultsLog: Total execution time: 23.48 seconds
+[2020.07.09-15.15.33:599][291]LogMainFrame: MainFrame: Module compiling took 23.676 seconds
+[2020.07.09-15.15.33:630][291]LogContentBrowser: Native class hierarchy updated for 'TCTD' in 0.0005 seconds. Added 12 classes and 2 folders.
+[2020.07.09-15.15.33:632][291]Display: HotReload successful (6 functions remapped  0 scriptstructs remapped)
+[2020.07.09-15.15.33:693][291]LogContentBrowser: Native class hierarchy populated in 0.0145 seconds. Added 3439 classes and 823 folders.
+[2020.07.09-15.15.33:693][291]Display: HotReload took 23.8s.
+[2020.07.09-15.15.35:487][486]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.09-15.15.35:508][486]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.09-15.15.35:508][486]PIE: New page: PIE session: TCTD (Jul 9, 2020, 7:15:35 AM)
+[2020.07.09-15.15.35:508][486]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.15.35:513][486]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004881s)
+[2020.07.09-15.15.35:515][486]LogAIModule: Creating AISystem for world TCTD
+[2020.07.09-15.15.35:515][486]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000013528995000), frame # 4486
+[2020.07.09-15.15.35:515][486]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000013504676C00), frame # 4486
+[2020.07.09-15.15.35:515][486]LogPlayLevel: PIE: World Init took: (0.001920s)
+[2020.07.09-15.15.35:515][486]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/TCTD.TCTD to /Game/Scenes/UEDPIE_0_TCTD.TCTD (0.006989s)
+[2020.07.09-15.15.35:525][486]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
+[2020.07.09-15.15.35:527][486]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.09-15.15.35:527][486]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.09-15.15.35:527][486]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.09-15.15.35:527][486]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.09-15.15.35:527][486]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.09-15.15.35:527][486]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.09-15.15.35:527][486]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.09-15.15.35:527][486]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.09-15.15.35:527][486]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.09-15.15.35:527][486]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.09-15.15.35:533][486]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.09-15.15.35:533][486]LogAudioMixer: Display: 1: FrontRight
+[2020.07.09-15.15.35:571][486]LogAudioMixer: Display: Using Audio Device Headset Earphone (Razer Audio Controller - Chat)
+[2020.07.09-15.15.35:571][486]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.09-15.15.35:571][486]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.09-15.15.35:571][486]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.09-15.15.35:572][486]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.09-15.15.35:596][486]LogInit: FAudioDevice initialized.
+[2020.07.09-15.15.35:606][486]LogLoad: Game class is 'GameModeBase'
+[2020.07.09-15.15.35:608][486]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_TCTD.TCTD up for play (max tick rate 0) at 2020.07.09-11.15.35
+[2020.07.09-15.15.35:608][486]LogWorld: Bringing up level for play took: 0.001734
+[2020.07.09-15.15.35:608][486]LogOnline: OSS: Creating online subsystem instance for: :Context_2
+[2020.07.09-15.15.35:611][486]PIE: Server logged in
+[2020.07.09-15.15.35:612][486]PIE: Play in editor total start time 0.107 seconds.
+[2020.07.09-15.15.40:491][ 63]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.15.44:857][571]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.15.44:857][571]LogWorld: BeginTearingDown for /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.15.44:857][571]LogWorld: UWorld::CleanupWorld for TCTD, bSessionEnded=true, bCleanupResources=true
+[2020.07.09-15.15.44:858][571]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.15.44:872][571]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.09-15.15.44:874][571]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.15.44:911][571]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.15.44:912][571]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000013504676C00), frame # 5571
+[2020.07.09-15.15.44:912][571]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000013528995000), frame # 5571
+[2020.07.09-15.15.44:913][571]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2020.07.09-15.15.44:942][572]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2020.07.09-15.16.00:052][454]Candidate modules for hot reload:
+[2020.07.09-15.16.00:052][454]  TCTD
+[2020.07.09-15.16.00:053][454]Launching UnrealBuildTool... [F:/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TCTD,5158 TCTDEditor Win64 Development -Project="F:/TCTD/TCTD/TCTD.uproject" "F:/TCTD/TCTD/TCTD.uproject"  -IgnoreJunk]
+[2020.07.09-15.16.00:057][454]Warning: Starting HotReload took  0.0s.
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog: New page: Compilation - Jul 9, 2020, 7:16:14 AM
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\TCTD).
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog: Building TCTDEditor...
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog: Using Visual Studio 2019 14.25.28614 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog: Building 4 actions with 4 processes...
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog:   [1/4] Enemy_Base.cpp
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(93): warning C4263: 'void AEnemy_Base::TakeDamage(int)': member function does not override any base class virtual member function
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(97): warning C4264: 'float AActor::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': no override available for virtual member function from base 'AActor'; function is hidden
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(2675): note: see declaration of 'AActor::TakeDamage'
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/LocalPlayer.h(28): note: see declaration of 'AActor'
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog:   [2/4] UE4Editor-TCTD-5158.lib
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-5158.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-5158.exp
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog:   [3/4] UE4Editor-TCTD-5158.dll
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-5158.suppressed.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-5158.suppressed.exp
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog:   [4/4] TCTDEditor.target
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog: Total time in Parallel executor: 12.75 seconds
+[2020.07.09-15.16.14:940][ 75]CompilerResultsLog: Total execution time: 14.44 seconds
+[2020.07.09-15.16.14:940][ 75]LogMainFrame: MainFrame: Module compiling took 14.895 seconds
+[2020.07.09-15.16.14:968][ 75]LogContentBrowser: Native class hierarchy updated for 'TCTD' in 0.0005 seconds. Added 12 classes and 2 folders.
+[2020.07.09-15.16.14:970][ 75]Display: HotReload successful (6 functions remapped  0 scriptstructs remapped)
+[2020.07.09-15.16.15:034][ 75]LogContentBrowser: Native class hierarchy populated in 0.0148 seconds. Added 3439 classes and 823 folders.
+[2020.07.09-15.16.15:034][ 75]Display: HotReload took 15.0s.
+[2020.07.09-15.16.16:692][241]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.09-15.16.16:713][241]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.09-15.16.16:713][241]PIE: New page: PIE session: TCTD (Jul 9, 2020, 7:16:16 AM)
+[2020.07.09-15.16.16:713][241]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.16.16:717][241]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004552s)
+[2020.07.09-15.16.16:719][241]LogAIModule: Creating AISystem for world TCTD
+[2020.07.09-15.16.16:719][241]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001352889E200), frame # 8241
+[2020.07.09-15.16.16:719][241]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000013501804180), frame # 8241
+[2020.07.09-15.16.16:720][241]LogPlayLevel: PIE: World Init took: (0.002140s)
+[2020.07.09-15.16.16:720][241]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/TCTD.TCTD to /Game/Scenes/UEDPIE_0_TCTD.TCTD (0.006889s)
+[2020.07.09-15.16.16:729][241]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2020.07.09-15.16.16:731][241]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.09-15.16.16:731][241]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.09-15.16.16:731][241]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.09-15.16.16:731][241]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.09-15.16.16:731][241]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.09-15.16.16:731][241]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.09-15.16.16:731][241]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.09-15.16.16:731][241]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.09-15.16.16:732][241]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.09-15.16.16:732][241]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.09-15.16.16:738][241]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.09-15.16.16:738][241]LogAudioMixer: Display: 1: FrontRight
+[2020.07.09-15.16.16:771][241]LogAudioMixer: Display: Using Audio Device Headset Earphone (Razer Audio Controller - Chat)
+[2020.07.09-15.16.16:771][241]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.09-15.16.16:771][241]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.09-15.16.16:771][241]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.09-15.16.16:772][241]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.09-15.16.16:797][241]LogInit: FAudioDevice initialized.
+[2020.07.09-15.16.16:807][241]LogLoad: Game class is 'GameModeBase'
+[2020.07.09-15.16.16:809][241]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_TCTD.TCTD up for play (max tick rate 0) at 2020.07.09-11.16.16
+[2020.07.09-15.16.16:809][241]LogWorld: Bringing up level for play took: 0.002109
+[2020.07.09-15.16.16:810][241]LogOnline: OSS: Creating online subsystem instance for: :Context_3
+[2020.07.09-15.16.16:813][241]PIE: Server logged in
+[2020.07.09-15.16.16:814][241]PIE: Play in editor total start time 0.105 seconds.
+[2020.07.09-15.16.21:698][821]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.18.12:219][ 43]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.18.12:219][ 43]LogWorld: BeginTearingDown for /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.18.12:219][ 43]LogWorld: UWorld::CleanupWorld for TCTD, bSessionEnded=true, bCleanupResources=true
+[2020.07.09-15.18.12:220][ 43]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.18.12:227][ 43]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.09-15.18.12:229][ 43]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.18.12:263][ 43]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.18.12:264][ 43]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000013501804180), frame # 20043
+[2020.07.09-15.18.12:264][ 43]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001352889E200), frame # 20043
+[2020.07.09-15.18.12:265][ 43]LogUObjectHash: Compacting FUObjectHashTables data took   0.95ms
+[2020.07.09-15.18.12:303][ 45]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2020.07.09-15.18.29:174][352]Candidate modules for hot reload:
+[2020.07.09-15.18.29:174][352]  TCTD
+[2020.07.09-15.18.29:174][352]Launching UnrealBuildTool... [F:/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TCTD,2244 TCTDEditor Win64 Development -Project="F:/TCTD/TCTD/TCTD.uproject" "F:/TCTD/TCTD/TCTD.uproject"  -IgnoreJunk]
+[2020.07.09-15.18.29:182][352]Warning: Starting HotReload took  0.0s.
+[2020.07.09-15.18.45:656][124]CompilerResultsLog: New page: Compilation - Jul 9, 2020, 7:18:45 AM
+[2020.07.09-15.18.45:657][124]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\TCTD).
+[2020.07.09-15.18.45:657][124]CompilerResultsLog: Building TCTDEditor...
+[2020.07.09-15.18.45:657][124]CompilerResultsLog: Using Visual Studio 2019 14.25.28614 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.07.09-15.18.45:657][124]CompilerResultsLog: Building 4 actions with 4 processes...
+[2020.07.09-15.18.45:657][124]CompilerResultsLog:   [1/4] Enemy_Base.cpp
+[2020.07.09-15.18.45:657][124]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(93): warning C4263: 'void AEnemy_Base::TakeDamage(int)': member function does not override any base class virtual member function
+[2020.07.09-15.18.45:657][124]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(97): warning C4264: 'float AActor::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': no override available for virtual member function from base 'AActor'; function is hidden
+[2020.07.09-15.18.45:657][124]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(2675): note: see declaration of 'AActor::TakeDamage'
+[2020.07.09-15.18.45:657][124]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/LocalPlayer.h(28): note: see declaration of 'AActor'
+[2020.07.09-15.18.45:657][124]CompilerResultsLog:   [2/4] UE4Editor-TCTD-2244.lib
+[2020.07.09-15.18.45:657][124]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-2244.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-2244.exp
+[2020.07.09-15.18.45:657][124]CompilerResultsLog:   [3/4] UE4Editor-TCTD-2244.dll
+[2020.07.09-15.18.45:657][124]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-2244.suppressed.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-2244.suppressed.exp
+[2020.07.09-15.18.45:657][124]CompilerResultsLog:   [4/4] TCTDEditor.target
+[2020.07.09-15.18.45:657][124]CompilerResultsLog: Total time in Parallel executor: 14.26 seconds
+[2020.07.09-15.18.45:657][124]CompilerResultsLog: Total execution time: 16.15 seconds
+[2020.07.09-15.18.45:657][124]LogMainFrame: MainFrame: Module compiling took 16.494 seconds
+[2020.07.09-15.18.45:686][124]LogContentBrowser: Native class hierarchy updated for 'TCTD' in 0.0004 seconds. Added 12 classes and 2 folders.
+[2020.07.09-15.18.45:688][124]Display: HotReload successful (6 functions remapped  0 scriptstructs remapped)
+[2020.07.09-15.18.45:752][124]LogContentBrowser: Native class hierarchy populated in 0.0139 seconds. Added 3439 classes and 823 folders.
+[2020.07.09-15.18.45:752][124]Display: HotReload took 16.6s.
+[2020.07.09-15.18.47:925][362]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.09-15.18.47:946][362]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.09-15.18.47:946][362]PIE: New page: PIE session: TCTD (Jul 9, 2020, 7:18:47 AM)
+[2020.07.09-15.18.47:946][362]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.18.47:950][362]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004399s)
+[2020.07.09-15.18.47:952][362]LogAIModule: Creating AISystem for world TCTD
+[2020.07.09-15.18.47:952][362]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000013523BBDA00), frame # 22362
+[2020.07.09-15.18.47:952][362]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001351D377B00), frame # 22362
+[2020.07.09-15.18.47:953][362]LogPlayLevel: PIE: World Init took: (0.002315s)
+[2020.07.09-15.18.47:953][362]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/TCTD.TCTD to /Game/Scenes/UEDPIE_0_TCTD.TCTD (0.007021s)
+[2020.07.09-15.18.47:962][362]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2020.07.09-15.18.47:964][362]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.09-15.18.47:964][362]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.09-15.18.47:964][362]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.09-15.18.47:964][362]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.09-15.18.47:964][362]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.09-15.18.47:964][362]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.09-15.18.47:964][362]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.09-15.18.47:964][362]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.09-15.18.47:965][362]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.09-15.18.47:965][362]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.09-15.18.47:972][362]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.09-15.18.47:972][362]LogAudioMixer: Display: 1: FrontRight
+[2020.07.09-15.18.48:006][362]LogAudioMixer: Display: Using Audio Device Headset Earphone (Razer Audio Controller - Chat)
+[2020.07.09-15.18.48:006][362]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.09-15.18.48:006][362]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.09-15.18.48:006][362]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.09-15.18.48:007][362]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.09-15.18.48:031][362]LogInit: FAudioDevice initialized.
+[2020.07.09-15.18.48:044][362]LogLoad: Game class is 'GameModeBase'
+[2020.07.09-15.18.48:047][362]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_TCTD.TCTD up for play (max tick rate 0) at 2020.07.09-11.18.48
+[2020.07.09-15.18.48:047][362]LogWorld: Bringing up level for play took: 0.002017
+[2020.07.09-15.18.48:047][362]LogOnline: OSS: Creating online subsystem instance for: :Context_6
+[2020.07.09-15.18.48:050][362]PIE: Server logged in
+[2020.07.09-15.18.48:051][362]PIE: Play in editor total start time 0.109 seconds.
+[2020.07.09-15.18.52:931][937]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.19.12:831][512]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.19.17:833][ 15]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.19.22:827][510]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.19.27:832][992]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.19.32:834][475]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.19.34:819][658]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.19.34:819][658]LogWorld: BeginTearingDown for /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.19.34:820][658]LogWorld: UWorld::CleanupWorld for TCTD, bSessionEnded=true, bCleanupResources=true
+[2020.07.09-15.19.34:820][658]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.19.34:828][658]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.09-15.19.34:830][658]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.19.34:867][658]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.19.34:868][658]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001351D377B00), frame # 26658
+[2020.07.09-15.19.34:869][658]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000013523BBDA00), frame # 26658
+[2020.07.09-15.19.34:870][658]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2020.07.09-15.19.34:907][659]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2020.07.09-15.20.01:381][ 41]Candidate modules for hot reload:
+[2020.07.09-15.20.01:381][ 41]  TCTD
+[2020.07.09-15.20.01:381][ 41]Launching UnrealBuildTool... [F:/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TCTD,5121 TCTDEditor Win64 Development -Project="F:/TCTD/TCTD/TCTD.uproject" "F:/TCTD/TCTD/TCTD.uproject"  -IgnoreJunk]
+[2020.07.09-15.20.01:385][ 41]Warning: Starting HotReload took  0.0s.
+[2020.07.09-15.20.14:905][894]CompilerResultsLog: New page: Compilation - Jul 9, 2020, 7:20:14 AM
+[2020.07.09-15.20.14:906][894]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\TCTD).
+[2020.07.09-15.20.14:906][894]CompilerResultsLog: Building TCTDEditor...
+[2020.07.09-15.20.14:906][894]CompilerResultsLog: Using Visual Studio 2019 14.25.28614 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.07.09-15.20.14:906][894]CompilerResultsLog: Building 4 actions with 4 processes...
+[2020.07.09-15.20.14:906][894]CompilerResultsLog:   [1/4] Enemy_Base.cpp
+[2020.07.09-15.20.14:906][894]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(93): warning C4263: 'void AEnemy_Base::TakeDamage(int)': member function does not override any base class virtual member function
+[2020.07.09-15.20.14:906][894]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(97): warning C4264: 'float AActor::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': no override available for virtual member function from base 'AActor'; function is hidden
+[2020.07.09-15.20.14:906][894]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(2675): note: see declaration of 'AActor::TakeDamage'
+[2020.07.09-15.20.14:906][894]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/LocalPlayer.h(28): note: see declaration of 'AActor'
+[2020.07.09-15.20.14:906][894]CompilerResultsLog:   [2/4] UE4Editor-TCTD-5121.lib
+[2020.07.09-15.20.14:906][894]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-5121.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-5121.exp
+[2020.07.09-15.20.14:906][894]CompilerResultsLog:   [3/4] UE4Editor-TCTD-5121.dll
+[2020.07.09-15.20.14:906][894]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-5121.suppressed.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-5121.suppressed.exp
+[2020.07.09-15.20.14:906][894]CompilerResultsLog:   [4/4] TCTDEditor.target
+[2020.07.09-15.20.14:906][894]CompilerResultsLog: Total time in Parallel executor: 11.53 seconds
+[2020.07.09-15.20.14:906][894]CompilerResultsLog: Total execution time: 13.19 seconds
+[2020.07.09-15.20.14:906][894]LogMainFrame: MainFrame: Module compiling took 13.531 seconds
+[2020.07.09-15.20.15:057][894]LogContentBrowser: Native class hierarchy updated for 'TCTD' in 0.0006 seconds. Added 12 classes and 2 folders.
+[2020.07.09-15.20.15:059][894]Display: HotReload successful (6 functions remapped  0 scriptstructs remapped)
+[2020.07.09-15.20.15:135][894]LogContentBrowser: Native class hierarchy populated in 0.0208 seconds. Added 3439 classes and 823 folders.
+[2020.07.09-15.20.15:135][894]Display: HotReload took 13.8s.
+[2020.07.09-15.20.25:087][918]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.09-15.20.25:108][918]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.09-15.20.25:108][918]PIE: New page: PIE session: TCTD (Jul 9, 2020, 7:20:25 AM)
+[2020.07.09-15.20.25:108][918]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.20.25:114][918]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005474s)
+[2020.07.09-15.20.25:116][918]LogAIModule: Creating AISystem for world TCTD
+[2020.07.09-15.20.25:116][918]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001353F7AAC00), frame # 27918
+[2020.07.09-15.20.25:116][918]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001351D1C02C0), frame # 27918
+[2020.07.09-15.20.25:116][918]LogPlayLevel: PIE: World Init took: (0.002193s)
+[2020.07.09-15.20.25:116][918]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/TCTD.TCTD to /Game/Scenes/UEDPIE_0_TCTD.TCTD (0.007970s)
+[2020.07.09-15.20.25:129][918]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2020.07.09-15.20.25:130][918]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.09-15.20.25:130][918]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.09-15.20.25:131][918]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.09-15.20.25:131][918]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.09-15.20.25:131][918]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.09-15.20.25:131][918]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.09-15.20.25:131][918]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.09-15.20.25:131][918]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.09-15.20.25:131][918]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.09-15.20.25:131][918]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.09-15.20.25:137][918]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.09-15.20.25:137][918]LogAudioMixer: Display: 1: FrontRight
+[2020.07.09-15.20.25:168][918]LogAudioMixer: Display: Using Audio Device Headset Earphone (Razer Audio Controller - Chat)
+[2020.07.09-15.20.25:169][918]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.09-15.20.25:169][918]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.09-15.20.25:169][918]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.09-15.20.25:169][918]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.09-15.20.25:196][918]LogInit: FAudioDevice initialized.
+[2020.07.09-15.20.25:204][918]LogLoad: Game class is 'GameModeBase'
+[2020.07.09-15.20.25:207][918]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_TCTD.TCTD up for play (max tick rate 0) at 2020.07.09-11.20.25
+[2020.07.09-15.20.25:207][918]LogWorld: Bringing up level for play took: 0.001778
+[2020.07.09-15.20.25:207][918]LogOnline: OSS: Creating online subsystem instance for: :Context_7
+[2020.07.09-15.20.25:210][918]PIE: Server logged in
+[2020.07.09-15.20.25:211][918]PIE: Play in editor total start time 0.108 seconds.
+[2020.07.09-15.20.30:316][353]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.20.35:092][672]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.20.40:089][192]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.20.45:092][708]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.20.50:089][216]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.20.55:092][719]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.21.00:097][207]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.21.05:645][638]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.21.10:351][ 26]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.21.15:348][488]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.21.20:352][958]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.21.26:149][433]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.21.31:153][890]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.21.36:151][343]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.21.41:151][797]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.21.46:156][258]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.21.51:059][697]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.21.51:059][697]LogWorld: BeginTearingDown for /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.21.51:060][697]LogWorld: UWorld::CleanupWorld for TCTD, bSessionEnded=true, bCleanupResources=true
+[2020.07.09-15.21.51:061][697]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.21.51:068][697]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.09-15.21.51:069][697]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.21.51:111][697]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.21.51:113][697]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001351D1C02C0), frame # 35697
+[2020.07.09-15.21.51:113][697]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001353F7AAC00), frame # 35697
+[2020.07.09-15.21.51:115][697]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2020.07.09-15.21.51:149][698]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2020.07.09-15.22.02:642][988]LogAssetEditorSubsystem: Opening Asset editor for Class /Script/TCTD.Enemy_Base
+[2020.07.09-15.23.27:122][823]Candidate modules for hot reload:
+[2020.07.09-15.23.27:122][823]  TCTD
+[2020.07.09-15.23.27:122][823]Launching UnrealBuildTool... [F:/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TCTD,1485 TCTDEditor Win64 Development -Project="F:/TCTD/TCTD/TCTD.uproject" "F:/TCTD/TCTD/TCTD.uproject"  -IgnoreJunk]
+[2020.07.09-15.23.27:127][823]Warning: Starting HotReload took  0.0s.
+[2020.07.09-15.23.48:383][130]CompilerResultsLog: New page: Compilation - Jul 9, 2020, 7:23:48 AM
+[2020.07.09-15.23.48:383][130]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\TCTD).
+[2020.07.09-15.23.48:383][130]CompilerResultsLog: Building TCTDEditor...
+[2020.07.09-15.23.48:383][130]CompilerResultsLog: Using Visual Studio 2019 14.25.28614 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.07.09-15.23.48:383][130]CompilerResultsLog: Building 4 actions with 4 processes...
+[2020.07.09-15.23.48:383][130]CompilerResultsLog:   [1/4] Enemy_Base.cpp
+[2020.07.09-15.23.48:383][130]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(93): warning C4263: 'void AEnemy_Base::TakeDamage(int)': member function does not override any base class virtual member function
+[2020.07.09-15.23.48:383][130]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(97): warning C4264: 'float AActor::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': no override available for virtual member function from base 'AActor'; function is hidden
+[2020.07.09-15.23.48:383][130]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(2675): note: see declaration of 'AActor::TakeDamage'
+[2020.07.09-15.23.48:383][130]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/LocalPlayer.h(28): note: see declaration of 'AActor'
+[2020.07.09-15.23.48:383][130]CompilerResultsLog:   [2/4] UE4Editor-TCTD-1485.lib
+[2020.07.09-15.23.48:383][130]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-1485.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-1485.exp
+[2020.07.09-15.23.48:383][130]CompilerResultsLog:   [3/4] UE4Editor-TCTD-1485.dll
+[2020.07.09-15.23.48:383][130]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-1485.suppressed.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-1485.suppressed.exp
+[2020.07.09-15.23.48:383][130]CompilerResultsLog:   [4/4] TCTDEditor.target
+[2020.07.09-15.23.48:383][130]CompilerResultsLog: Total time in Parallel executor: 18.58 seconds
+[2020.07.09-15.23.48:383][130]CompilerResultsLog: Total execution time: 20.82 seconds
+[2020.07.09-15.23.48:383][130]LogMainFrame: MainFrame: Module compiling took 21.267 seconds
+[2020.07.09-15.23.48:412][130]LogContentBrowser: Native class hierarchy updated for 'TCTD' in 0.0005 seconds. Added 12 classes and 2 folders.
+[2020.07.09-15.23.48:414][130]Display: HotReload successful (6 functions remapped  0 scriptstructs remapped)
+[2020.07.09-15.23.48:480][130]LogContentBrowser: Native class hierarchy populated in 0.0155 seconds. Added 3439 classes and 823 folders.
+[2020.07.09-15.23.48:480][130]Display: HotReload took 21.4s.
+[2020.07.09-15.23.57:100][156]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.09-15.23.57:138][156]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.09-15.23.57:139][156]PIE: New page: PIE session: TCTD (Jul 9, 2020, 7:23:57 AM)
+[2020.07.09-15.23.57:139][156]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.23.57:148][156]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009085s)
+[2020.07.09-15.23.57:151][156]LogAIModule: Creating AISystem for world TCTD
+[2020.07.09-15.23.57:151][156]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001353F8AB600), frame # 38156
+[2020.07.09-15.23.57:151][156]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001352879C900), frame # 38156
+[2020.07.09-15.23.57:153][156]LogPlayLevel: PIE: World Init took: (0.003926s)
+[2020.07.09-15.23.57:153][156]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/TCTD.TCTD to /Game/Scenes/UEDPIE_0_TCTD.TCTD (0.013762s)
+[2020.07.09-15.23.57:171][156]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2020.07.09-15.23.57:175][156]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.09-15.23.57:175][156]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.09-15.23.57:175][156]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.09-15.23.57:175][156]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.09-15.23.57:175][156]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.09-15.23.57:175][156]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.09-15.23.57:175][156]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.09-15.23.57:175][156]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.09-15.23.57:176][156]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.09-15.23.57:176][156]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.09-15.23.57:186][156]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.09-15.23.57:186][156]LogAudioMixer: Display: 1: FrontRight
+[2020.07.09-15.23.57:236][156]LogAudioMixer: Display: Using Audio Device Headset Earphone (Razer Audio Controller - Chat)
+[2020.07.09-15.23.57:236][156]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.09-15.23.57:236][156]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.09-15.23.57:236][156]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.09-15.23.57:237][156]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.09-15.23.57:280][156]LogInit: FAudioDevice initialized.
+[2020.07.09-15.23.57:292][156]LogLoad: Game class is 'GameModeBase'
+[2020.07.09-15.23.57:296][156]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_TCTD.TCTD up for play (max tick rate 0) at 2020.07.09-11.23.57
+[2020.07.09-15.23.57:297][156]LogWorld: Bringing up level for play took: 0.003711
+[2020.07.09-15.23.57:297][156]LogOnline: OSS: Creating online subsystem instance for: :Context_8
+[2020.07.09-15.23.57:302][156]PIE: Server logged in
+[2020.07.09-15.23.57:304][156]PIE: Play in editor total start time 0.173 seconds.
+[2020.07.09-15.24.02:105][686]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.24.07:182][192]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.24.12:376][688]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.24.17:378][186]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.24.22:382][689]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.24.27:380][179]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.24.32:375][669]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.24.33:568][777]LogSlate: Took 0.000219 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.07.09-15.24.44:574][359]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.24.49:578][819]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.24.54:577][315]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.25.03:521][215]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.25.03:521][215]LogWorld: BeginTearingDown for /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.25.03:521][215]LogWorld: UWorld::CleanupWorld for TCTD, bSessionEnded=true, bCleanupResources=true
+[2020.07.09-15.25.03:522][215]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.25.03:531][215]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.09-15.25.03:532][215]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.25.03:566][215]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.25.03:567][215]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001352879C900), frame # 44215
+[2020.07.09-15.25.03:567][215]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001353F8AB600), frame # 44215
+[2020.07.09-15.25.03:568][215]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
+[2020.07.09-15.25.03:598][216]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2020.07.09-15.25.43:796][438]LogHotReload: New module detected: UE4Editor-TCTD-0190.dll
+[2020.07.09-15.25.45:190][443]LogHotReload: Starting Hot-Reload from IDE
+[2020.07.09-15.25.45:267][443]LogContentBrowser: Native class hierarchy updated for 'TCTD' in 0.0005 seconds. Added 12 classes and 2 folders.
+[2020.07.09-15.25.45:269][443]Display: HotReload successful (6 functions remapped  0 scriptstructs remapped)
+[2020.07.09-15.25.45:353][443]LogContentBrowser: Native class hierarchy populated in 0.0149 seconds. Added 3439 classes and 823 folders.
+[2020.07.09-15.25.45:358][443]Display: HotReload took  0.2s.
+[2020.07.09-15.27.01:025][851]Candidate modules for hot reload:
+[2020.07.09-15.27.01:025][851]  TCTD
+[2020.07.09-15.27.01:025][851]Launching UnrealBuildTool... [F:/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TCTD,2108 TCTDEditor Win64 Development -Project="F:/TCTD/TCTD/TCTD.uproject" "F:/TCTD/TCTD/TCTD.uproject"  -IgnoreJunk]
+[2020.07.09-15.27.01:031][851]Warning: Starting HotReload took  0.0s.
+[2020.07.09-15.27.18:813][746]CompilerResultsLog: New page: Compilation - Jul 9, 2020, 7:27:18 AM
+[2020.07.09-15.27.18:813][746]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\TCTD).
+[2020.07.09-15.27.18:813][746]CompilerResultsLog: Building TCTDEditor...
+[2020.07.09-15.27.18:813][746]CompilerResultsLog: Using Visual Studio 2019 14.25.28614 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.07.09-15.27.18:813][746]CompilerResultsLog: Building 4 actions with 4 processes...
+[2020.07.09-15.27.18:813][746]CompilerResultsLog:   [1/4] Enemy_Base.cpp
+[2020.07.09-15.27.18:813][746]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(93): warning C4263: 'void AEnemy_Base::TakeDamage(int)': member function does not override any base class virtual member function
+[2020.07.09-15.27.18:813][746]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(97): warning C4264: 'float AActor::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': no override available for virtual member function from base 'AActor'; function is hidden
+[2020.07.09-15.27.18:813][746]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(2675): note: see declaration of 'AActor::TakeDamage'
+[2020.07.09-15.27.18:813][746]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/LocalPlayer.h(28): note: see declaration of 'AActor'
+[2020.07.09-15.27.18:813][746]CompilerResultsLog:   [2/4] UE4Editor-TCTD-2108.lib
+[2020.07.09-15.27.18:813][746]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-2108.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-2108.exp
+[2020.07.09-15.27.18:813][746]CompilerResultsLog:   [3/4] UE4Editor-TCTD-2108.dll
+[2020.07.09-15.27.18:813][746]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-2108.suppressed.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-2108.suppressed.exp
+[2020.07.09-15.27.18:813][746]CompilerResultsLog:   [4/4] TCTDEditor.target
+[2020.07.09-15.27.18:813][746]CompilerResultsLog: Total time in Parallel executor: 16.09 seconds
+[2020.07.09-15.27.18:813][746]CompilerResultsLog: Total execution time: 17.61 seconds
+[2020.07.09-15.27.18:814][746]LogMainFrame: MainFrame: Module compiling took 17.794 seconds
+[2020.07.09-15.27.18:841][746]LogContentBrowser: Native class hierarchy updated for 'TCTD' in 0.0004 seconds. Added 12 classes and 2 folders.
+[2020.07.09-15.27.18:843][746]Display: HotReload successful (6 functions remapped  0 scriptstructs remapped)
+[2020.07.09-15.27.18:903][746]LogContentBrowser: Native class hierarchy populated in 0.0162 seconds. Added 3439 classes and 823 folders.
+[2020.07.09-15.27.18:903][746]Display: HotReload took 17.9s.
+[2020.07.09-15.27.23:145][219]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.09-15.27.23:166][219]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.09-15.27.23:166][219]PIE: New page: PIE session: TCTD (Jul 9, 2020, 7:27:23 AM)
+[2020.07.09-15.27.23:166][219]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.27.23:170][219]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004360s)
+[2020.07.09-15.27.23:172][219]LogAIModule: Creating AISystem for world TCTD
+[2020.07.09-15.27.23:172][219]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001351D4DAE00), frame # 49219
+[2020.07.09-15.27.23:172][219]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000013523AC6AC0), frame # 49219
+[2020.07.09-15.27.23:173][219]LogPlayLevel: PIE: World Init took: (0.002128s)
+[2020.07.09-15.27.23:173][219]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/TCTD.TCTD to /Game/Scenes/UEDPIE_0_TCTD.TCTD (0.006795s)
+[2020.07.09-15.27.23:182][219]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2020.07.09-15.27.23:184][219]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.09-15.27.23:184][219]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.09-15.27.23:184][219]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.09-15.27.23:184][219]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.09-15.27.23:184][219]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.09-15.27.23:184][219]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.09-15.27.23:185][219]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.09-15.27.23:185][219]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.09-15.27.23:185][219]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.09-15.27.23:185][219]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.09-15.27.23:192][219]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.09-15.27.23:192][219]LogAudioMixer: Display: 1: FrontRight
+[2020.07.09-15.27.23:231][219]LogAudioMixer: Display: Using Audio Device Headset Earphone (Razer Audio Controller - Chat)
+[2020.07.09-15.27.23:231][219]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.09-15.27.23:231][219]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.09-15.27.23:232][219]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.09-15.27.23:232][219]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.09-15.27.23:256][219]LogInit: FAudioDevice initialized.
+[2020.07.09-15.27.23:266][219]LogLoad: Game class is 'GameModeBase'
+[2020.07.09-15.27.23:268][219]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_TCTD.TCTD up for play (max tick rate 0) at 2020.07.09-11.27.23
+[2020.07.09-15.27.23:268][219]LogWorld: Bringing up level for play took: 0.001646
+[2020.07.09-15.27.23:268][219]LogOnline: OSS: Creating online subsystem instance for: :Context_9
+[2020.07.09-15.27.23:271][219]PIE: Server logged in
+[2020.07.09-15.27.23:272][219]PIE: Play in editor total start time 0.111 seconds.
+[2020.07.09-15.27.28:146][788]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.27.50:201][ 20]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.27.50:201][ 20]LogWorld: BeginTearingDown for /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.27.50:202][ 20]LogWorld: UWorld::CleanupWorld for TCTD, bSessionEnded=true, bCleanupResources=true
+[2020.07.09-15.27.50:202][ 20]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.27.50:208][ 20]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.09-15.27.50:210][ 20]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.27.50:243][ 20]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.27.50:244][ 20]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000013523AC6AC0), frame # 52020
+[2020.07.09-15.27.50:244][ 20]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001351D4DAE00), frame # 52020
+[2020.07.09-15.27.50:245][ 20]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2020.07.09-15.27.50:279][ 22]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2020.07.09-15.29.11:081][757]Candidate modules for hot reload:
+[2020.07.09-15.29.11:082][757]  TCTD
+[2020.07.09-15.29.11:082][757]Launching UnrealBuildTool... [F:/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TCTD,1682 TCTDEditor Win64 Development -Project="F:/TCTD/TCTD/TCTD.uproject" "F:/TCTD/TCTD/TCTD.uproject"  -IgnoreJunk]
+[2020.07.09-15.29.11:086][757]Warning: Starting HotReload took  0.0s.
+[2020.07.09-15.29.26:446][142]CompilerResultsLog: New page: Compilation - Jul 9, 2020, 7:29:26 AM
+[2020.07.09-15.29.26:447][142]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\TCTD).
+[2020.07.09-15.29.26:447][142]CompilerResultsLog: Building TCTDEditor...
+[2020.07.09-15.29.26:447][142]CompilerResultsLog: Using Visual Studio 2019 14.25.28614 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.07.09-15.29.26:447][142]CompilerResultsLog: Building 5 actions with 4 processes...
+[2020.07.09-15.29.26:447][142]CompilerResultsLog:   [1/5] Spawner.cpp
+[2020.07.09-15.29.26:447][142]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(93): warning C4263: 'void AEnemy_Base::TakeDamage(int)': member function does not override any base class virtual member function
+[2020.07.09-15.29.26:447][142]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(97): warning C4264: 'float AActor::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': no override available for virtual member function from base 'AActor'; function is hidden
+[2020.07.09-15.29.26:447][142]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(2675): note: see declaration of 'AActor::TakeDamage'
+[2020.07.09-15.29.26:447][142]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/LocalPlayer.h(28): note: see declaration of 'AActor'
+[2020.07.09-15.29.26:447][142]CompilerResultsLog:   [2/5] Enemy_Base.cpp
+[2020.07.09-15.29.26:447][142]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(93): warning C4263: 'void AEnemy_Base::TakeDamage(int)': member function does not override any base class virtual member function
+[2020.07.09-15.29.26:447][142]CompilerResultsLog:   F:\TCTD\TCTD\Source\TCTD\Enemy_Base.h(97): warning C4264: 'float AActor::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': no override available for virtual member function from base 'AActor'; function is hidden
+[2020.07.09-15.29.26:447][142]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(2675): note: see declaration of 'AActor::TakeDamage'
+[2020.07.09-15.29.26:447][142]CompilerResultsLog:   F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/LocalPlayer.h(28): note: see declaration of 'AActor'
+[2020.07.09-15.29.26:447][142]CompilerResultsLog:   [3/5] UE4Editor-TCTD-1682.lib
+[2020.07.09-15.29.26:448][142]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-1682.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-1682.exp
+[2020.07.09-15.29.26:448][142]CompilerResultsLog:   [4/5] UE4Editor-TCTD-1682.dll
+[2020.07.09-15.29.26:448][142]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-1682.suppressed.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-1682.suppressed.exp
+[2020.07.09-15.29.26:448][142]CompilerResultsLog:   [5/5] TCTDEditor.target
+[2020.07.09-15.29.26:448][142]CompilerResultsLog: Total time in Parallel executor: 13.68 seconds
+[2020.07.09-15.29.26:448][142]CompilerResultsLog: Total execution time: 14.98 seconds
+[2020.07.09-15.29.26:448][142]LogMainFrame: MainFrame: Module compiling took 15.371 seconds
+[2020.07.09-15.29.26:471][142]LogHotReload: Re-instancing Enemy_Base after hot-reload.
+[2020.07.09-15.29.26:487][142]LogContentBrowser: Native class hierarchy updated for 'TCTD' in 0.0005 seconds. Added 12 classes and 2 folders.
+[2020.07.09-15.29.26:490][142]Display: HotReload successful (6 functions remapped  0 scriptstructs remapped)
+[2020.07.09-15.29.26:564][142]LogContentBrowser: Native class hierarchy populated in 0.0172 seconds. Added 3439 classes and 823 folders.
+[2020.07.09-15.29.26:564][142]Display: HotReload took 15.5s.
+[2020.07.09-15.29.32:986][159]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.09-15.29.33:019][159]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.09-15.29.33:019][159]PIE: New page: PIE session: TCTD (Jul 9, 2020, 7:29:33 AM)
+[2020.07.09-15.29.33:020][159]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.29.33:027][159]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007339s)
+[2020.07.09-15.29.33:029][159]LogAIModule: Creating AISystem for world TCTD
+[2020.07.09-15.29.33:029][159]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000013547FB5C00), frame # 53159
+[2020.07.09-15.29.33:029][159]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001351D377C40), frame # 53159
+[2020.07.09-15.29.33:030][159]LogPlayLevel: PIE: World Init took: (0.002340s)
+[2020.07.09-15.29.33:030][159]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/TCTD.TCTD to /Game/Scenes/UEDPIE_0_TCTD.TCTD (0.009976s)
+[2020.07.09-15.29.33:042][159]LogUObjectHash: Compacting FUObjectHashTables data took   1.17ms
+[2020.07.09-15.29.33:044][159]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.09-15.29.33:044][159]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.09-15.29.33:044][159]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.09-15.29.33:044][159]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.09-15.29.33:044][159]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.09-15.29.33:045][159]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.09-15.29.33:045][159]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.09-15.29.33:045][159]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.09-15.29.33:045][159]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.09-15.29.33:045][159]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.09-15.29.33:053][159]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.09-15.29.33:053][159]LogAudioMixer: Display: 1: FrontRight
+[2020.07.09-15.29.33:103][159]LogAudioMixer: Display: Using Audio Device Headset Earphone (Razer Audio Controller - Chat)
+[2020.07.09-15.29.33:104][159]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.09-15.29.33:104][159]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.09-15.29.33:104][159]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.09-15.29.33:104][159]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.09-15.29.33:134][159]LogInit: FAudioDevice initialized.
+[2020.07.09-15.29.33:144][159]LogLoad: Game class is 'GameModeBase'
+[2020.07.09-15.29.33:147][159]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_TCTD.TCTD up for play (max tick rate 0) at 2020.07.09-11.29.33
+[2020.07.09-15.29.33:147][159]LogWorld: Bringing up level for play took: 0.002204
+[2020.07.09-15.29.33:147][159]LogOnline: OSS: Creating online subsystem instance for: :Context_10
+[2020.07.09-15.29.33:150][159]PIE: Server logged in
+[2020.07.09-15.29.33:151][159]PIE: Play in editor total start time 0.138 seconds.
+[2020.07.09-15.29.33:640][207]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.29.33:641][207]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.29.33:642][207]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.29.34:085][260]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.29.34:085][260]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.29.34:085][260]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.29.34:404][298]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.29.34:405][298]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.29.34:405][298]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.29.37:992][726]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.29.37:993][726]LogOutputDevice: Warning: 
+
+Script Stack (1 frames):
+Turret.OnBeginOverlap
+
+[2020.07.09-15.29.38:472][726]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.478 s
+[2020.07.09-15.29.38:472][726]LogOutputDevice: Error: === Handled ensure: ===
+[2020.07.09-15.29.38:472][726]LogOutputDevice: Error: 
+[2020.07.09-15.29.38:472][726]LogOutputDevice: Error: Ensure condition failed: InvocationList[ CurFunctionIndex ] != InDelegate [File:F:\UE_4.25\Engine\Source\Runtime\Core\Public\UObject/ScriptDelegates.h] [Line: 556]
+[2020.07.09-15.29.38:472][726]LogOutputDevice: Error: 
+[2020.07.09-15.29.38:472][726]LogOutputDevice: Error: Stack: 
+[2020.07.09-15.29.38:472][726]LogOutputDevice: Error: [Callstack] 0x00007ffe81716d39 UE4Editor-TCTD-1682.dll!<lambda_7a74eab938c883ad1b220dd941a3d4a1>::operator()() [F:\UE_4.25\Engine\Source\Runtime\Core\Public\UObject\ScriptDelegates.h:556]
+[2020.07.09-15.29.38:472][726]LogOutputDevice: Error: [Callstack] 0x00007ffe8170b311 UE4Editor-TCTD-1682.dll!TMulticastScriptDelegate<FWeakObjectPtr>::Add() [F:\UE_4.25\Engine\Source\Runtime\Core\Public\UObject\ScriptDelegates.h:327]
+[2020.07.09-15.29.38:472][726]LogOutputDevice: Error: [Callstack] 0x00007ffe8170c33e UE4Editor-TCTD-1682.dll!ATurret::CalculateClosestEnemy() [F:\TCTD\TCTD\Source\TCTD\Turret.cpp:169]
+[2020.07.09-15.29.38:472][726]LogOutputDevice: Error: [Callstack] 0x00007ffe8170cc69 UE4Editor-TCTD-1682.dll!ATurret::OnBeginOverlap() [F:\TCTD\TCTD\Source\TCTD\Turret.cpp:187]
+[2020.07.09-15.29.38:472][726]LogOutputDevice: Error: [Callstack] 0x00007ffe8170f21b UE4Editor-TCTD-1682.dll!ATurret::execOnBeginOverlap() [F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Inc\TCTD\Turret.gen.cpp:51]
+[2020.07.09-15.29.38:472][726]LogOutputDevice: Error: [Callstack] 0x00007ffeeb9e0ac4 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2020.07.09-15.29.38:472][726]LogOutputDevice: Error: [Callstack] 0x00007ffeebc54763 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2020.07.09-15.29.38:472][726]LogOutputDevice: Error: [Callstack] 0x00007ffeaa57a025 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeaa520e7b UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeaa95645b UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeaa998773 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeaa9988e1 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeaa595951 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeaa55040e UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeaa5764f2 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeaa55c59c UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeaa57947a UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeaae03128 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeaae03598 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffe8170a2d9 UE4Editor-TCTD-1682.dll!ASpawner::SpawnEnemy() [F:\TCTD\TCTD\Source\TCTD\Spawner.cpp:43]
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeab68ef7b UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeab6e8ce9 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeaae08214 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeb7aaa737 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ffeb83800d6 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ff7f1397800 UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ff7f13aba7c UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ff7f13abb5a UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ff7f13be31d UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007ff7f13c145a UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007fff3f147bd4 KERNEL32.DLL!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: [Callstack] 0x00007fff40dece51 ntdll.dll!UnknownFunction []
+[2020.07.09-15.29.38:473][726]LogOutputDevice: Error: 
+[2020.07.09-15.29.38:478][726]LogStats:                SubmitErrorReport -  0.000 s
+[2020.07.09-15.29.40:081][726]LogStats:                    SendNewReport -  1.604 s
+[2020.07.09-15.29.40:081][726]LogStats:             FDebug::EnsureFailed -  2.088 s
+[2020.07.09-15.29.44:693][244]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.29.49:689][816]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.29.54:684][395]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.29.58:682][845]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.29.58:682][845]LogWorld: BeginTearingDown for /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.29.58:682][845]LogWorld: UWorld::CleanupWorld for TCTD, bSessionEnded=true, bCleanupResources=true
+[2020.07.09-15.29.58:683][845]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.29.58:694][845]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.09-15.29.58:695][845]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.29.58:728][845]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.29.58:729][845]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001351D377C40), frame # 55845
+[2020.07.09-15.29.58:729][845]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000013547FB5C00), frame # 55845
+[2020.07.09-15.29.58:730][845]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
+[2020.07.09-15.29.58:756][846]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2020.07.09-15.30.23:934][131]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.09-15.30.23:949][131]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.09-15.30.23:949][131]PIE: New page: PIE session: TCTD (Jul 9, 2020, 7:30:23 AM)
+[2020.07.09-15.30.23:949][131]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.30.23:954][131]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004808s)
+[2020.07.09-15.30.23:956][131]LogAIModule: Creating AISystem for world TCTD
+[2020.07.09-15.30.23:956][131]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001353F681400), frame # 56131
+[2020.07.09-15.30.23:956][131]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000013523AC7240), frame # 56131
+[2020.07.09-15.30.23:957][131]LogPlayLevel: PIE: World Init took: (0.002100s)
+[2020.07.09-15.30.23:957][131]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/TCTD.TCTD to /Game/Scenes/UEDPIE_0_TCTD.TCTD (0.007486s)
+[2020.07.09-15.30.23:966][131]LogUObjectHash: Compacting FUObjectHashTables data took   0.78ms
+[2020.07.09-15.30.23:967][131]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.09-15.30.23:967][131]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.09-15.30.23:967][131]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.09-15.30.23:967][131]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.09-15.30.23:967][131]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.09-15.30.23:967][131]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.09-15.30.23:967][131]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.09-15.30.23:967][131]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.09-15.30.23:967][131]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.09-15.30.23:967][131]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.09-15.30.23:973][131]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.09-15.30.23:973][131]LogAudioMixer: Display: 1: FrontRight
+[2020.07.09-15.30.24:006][131]LogAudioMixer: Display: Using Audio Device Headset Earphone (Razer Audio Controller - Chat)
+[2020.07.09-15.30.24:006][131]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.09-15.30.24:006][131]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.09-15.30.24:006][131]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.09-15.30.24:007][131]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.09-15.30.24:030][131]LogInit: FAudioDevice initialized.
+[2020.07.09-15.30.24:041][131]LogLoad: Game class is 'GameModeBase'
+[2020.07.09-15.30.24:043][131]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_TCTD.TCTD up for play (max tick rate 0) at 2020.07.09-11.30.24
+[2020.07.09-15.30.24:043][131]LogWorld: Bringing up level for play took: 0.001896
+[2020.07.09-15.30.24:043][131]LogOnline: OSS: Creating online subsystem instance for: :Context_11
+[2020.07.09-15.30.24:046][131]PIE: Server logged in
+[2020.07.09-15.30.24:047][131]PIE: Play in editor total start time 0.098 seconds.
+[2020.07.09-15.30.25:124][256]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.30.25:125][256]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.30.25:125][256]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.30.25:502][300]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.30.25:502][300]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.30.25:502][300]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.30.26:119][374]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.30.26:119][374]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.30.26:120][374]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.30.28:937][712]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.30.30:700][923]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.30.30:700][923]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.30.30:701][923]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.30.33:935][310]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.30.38:940][908]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.11:603][960]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.31.11:603][960]LogWorld: BeginTearingDown for /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.31.11:603][960]LogWorld: UWorld::CleanupWorld for TCTD, bSessionEnded=true, bCleanupResources=true
+[2020.07.09-15.31.11:604][960]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.31.11:614][960]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.09-15.31.11:615][960]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.31.11:624][960]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.31.11:650][960]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000013523AC7240), frame # 58960
+[2020.07.09-15.31.11:650][960]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001353F681400), frame # 58960
+[2020.07.09-15.31.11:651][960]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2020.07.09-15.31.11:682][961]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2020.07.09-15.31.15:963][416]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.09-15.31.15:963][416]PIE: New page: SIE session: TCTD (Jul 9, 2020, 7:31:15 AM)
+[2020.07.09-15.31.15:963][416]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.31.15:967][416]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004218s)
+[2020.07.09-15.31.15:969][416]LogAIModule: Creating AISystem for world TCTD
+[2020.07.09-15.31.15:969][416]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001353631AE00), frame # 59416
+[2020.07.09-15.31.15:969][416]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000013504676980), frame # 59416
+[2020.07.09-15.31.15:969][416]LogPlayLevel: PIE: World Init took: (0.001865s)
+[2020.07.09-15.31.15:969][416]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/TCTD.TCTD to /Game/Scenes/UEDPIE_0_TCTD.TCTD (0.006272s)
+[2020.07.09-15.31.15:978][416]LogUObjectHash: Compacting FUObjectHashTables data took   0.80ms
+[2020.07.09-15.31.15:980][416]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.09-15.31.15:980][416]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.09-15.31.15:980][416]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.09-15.31.15:980][416]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.09-15.31.15:980][416]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.09-15.31.15:980][416]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.09-15.31.15:980][416]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.09-15.31.15:980][416]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.09-15.31.15:981][416]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.09-15.31.15:981][416]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.09-15.31.15:985][416]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.09-15.31.15:985][416]LogAudioMixer: Display: 1: FrontRight
+[2020.07.09-15.31.16:018][416]LogAudioMixer: Display: Using Audio Device Headset Earphone (Razer Audio Controller - Chat)
+[2020.07.09-15.31.16:019][416]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.09-15.31.16:019][416]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.09-15.31.16:019][416]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.09-15.31.16:019][416]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.09-15.31.16:046][416]LogInit: FAudioDevice initialized.
+[2020.07.09-15.31.16:059][416]LogLoad: Game class is 'GameModeBase'
+[2020.07.09-15.31.16:062][416]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_TCTD.TCTD up for play (max tick rate 0) at 2020.07.09-11.31.16
+[2020.07.09-15.31.16:062][416]LogWorld: Bringing up level for play took: 0.002132
+[2020.07.09-15.31.16:062][416]LogOnline: OSS: Creating online subsystem instance for: :Context_12
+[2020.07.09-15.31.16:064][416]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2020.07.09-15.31.16:143][416]PIE: Server logged in
+[2020.07.09-15.31.16:144][416]PIE: Play in editor total start time 0.182 seconds.
+[2020.07.09-15.31.19:410][771]LogEditorViewport: Clicking on Actor (LMB): MyTowerNode_C (MyTowerNode12)
+[2020.07.09-15.31.19:926][805]LogEditorViewport: Clicking on Actor (LMB): MyTowerNode_C (MyTowerNode13)
+[2020.07.09-15.31.20:951][891]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.22:723][ 38]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.31.22:723][ 38]LogWorld: BeginTearingDown for /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.31.22:724][ 38]LogWorld: UWorld::CleanupWorld for TCTD, bSessionEnded=true, bCleanupResources=true
+[2020.07.09-15.31.22:724][ 38]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.31.22:737][ 38]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.09-15.31.22:738][ 38]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.31.22:748][ 38]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.31.22:779][ 38]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000013504676980), frame # 60038
+[2020.07.09-15.31.22:779][ 38]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001353631AE00), frame # 60038
+[2020.07.09-15.31.22:780][ 38]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2020.07.09-15.31.22:825][ 39]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2020.07.09-15.31.28:903][630]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.31.28:912][630]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.31.28:922][630]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.31.28:932][630]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.31.30:839][787]LogRenderer: Reallocating scene render targets to support 3604x1716 Format 10 NumSamples 1 (Frame:17796).
+[2020.07.09-15.31.37:634][416]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.09-15.31.37:635][416]PIE: New page: PIE session: TCTD (Jul 9, 2020, 7:31:37 AM)
+[2020.07.09-15.31.37:635][416]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.31.37:639][416]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004444s)
+[2020.07.09-15.31.37:641][416]LogAIModule: Creating AISystem for world TCTD
+[2020.07.09-15.31.37:641][416]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000013540021E00), frame # 61416
+[2020.07.09-15.31.37:641][416]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001351D377880), frame # 61416
+[2020.07.09-15.31.37:641][416]LogPlayLevel: PIE: World Init took: (0.001788s)
+[2020.07.09-15.31.37:641][416]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/TCTD.TCTD to /Game/Scenes/UEDPIE_0_TCTD.TCTD (0.006417s)
+[2020.07.09-15.31.37:650][416]LogUObjectHash: Compacting FUObjectHashTables data took   0.81ms
+[2020.07.09-15.31.37:653][416]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.09-15.31.37:653][416]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.09-15.31.37:653][416]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.09-15.31.37:653][416]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.09-15.31.37:653][416]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.09-15.31.37:653][416]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.09-15.31.37:653][416]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.09-15.31.37:653][416]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.09-15.31.37:654][416]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.09-15.31.37:654][416]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.09-15.31.37:659][416]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.09-15.31.37:659][416]LogAudioMixer: Display: 1: FrontRight
+[2020.07.09-15.31.37:692][416]LogAudioMixer: Display: Using Audio Device Headset Earphone (Razer Audio Controller - Chat)
+[2020.07.09-15.31.37:692][416]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.09-15.31.37:693][416]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.09-15.31.37:693][416]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.09-15.31.37:693][416]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.09-15.31.37:717][416]LogInit: FAudioDevice initialized.
+[2020.07.09-15.31.37:753][416]LogLoad: Game class is 'GameModeBase'
+[2020.07.09-15.31.37:756][416]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_TCTD.TCTD up for play (max tick rate 0) at 2020.07.09-11.31.37
+[2020.07.09-15.31.37:756][416]LogWorld: Bringing up level for play took: 0.002211
+[2020.07.09-15.31.37:756][416]LogOnline: OSS: Creating online subsystem instance for: :Context_13
+[2020.07.09-15.31.37:759][416]PIE: Server logged in
+[2020.07.09-15.31.37:762][416]PIE: Play in editor total start time 0.129 seconds.
+[2020.07.09-15.31.39:885][646]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.39:885][646]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.39:886][646]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.40:708][740]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.40:708][740]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.40:709][740]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.42:619][942]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.46:800][392]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.46:800][392]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.46:801][392]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.47:092][425]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.47:093][425]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.47:093][425]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.47:569][478]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.47:569][478]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.47:570][478]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.47:615][483]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.47:918][517]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.47:919][517]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.47:919][517]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.31.52:618][ 43]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.32.25:327][909]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.32.30:330][305]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.32.35:327][707]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.32.40:333][115]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.32.45:324][507]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.32.45:923][546]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.32.45:923][546]LogWorld: BeginTearingDown for /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.32.45:924][546]LogWorld: UWorld::CleanupWorld for TCTD, bSessionEnded=true, bCleanupResources=true
+[2020.07.09-15.32.45:924][546]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.32.45:933][546]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.07.09-15.32.45:934][546]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.09-15.32.45:972][546]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.09-15.32.45:973][546]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001351D377880), frame # 67546
+[2020.07.09-15.32.45:973][546]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000013540021E00), frame # 67546
+[2020.07.09-15.32.45:974][546]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2020.07.09-15.32.46:004][547]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2020.07.09-15.32.50:299][952]LogActor: Warning: MyTurret_C /Engine/Transient.World_2:PersistentLevel.MyTurret_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.32.50:318][953]LogActor: Warning: MyTowerNode_C /Engine/Transient.World_3:PersistentLevel.MyTowerNode_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.32.50:351][954]LogActor: Warning: MySpawner_C /Engine/Transient.World_4:PersistentLevel.MySpawner_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.32.50:377][955]LogActor: Warning: MyProjectile_C /Engine/Transient.World_5:PersistentLevel.MyProjectile_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.32.50:396][956]LogActor: Warning: MyEnemy_Standard_C /Engine/Transient.World_6:PersistentLevel.MyEnemy_Standard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.32.52:500][ 82]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/MyTurret.MyTurret
+[2020.07.09-15.32.53:349][ 82]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 125 classes and 0 folders.
+[2020.07.09-15.32.54:703][ 82]LogActor: Warning: MyTurret_C /Engine/Transient.World_7:PersistentLevel.MyTurret_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.32.54:769][ 82]LogSlate: Took 0.020396 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2020.07.09-15.33.31:472][123]BlueprintLog: New page: Compile MyTurret
+[2020.07.09-15.33.31:481][123]LogActor: Warning: MyTurret_C /Engine/Transient.World_2:PersistentLevel.MyTurret_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.33.31:481][123]LogActor: Warning: MyTurret_C /Engine/Transient.World_7:PersistentLevel.MyTurret_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.33.31:521][123]LogUObjectHash: Compacting FUObjectHashTables data took   2.67ms
+[2020.07.09-15.33.31:526][123]LogActor: Warning: MyTurret_C /Engine/Transient.World_2:PersistentLevel.MyTurret_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.33.32:116][153]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/MyTurret" FILE="../../../../TCTD/TCTD/Content/Blueprints/MyTurret.uasset" SILENT=true
+[2020.07.09-15.33.32:183][153]LogSavePackage: Moving '../../../../TCTD/TCTD/Saved/MyTurret1928A2144C27EEDCB4D16988277487DD.tmp' to '../../../../TCTD/TCTD/Content/Blueprints/MyTurret.uasset'
+[2020.07.09-15.33.32:200][153]AssetCheck: New page: Asset Save: MyTurret
+[2020.07.09-15.33.32:200][153]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/MyTurret.MyTurret
+[2020.07.09-15.33.37:433][588]Candidate modules for hot reload:
+[2020.07.09-15.33.37:433][588]  TCTD
+[2020.07.09-15.33.37:433][588]Launching UnrealBuildTool... [F:/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TCTD,7102 TCTDEditor Win64 Development -Project="F:/TCTD/TCTD/TCTD.uproject" "F:/TCTD/TCTD/TCTD.uproject"  -IgnoreJunk]
+[2020.07.09-15.33.37:438][588]Warning: Starting HotReload took  0.0s.
+[2020.07.09-15.33.41:438][734]CompilerResultsLog: New page: Compilation - Jul 9, 2020, 7:33:41 AM
+[2020.07.09-15.33.41:439][734]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\TCTD).
+[2020.07.09-15.33.41:439][734]CompilerResultsLog: Building TCTDEditor...
+[2020.07.09-15.33.41:439][734]CompilerResultsLog: Using Visual Studio 2019 14.25.28614 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.07.09-15.33.41:439][734]CompilerResultsLog: Building 3 actions with 4 processes...
+[2020.07.09-15.33.41:439][734]CompilerResultsLog:   [1/3] UE4Editor-TCTD-7102.lib
+[2020.07.09-15.33.41:439][734]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-7102.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-7102.exp
+[2020.07.09-15.33.41:439][734]CompilerResultsLog:   [2/3] UE4Editor-TCTD-7102.dll
+[2020.07.09-15.33.41:439][734]CompilerResultsLog:      Creating library F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-7102.suppressed.lib and object F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Development\TCTD\UE4Editor-TCTD-7102.suppressed.exp
+[2020.07.09-15.33.41:439][734]CompilerResultsLog:   [3/3] TCTDEditor.target
+[2020.07.09-15.33.41:439][734]CompilerResultsLog: Total time in Parallel executor: 2.24 seconds
+[2020.07.09-15.33.41:439][734]CompilerResultsLog: Total execution time: 3.69 seconds
+[2020.07.09-15.33.41:439][734]LogMainFrame: MainFrame: Module compiling took 4.012 seconds
+[2020.07.09-15.33.41:529][734]LogContentBrowser: Native class hierarchy updated for 'TCTD' in 0.0005 seconds. Added 12 classes and 2 folders.
+[2020.07.09-15.33.41:534][734]Display: HotReload successful (6 functions remapped  0 scriptstructs remapped)
+[2020.07.09-15.33.41:701][734]LogContentBrowser: Native class hierarchy populated in 0.0140 seconds. Added 3439 classes and 823 folders.
+[2020.07.09-15.33.41:701][734]Display: HotReload took  4.3s.
+[2020.07.09-15.33.44:409][776]LogTemp: Repeating last play command: Selected Viewport
+[2020.07.09-15.33.44:441][776]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.07.09-15.33.44:441][776]PIE: New page: PIE session: TCTD (Jul 9, 2020, 7:33:44 AM)
+[2020.07.09-15.33.44:441][776]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_TCTD
+[2020.07.09-15.33.44:448][776]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007105s)
+[2020.07.09-15.33.44:453][776]LogAIModule: Creating AISystem for world TCTD
+[2020.07.09-15.33.44:453][776]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000135925AEC00), frame # 69776
+[2020.07.09-15.33.44:453][776]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001351D1C0F40), frame # 69776
+[2020.07.09-15.33.44:454][776]LogPlayLevel: PIE: World Init took: (0.005346s)
+[2020.07.09-15.33.44:454][776]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/TCTD.TCTD to /Game/Scenes/UEDPIE_0_TCTD.TCTD (0.012709s)
+[2020.07.09-15.33.44:525][776]LogUObjectHash: Compacting FUObjectHashTables data took   5.19ms
+[2020.07.09-15.33.44:527][776]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.09-15.33.44:527][776]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.09-15.33.44:527][776]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.09-15.33.44:527][776]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.09-15.33.44:527][776]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.09-15.33.44:527][776]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.09-15.33.44:527][776]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.09-15.33.44:527][776]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.09-15.33.44:528][776]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.09-15.33.44:528][776]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.09-15.33.44:536][776]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.09-15.33.44:536][776]LogAudioMixer: Display: 1: FrontRight
+[2020.07.09-15.33.44:580][776]LogAudioMixer: Display: Using Audio Device Headset Earphone (Razer Audio Controller - Chat)
+[2020.07.09-15.33.44:580][776]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.09-15.33.44:581][776]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.09-15.33.44:581][776]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.09-15.33.44:581][776]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.09-15.33.44:609][776]LogInit: FAudioDevice initialized.
+[2020.07.09-15.33.44:626][776]LogLoad: Game class is 'GameModeBase'
+[2020.07.09-15.33.44:629][776]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_TCTD.TCTD up for play (max tick rate 0) at 2020.07.09-11.33.44
+[2020.07.09-15.33.44:629][776]LogWorld: Bringing up level for play took: 0.002336
+[2020.07.09-15.33.44:629][776]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2020.07.09-15.33.44:633][776]PIE: Server logged in
+[2020.07.09-15.33.44:636][776]PIE: Play in editor total start time 0.201 seconds.
+[2020.07.09-15.33.46:496][954]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.33.46:497][954]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.33.46:497][954]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.33.46:866][992]LogActor: Warning: MyTurret_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyTurret_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.33.46:867][992]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.33.46:867][992]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.33.49:467][255]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.33.49:468][255]LogOutputDevice: Warning: 
+
+Script Stack (1 frames):
+Turret.OnBeginOverlap
+
+[2020.07.09-15.33.49:673][255]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.205 s
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: === Handled ensure: ===
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: 
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: Ensure condition failed: InvocationList[ CurFunctionIndex ] != InDelegate [File:F:\UE_4.25\Engine\Source\Runtime\Core\Public\UObject/ScriptDelegates.h] [Line: 556]
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: 
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: Stack: 
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: [Callstack] 0x00007ffe7e476d39 UE4Editor-TCTD-7102.dll!<lambda_7a74eab938c883ad1b220dd941a3d4a1>::operator()() [F:\UE_4.25\Engine\Source\Runtime\Core\Public\UObject\ScriptDelegates.h:556]
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: [Callstack] 0x00007ffe7e46b311 UE4Editor-TCTD-7102.dll!TMulticastScriptDelegate<FWeakObjectPtr>::Add() [F:\UE_4.25\Engine\Source\Runtime\Core\Public\UObject\ScriptDelegates.h:327]
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: [Callstack] 0x00007ffe7e46c33e UE4Editor-TCTD-7102.dll!ATurret::CalculateClosestEnemy() [F:\TCTD\TCTD\Source\TCTD\Turret.cpp:169]
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: [Callstack] 0x00007ffe7e46cc69 UE4Editor-TCTD-7102.dll!ATurret::OnBeginOverlap() [F:\TCTD\TCTD\Source\TCTD\Turret.cpp:187]
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: [Callstack] 0x00007ffe7e46f21b UE4Editor-TCTD-7102.dll!ATurret::execOnBeginOverlap() [F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Inc\TCTD\Turret.gen.cpp:51]
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: [Callstack] 0x00007ffeeb9e0ac4 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: [Callstack] 0x00007ffeebc54763 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: [Callstack] 0x00007ffeaa57a025 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: [Callstack] 0x00007ffeaa520e7b UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:673][255]LogOutputDevice: Error: [Callstack] 0x00007ffeaa95645b UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffeaa998773 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffeaa9988e1 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffeaa595951 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffeaa55040e UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffeaa5764f2 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffeaa55c59c UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffeaa57947a UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffeaae03128 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffeaae03598 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffe7e46a2d9 UE4Editor-TCTD-7102.dll!ASpawner::SpawnEnemy() [F:\TCTD\TCTD\Source\TCTD\Spawner.cpp:43]
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffeab68ef7b UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffeab6e8ce9 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffeaae08214 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffeb7aaa737 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ffeb83800d6 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ff7f1397800 UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ff7f13aba7c UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ff7f13abb5a UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ff7f13be31d UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007ff7f13c145a UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007fff3f147bd4 KERNEL32.DLL!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: [Callstack] 0x00007fff40dece51 ntdll.dll!UnknownFunction []
+[2020.07.09-15.33.49:674][255]LogOutputDevice: Error: 
+[2020.07.09-15.33.49:675][255]LogStats:                SubmitErrorReport -  0.000 s
+[2020.07.09-15.33.50:276][255]LogStats:                    SendNewReport -  0.602 s
+[2020.07.09-15.33.50:276][255]LogStats:             FDebug::EnsureFailed -  0.809 s
+[2020.07.09-15.33.54:895][578]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.34.00:025][938]LogActor: Warning: MyEnemy_Standard_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyEnemy_Standard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.34.04:564][283]LogActor: Warning: MyProjectile_C /Game/Scenes/UEDPIE_0_TCTD.TCTD:PersistentLevel.MyProjectile_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.09-15.34.04:565][283]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2020.07.09-15.34.04:565][283]LogWindows: Windows GetLastError: The operation completed successfully. (0)
+[2020.07.09-15.34.06:081][283]LogWindows: Error: === Critical error: ===
+[2020.07.09-15.34.06:081][283]LogWindows: Error: 
+[2020.07.09-15.34.06:081][283]LogWindows: Error: Assertion failed: (Index >= 0) & (Index < ArrayNum) [File:F:\UE_4.25\Engine\Source\Runtime\Core\Public\Containers/Array.h] [Line: 674] 
+[2020.07.09-15.34.06:081][283]LogWindows: Error: Array index out of bounds: 3 from an array of size 3
+[2020.07.09-15.34.06:081][283]LogWindows: Error: 
+[2020.07.09-15.34.06:081][283]LogWindows: Error: 
+[2020.07.09-15.34.06:081][283]LogWindows: Error: [Callstack] 0x00007fff3e2ba799 KERNELBASE.dll!UnknownFunction []
+[2020.07.09-15.34.06:081][283]LogWindows: Error: [Callstack] 0x00007ffeecd7eb46 UE4Editor-Core.dll!UnknownFunction []
+[2020.07.09-15.34.06:081][283]LogWindows: Error: [Callstack] 0x00007ffeecd81f28 UE4Editor-Core.dll!UnknownFunction []
+[2020.07.09-15.34.06:081][283]LogWindows: Error: [Callstack] 0x00007ffeecb0e53d UE4Editor-Core.dll!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ffeeca997b5 UE4Editor-Core.dll!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ffeeca9baf0 UE4Editor-Core.dll!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ffe7e476948 UE4Editor-TCTD-7102.dll!DispatchCheckVerify<void,<lambda_5ab2bd4bfe1d7a6d1162da11a7d55ebb> >() [F:\UE_4.25\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:162]
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ffe7e46c966 UE4Editor-TCTD-7102.dll!ATurret::GetProjectileFormPool() [F:\TCTD\TCTD\Source\TCTD\Turret.cpp:57]
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ffe7e46d164 UE4Editor-TCTD-7102.dll!ATurret::ShootAtEnemy() [F:\TCTD\TCTD\Source\TCTD\Turret.cpp:106]
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ffeab68ef7b UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ffeab6e8ce9 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ffeaae08214 UE4Editor-Engine.dll!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ffeb7aaa737 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ffeb83800d6 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ff7f1397800 UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ff7f13aba7c UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ff7f13abb5a UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ff7f13be31d UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007ff7f13c145a UE4Editor.exe!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007fff3f147bd4 KERNEL32.DLL!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: [Callstack] 0x00007fff40dece51 ntdll.dll!UnknownFunction []
+[2020.07.09-15.34.06:082][283]LogWindows: Error: 
+[2020.07.09-15.34.06:136][283]LogExit: Executing StaticShutdownAfterError
+[2020.07.09-15.34.06:140][283]LogWindows: FPlatformMisc::RequestExit(1)
+[2020.07.09-15.34.06:141][283]LogCore: Engine exit requested (reason: Win RequestExit)
+[2020.07.09-15.34.06:167][283]Log file closed, 07/09/20 11:34:06

@@ -113,9 +113,13 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AngleToWaypoint_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DistanceLeftInLevel_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AngleToWaypoint;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_DistanceLeftInLevel;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AllWaypointDistances_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AllWaypointDistances;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseMesh_MetaData[];
 #endif
@@ -128,6 +132,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GoToWaypoint_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_GoToWaypoint;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DistanceToNextWaypoint_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_DistanceToNextWaypoint;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Waypoints_MetaData[];
 #endif
@@ -159,12 +167,19 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_AngleToWaypoint_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_DistanceLeftInLevel_MetaData[] = {
 		{ "Category", "Enemy_Base" },
 		{ "ModuleRelativePath", "Enemy_Base.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_AngleToWaypoint = { "AngleToWaypoint", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, AngleToWaypoint), METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_AngleToWaypoint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_AngleToWaypoint_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_DistanceLeftInLevel = { "DistanceLeftInLevel", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, DistanceLeftInLevel), METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_DistanceLeftInLevel_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_DistanceLeftInLevel_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_AllWaypointDistances_MetaData[] = {
+		{ "Category", "Enemy_Base" },
+		{ "ModuleRelativePath", "Enemy_Base.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_AllWaypointDistances = { "AllWaypointDistances", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, AllWaypointDistances), METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_AllWaypointDistances_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_AllWaypointDistances_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_BaseMesh_MetaData[] = {
 		{ "Category", "Enemy_Base" },
@@ -188,6 +203,13 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_GoToWaypoint = { "GoToWaypoint", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, GoToWaypoint), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_GoToWaypoint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_GoToWaypoint_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_DistanceToNextWaypoint_MetaData[] = {
+		{ "Category", "Enemy_Base" },
+		{ "ModuleRelativePath", "Enemy_Base.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_DistanceToNextWaypoint = { "DistanceToNextWaypoint", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, DistanceToNextWaypoint), METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_DistanceToNextWaypoint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_DistanceToNextWaypoint_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Waypoints_MetaData[] = {
 		{ "Category", "Enemy_Base" },
 		{ "ModuleRelativePath", "Enemy_Base.h" },
@@ -209,10 +231,12 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyDeathEvent = { "EnemyDeathEvent", nullptr, (EPropertyFlags)0x0010000000080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, EnemyDeathEvent), Z_Construct_UDelegateFunction_TCTD_EnemyDeath__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyDeathEvent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyDeathEvent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemy_Base_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_AngleToWaypoint,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_DistanceLeftInLevel,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_AllWaypointDistances,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_BaseMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemySpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_GoToWaypoint,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_DistanceToNextWaypoint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Waypoints,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Waypoints_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_CurrentHealth,
@@ -245,7 +269,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy_Base, 329076830);
+	IMPLEMENT_CLASS(AEnemy_Base, 3410338410);
 	template<> TCTD_API UClass* StaticClass<AEnemy_Base>()
 	{
 		return AEnemy_Base::StaticClass();
