@@ -7,6 +7,9 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
 #include "TowerNode.h"
+#include "TextWidget.h"
+#include "Internationalization/Text.h"
+#include "Components/TextBlock.h"
 #include "PlayerPawn.generated.h"
 
 
@@ -31,6 +34,8 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	UCameraComponent* PlayerCamera;
 
+	UPROPERTY(EditAnywhere)
+	UWidgetComponent* TextWidget;
 
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> ToSpawn;
@@ -38,6 +43,9 @@ public:
 	UPROPERTY(EditAnywhere)
     AActor* BasicTurret;
 
+	UPROPERTY(EditAnywhere)
+	UTextBlock* MoneyText;
+	
 	UPROPERTY(VisibleAnywhere)
 	FVector2D CurrentPosition;
 	FVector2D OldPosition; 
@@ -47,11 +55,16 @@ public:
 
 	APlayerController* PlayerController;
 	
+	ATowerNode* TowerNodeCursor;
+	
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 
-	virtual void RaycastToCheckIfNodeIsFree();
+	void UpdateMoney();
 	
+	
+	virtual void RaycastToCheckIfNodeIsFree();
+
 	
 };

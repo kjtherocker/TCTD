@@ -18,6 +18,15 @@ void ATowerNode::BeginPlay()
 	Super::BeginPlay();
 
 	TurretSpotOccupied = false;
+	
+	TArray<UStaticMeshComponent*> StaticMeshComponents;
+	GetComponents<UStaticMeshComponent>(StaticMeshComponents);
+
+	if(StaticMeshComponents.IsValidIndex(1))
+	{
+		Selector = StaticMeshComponents[1];
+		//Selector->SetVisibility(false);
+	}
 }
 
 // Called every frame
@@ -55,3 +64,12 @@ void ATowerNode::SpawnTurret(TSubclassOf<AActor> aTurret)
 	
 }
 
+void ATowerNode::TurnSelectorOn()
+{
+	Selector->SetVisibility(true);
+}
+
+void ATowerNode::TurnSelectorOff()
+{
+	Selector->SetVisibility(false);	
+}

@@ -143,4 +143,10 @@ F:\TCTD\TCTD\Source\TCTD\Projectile.h
 F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Inc\TCTD\Projectile.generated.h
 F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Inc\TCTD\Turret.generated.h
 F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Inc\TCTD\TowerNode.generated.h
+F:\TCTD\TCTD\Source\TCTD\TextWidget.h
+F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Inc\TCTD\TextWidget.generated.h
+F:\UE_4.25\Engine\Source\Runtime\UMG\Public\Components/TextBlock.h
+F:\UE_4.25\Engine\Source\Runtime\UMG\Public\Components/TextWidgetTypes.h
+F:\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\TextWidgetTypes.generated.h
+F:\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\TextBlock.generated.h
 F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Inc\TCTD\PlayerPawn.generated.h

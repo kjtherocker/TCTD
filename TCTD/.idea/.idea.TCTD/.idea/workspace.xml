@@ -2,34 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4765604f-55d1-43d8-98ad-325414de9f06" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TCTD/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCTD/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TCTD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TCTD/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor.modules" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor.modules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/MyEnemy_Large.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/MyEnemy_Large.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/MyEnemy_Speed.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/MyEnemy_Speed.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/MyEnemy_Standard.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/MyEnemy_Standard.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/MyProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/MyProjectile.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/MyTurret.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/MyTurret.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/MyPlayerPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/MyPlayerPawn.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/MySpawner.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/MySpawner.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/Enemy/Slime_White_Mat.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/Enemy/Slime_White_Mat.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/Enemy/Texture_SlimeRed_Mat.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/Enemy/Texture_SlimeRed_Mat.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Scenes/TCTD.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/TCTD.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Scenes/TCTD_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/TCTD_BuiltData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Ui/Healthbar.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Ui/Healthbar.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/TCTDEditor/ActionHistory.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/TCTDEditor/ActionHistory.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/TCTDEditor/Development/DependencyCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/TCTDEditor/Development/DependencyCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/TCTDEditor/Development/HotReload.state" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/TCTDEditor/Development/HotReload.state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/TCTDEditor/Development/Makefile.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/TCTDEditor/Development/Makefile.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/TCTDEditor/Development/Metadata-HotReload.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/TCTDEditor/Development/Metadata-HotReload.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/EnemyHealthbar.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/EnemyHealthbar.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/EnemyHealthbar.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/EnemyHealthbar.gen.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/TCTDEditor/Development/TCTDEditor.uhtmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/TCTDEditor/Development/TCTDEditor.uhtmanifest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Base.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Base.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Base.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Base.gen.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Large.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Large.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Large.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Large.gen.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Speed.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Speed.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Speed.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Speed.gen.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Standard.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Standard.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Standard.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Enemy_Standard.gen.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/MyPlayerPawn.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/MyPlayerPawn.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/MyPlayerPawn.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/MyPlayerPawn.gen.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/PlayerPawn.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/PlayerPawn.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/PlayerPawn.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/PlayerPawn.cpp.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/PlayerPawn.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/PlayerPawn.gen.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Projectile.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Projectile.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Projectile.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Projectile.gen.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/PlayerPawn.gen.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/PlayerPawn.gen.cpp.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Spawner.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Spawner.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Spawner.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Spawner.cpp.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Spawner.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Spawner.gen.cpp.obj" afterDir="false" />
@@ -38,74 +41,56 @@
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/TowerNode.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/TowerNode.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/TowerNode.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/TowerNode.gen.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Turret.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Turret.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Turret.gen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/Turret.gen.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD-9852.dll.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD-9852.dll.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD-9852.lib.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD-9852.lib.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Base.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Base.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Large.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Large.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Speed.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Speed.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Standard.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Enemy_Standard.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/MyPlayerPawn.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/MyPlayerPawn.gen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD-0190.dll.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD-0190.dll.response" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD-0190.lib.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD-0190.lib.response" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD.dll.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD.dll.response" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD.dll.response.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD.dll.response.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD.lib.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD.lib.response" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD.lib.response.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TCTD/UE4Editor-TCTD.lib.response.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/MyPlayerPawn.gen.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/MyPlayerPawn.generated.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/PlayerPawn.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/PlayerPawn.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Spawner.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Spawner.gen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/PlayerPawn.generated.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/PlayerPawn.generated.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/TCTD.init.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/TCTD.init.gen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/Timestamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/TowerNode.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TCTD/TowerNode.gen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UE4Editor.modules" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Win64/UE4Editor.modules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Config/CoalescedSourceConfigs/Engine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Config/CoalescedSourceConfigs/Engine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/TCTD.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/TCTD.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/TCTD.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/TCTD.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE4.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE4.vcxproj.filters" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/AutoScreenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/AutoScreenshot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto1.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto2.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto2.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto3.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto3.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto4.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto4.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto5.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto5.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto7.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/Scenes/TCTD_Auto7.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Autosaves/PackageRestoreData.json" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/PackageRestoreData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-06BEE6E5416C9E25CD81EDAC7C75447E/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-0CAC8ECC45F38EF0A2E5E7902EC1EE0F/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-12E3E7174D396BE4D2F197A9BE419A19/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-14766D23498A4C324B635FB74D855AA0/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-43369A974AF3F84E13D2B581035C339A/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-4A66403642CF87376977B385E5045B0D/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-4C4265A4499179793512F190EC888654/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-5C84B3444CBC3787CCA9C892323FBCDE/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-69369ED7498ED55D2E09DC8CF9D47473/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-77D4D6994D90A6A4E40C97AB07102EDA/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-8A1DEE254DBFC29DC527F1B92ACAF17B/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-9DF01E2B470D2B3253F1DDB09D5518EE/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-A3984259463586AD06937C9FFEE5DBA1/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-B41AED3A403E541391F2188E31B73A0C/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-C44B472B4A94C25F7E85FE96588D65B5/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-CDC33D1841797FA0A212F4A5F3567436/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-D862D5C94DDB895A08DEA99F5503DDC9/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-D98C448045126816E17C1AB5C24AA39F/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-E307B59443A468069A5899B4764895F0/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-F93B5DC5445F02BB994FE89CCEDDA8F8/CrashReportClient.ini" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Config/Windows/EditorPerProjectUserSettings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/Windows/EditorPerProjectUserSettings.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Config/WorldState/1703437055.json" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/WorldState/1703437055.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.06.29-21.48.04.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.06.29-23.02.04.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.06.29-23.39.48.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.06.30-00.00.09.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.06.30-00.06.01.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.06.30-02.11.20.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.07.02-17.12.07.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.07.04-19.15.43.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.07.04-19.23.57.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.07.09-14.57.19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.07.09-15.01.00.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.07.09-15.01.31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD-backup-2020.07.09-15.05.36.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/TCTD.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.04-18.43.09.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.04-18.44.37.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.04-18.49.37.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.04-18.50.30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.04-18.58.21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.04-19.00.18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.04-19.01.09.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.04-19.02.50.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.04-19.22.12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.04-19.28.32.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.07-03.28.52.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2-backup-2020.07.07-03.36.11.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Logs/TCTD_2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/TCTD_2.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TCTD/Enemy_Base.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Enemy_Base.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TCTD/Enemy_Base.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Enemy_Base.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TCTD/Enemy_Large.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Enemy_Large.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TCTD/Enemy_Speed.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Enemy_Speed.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TCTD/Enemy_Standard.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Enemy_Standard.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TCTD/MyPlayerPawn.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TCTD/MyPlayerPawn.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TCTD/PlayerPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/PlayerPawn.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TCTD/PlayerPawn.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/PlayerPawn.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TCTD/Projectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Projectile.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TCTD/Spawner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Spawner.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TCTD/Spawner.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Spawner.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TCTD/TowerNode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/TowerNode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TCTD/TowerNode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/TowerNode.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TCTD/Turret.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Turret.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TCTD/Turret.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TCTD/Turret.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +105,7 @@
     <setting file="file://$PROJECT_DIR$/../../UE_4.25/Engine/Source/Runtime/UMG/Public/Components/ProgressBar.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Turret.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TCTD/PlayerPawn.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UE_4.25/Engine/Source/Runtime/Core/Public/Internationalization/Text.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TCTD/PlayerPawn.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TCTD/Spawner.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TCTD/TowerNode.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -138,7 +124,6 @@
     <setting file="file://$PROJECT_DIR$/Source/TCTD/Enemy_Large.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UE_4.25/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TCTD/Enemy_Speed.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TCTD/MyPlayerPawn.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TCTD/Enemy_Standard.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TCTD/Enemy_Large.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TCTD/Enemy_Standard.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -147,15 +132,14 @@
     <setting file="file://$PROJECT_DIR$/Source/TCTD/EnemyHealthbar.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UE_4.25/Engine/Source/Runtime/Core/Public/UObject/ScriptDelegates.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UE_4.25/Engine/Source/Runtime/Core/Public/Containers/Array.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TCTD/TextWidget.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TCTD/TextWidget.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UE_4.25/Engine/Source/Runtime/CoreUObject/Public/UObject/Object.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TCTD/MyPlayerPawn.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UE_4.25/Engine/Source/Runtime/UMG/Public/Components/Visual.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Source/TCTD/TowerNode.h" />
-        <option value="$PROJECT_DIR$/Source/TCTD/TowerNode.cpp" />
         <option value="$PROJECT_DIR$/Source/TCTD/Enemy_Speed.h" />
         <option value="$PROJECT_DIR$/Source/TCTD/Enemy_Standard.h" />
         <option value="$PROJECT_DIR$/Source/TCTD/Enemy_Large.h" />
@@ -164,14 +148,21 @@
         <option value="$PROJECT_DIR$/Source/TCTD/EnemyHealthbar.cpp" />
         <option value="$PROJECT_DIR$/Source/TCTD/Projectile.h" />
         <option value="$PROJECT_DIR$/Source/TCTD/Turret.h" />
-        <option value="$PROJECT_DIR$/Source/TCTD/PlayerPawn.cpp" />
-        <option value="$PROJECT_DIR$/Source/TCTD/PlayerPawn.h" />
+        <option value="$PROJECT_DIR$/Source/TCTD/Projectile.cpp" />
+        <option value="$PROJECT_DIR$/Source/TCTD/Enemy_Base.h" />
+        <option value="$PROJECT_DIR$/Source/TCTD/TowerNode.h" />
+        <option value="$PROJECT_DIR$/Source/TCTD/TowerNode.cpp" />
         <option value="$PROJECT_DIR$/Source/TCTD/Turret.cpp" />
         <option value="$PROJECT_DIR$/Source/TCTD/Spawner.h" />
-        <option value="$PROJECT_DIR$/Source/TCTD/Enemy_Base.h" />
         <option value="$PROJECT_DIR$/Source/TCTD/Spawner.cpp" />
+        <option value="$PROJECT_DIR$/Source/TCTD/Enemy_Speed.cpp" />
+        <option value="$PROJECT_DIR$/Source/TCTD/Enemy_Large.cpp" />
+        <option value="$PROJECT_DIR$/Source/TCTD/Enemy_Standard.cpp" />
+        <option value="$PROJECT_DIR$/Source/TCTD/TextWidget.h" />
+        <option value="$PROJECT_DIR$/Source/TCTD/TextWidget.cpp" />
         <option value="$PROJECT_DIR$/Source/TCTD/Enemy_Base.cpp" />
-        <option value="$PROJECT_DIR$/Source/TCTD/Projectile.cpp" />
+        <option value="$PROJECT_DIR$/Source/TCTD/PlayerPawn.h" />
+        <option value="$PROJECT_DIR$/Source/TCTD/PlayerPawn.cpp" />
       </list>
     </option>
   </component>
@@ -340,7 +331,11 @@
       <workItem from="1594238134207" duration="1753000" />
       <workItem from="1594304365108" duration="1850000" />
       <workItem from="1594306317860" duration="1734000" />
-      <workItem from="1594308184547" duration="1146000" />
+      <workItem from="1594308184547" duration="1746000" />
+      <workItem from="1594310294248" duration="1419000" />
+      <workItem from="1594314802311" duration="583000" />
+      <workItem from="1594315558589" duration="13896000" />
+      <workItem from="1594503246161" duration="1217000" />
     </task>
     <servers />
   </component>
@@ -476,29 +471,22 @@
       <screen x="3840" y="226" width="1920" height="960" />
     </state>
     <state x="4457" y="353" key="run.anything.popup/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1593888698800" />
-    <state x="4295" y="190" width="1008" height="958" key="search.everywhere.popup" timestamp="1594308783162">
-      <screen x="3840" y="190" width="1920" height="960" />
+    <state x="303" y="0" width="672" height="678" key="search.everywhere.popup" timestamp="1594499395952">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="679" key="search.everywhere.popup/3840.190.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1594307653806" />
-    <state x="4295" y="190" width="1008" height="958" key="search.everywhere.popup/3840.190.1920.960/0.0.1280.680@3840.190.1920.960" timestamp="1594308783162" />
+    <state x="455" y="0" width="1008" height="1038" key="search.everywhere.popup/0.0.1920.1040/-3840.-190.1280.680@0.0.1920.1040" timestamp="1594323716046" />
+    <state x="303" y="0" width="672" height="678" key="search.everywhere.popup/3840.190.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1594319805145" />
+    <state x="4295" y="190" width="1008" height="958" key="search.everywhere.popup/3840.190.1920.960/0.0.1280.680@3840.190.1920.960" timestamp="1594321191970" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593476053512" />
     <state x="4295" y="210" width="1008" height="958" key="search.everywhere.popup/3840.209.1920.960/0.0.1280.680@3840.209.1920.960" timestamp="1593309393485" />
     <state x="4295" y="227" width="1008" height="958" key="search.everywhere.popup/3840.226.1920.960/0.0.1280.680@3840.226.1920.960" timestamp="1594238538096" />
+    <state x="303" y="0" width="672" height="678" key="search.everywhere.popup/3840.243.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1594499395952" />
     <state x="263" y="154" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1593480157948">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="263" y="154" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/3840.209.1920.960/0.0.1280.680@0.0.1280.680" timestamp="1593480157948" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TCTD/Enemy_Base.cpp</url>
-          <line>75</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="CppProject">
         <watch expression="aDamageTaken" />

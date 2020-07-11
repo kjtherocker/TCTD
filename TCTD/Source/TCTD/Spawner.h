@@ -43,7 +43,9 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> Enemy_Speed;
-    
+
+
+	TArray<TSubclassOf<AActor>> WaveList;
 
   	UPROPERTY(EditAnywhere)
     TArray<FVector> Waypoints;
@@ -58,6 +60,7 @@ public:
 	UFUNCTION()
 	virtual void SpawnEnemy();
 
+	virtual void Wave1();
 	
 
 };

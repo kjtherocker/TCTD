@@ -8,15 +8,21 @@ AEnemy_Speed::AEnemy_Speed()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	
 }
 
 // Called when the game starts or when spawned
 void AEnemy_Speed::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	MaxHealth = 100;
+	CurrentHealth = MaxHealth;
+
+
+	EnemySpeed = 125.0f;
 }
+
 
 // Called every frame
 void AEnemy_Speed::Tick(float DeltaTime)

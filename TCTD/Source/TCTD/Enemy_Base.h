@@ -49,6 +49,8 @@ protected:
     
     UWidgetComponent* Healthbar;
 	UProgressBar* ProgressBar;	
+
+	
 	
 
 public:	

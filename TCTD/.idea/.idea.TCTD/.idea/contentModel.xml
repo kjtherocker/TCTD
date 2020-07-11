@@ -304,8 +304,6 @@
           <e p="Enemy_Standard.h" t="Include" />
           <e p="EnemyHealthbar.cpp" t="Include" />
           <e p="EnemyHealthbar.h" t="Include" />
-          <e p="MyPlayerPawn.cpp" t="Include" />
-          <e p="MyPlayerPawn.h" t="Include" />
           <e p="PlayerPawn.cpp" t="Include" />
           <e p="PlayerPawn.h" t="Include" />
           <e p="Projectile.cpp" t="Include" />
@@ -317,6 +315,8 @@
           <e p="TCTD.h" t="Include" />
           <e p="TCTDGameModeBase.cpp" t="Include" />
           <e p="TCTDGameModeBase.h" t="Include" />
+          <e p="TextWidget.cpp" t="Include" />
+          <e p="TextWidget.h" t="Include" />
           <e p="TowerNode.cpp" t="Include" />
           <e p="TowerNode.h" t="Include" />
           <e p="Turret.cpp" t="Include" />

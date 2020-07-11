@@ -2,6 +2,9 @@
 
 
 #include "PlayerPawn.h"
+
+#include <string>
+
 #include "Engine/World.h"
 #include "ChaosInterfaceWrapperCore.h"
 #include "DrawDebugHelpers.h"
@@ -16,6 +19,8 @@ APlayerPawn::APlayerPawn()
 
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 	CurrentMoney = 100;
+
+
 }
 
 // Called when the game starts or when spawned
@@ -30,18 +35,32 @@ void APlayerPawn::BeginPlay()
 		PlayerController->bShowMouseCursor = true; 
 		PlayerController->bEnableClickEvents = true; 
 		PlayerController->bEnableMouseOverEvents = true;
+	//		PlayerController->GetHUD();
+	}
+
+	TArray<UWidgetComponent*> TextWidgets;
+	GetComponents<UWidgetComponent>(TextWidgets);
+	TextWidget = TextWidgets[0];
+
+	if(UUserWidget* widget = TextWidget->GetUserWidgetObject())
+	{
+		MoneyText = Cast<UTextBlock>(widget->GetWidgetFromName("Money"));
+		FString TempMoney = FString::Printf(TEXT("%d"), CurrentMoney);
+		FText Money = FText::FromString(TempMoney);
+		MoneyText->SetText(Money);
 	}
 	
 	GetWorld()->GetGameViewport()->GetMousePosition(CurrentPosition);
 
 	OldPosition = CurrentPosition;
+	//TextWidget->SetDisplayText();
 }
 
 // Called every frame
 void APlayerPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	UpdateMoney();
 
 	//if(CurrentPosition != OldPosition)
 	//{
@@ -59,9 +78,16 @@ void APlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	//InputComponent->BindAxis("MoveUp", this, &ACharacter::MoveUp);
-	//InputComponent->BindAxis("MoveRight", this, );
+	//InputComponent->BindAxis("MoveRight", this, );S
 	InputComponent->BindAction("Spawn", IE_Pressed, this, &APlayerPawn::RaycastToCheckIfNodeIsFree);
 
+}
+
+void APlayerPawn::UpdateMoney()
+{
+		FString TempMoney = FString::Printf(TEXT("%d"), CurrentMoney);
+		FText Money = FText::FromString(TempMoney);
+		MoneyText->SetText(Money);
 }
 
 void APlayerPawn::RaycastToCheckIfNodeIsFree()
@@ -88,29 +114,35 @@ void APlayerPawn::RaycastToCheckIfNodeIsFree()
                 PlaneOrigin,
                 FVector::UpVector);
 
-
-
-
 	FCollisionQueryParams * TraceParams = new FCollisionQueryParams();
+
+	const FName TraceTag("MyTraceTag");
+ 
+	world->DebugDrawTraceTag = TraceTag;
+	
+	TraceParams->TraceTag = TraceTag;
 
 	if(world->LineTraceSingleByChannel(*hitResult, StartPoint, EndPoint, ECC_Visibility, * TraceParams))
 	{
 		GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Blue,
 			FString::Printf(TEXT("You Hit: %s"), *hitResult->Actor->GetName()));
 
-		//ATurret* Turret = Cast<ATurret>(BasicTurret);
-
-
+		AActor* tempActor = hitResult->GetActor();
+		
 		if(CurrentMoney >= 50)
 		{
-			CurrentMoney -= 50;
 			
-			ATowerNode* TowerNodeTemp =  Cast<ATowerNode>(hitResult->Actor);
+			
+			ATowerNode* TowerNodeTemp =  Cast<ATowerNode>(tempActor);
 			if(TowerNodeTemp != nullptr)
 			{
 				TowerNodeTemp->SpawnTurret(ToSpawn);
+				CurrentMoney -= 50;
 			}
-		}
+
+		
+		}	
+	
 	}
 }
 

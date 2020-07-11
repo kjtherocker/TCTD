@@ -24,6 +24,7 @@ void ASpawner::BeginPlay()
     FTimerHandle handle;
 
     world->GetTimerManager().SetTimer(handle,this,&ASpawner::SpawnEnemy,5.0f,true);
+	Wave1();
 }
 
 // Called every frame
@@ -35,18 +36,36 @@ void ASpawner::Tick(float DeltaTime)
 
 void ASpawner::SpawnEnemy()
 {
+
+	if(!WaveList.IsValidIndex(0))
+	{
+		return;
+	}
+	
 	FVector ActorSpawnPosition = GetActorLocation() + SpawnEnemyPosition;
 	FRotator m_Rotator = GetActorRotation();
 
 	AEnemy_Base* m_EnemyToSpawn;
 
-	m_EnemyToSpawn = Cast<AEnemy_Base>(GetWorld()->SpawnActor<AActor>(Enemy_Standard, ActorSpawnPosition, m_Rotator));
+	m_EnemyToSpawn = Cast<AEnemy_Base>(GetWorld()->SpawnActor<AActor>(WaveList[0], ActorSpawnPosition, m_Rotator));
 
 	if(m_EnemyToSpawn == nullptr)
 	{
 		return;
 	}
-	
+
+	WaveList.RemoveAt(0);
 	m_EnemyToSpawn->SetWaypoints(Waypoints);
 }
 
+void ASpawner::Wave1()
+{
+	WaveList.Add(Enemy_Large);
+	WaveList.Add(Enemy_Speed);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Speed);
+	WaveList.Add(Enemy_Speed);
+	WaveList.Add(Enemy_Large);
+	WaveList.Add(Enemy_Large);
+	
+}

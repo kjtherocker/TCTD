@@ -27,11 +27,17 @@ public:
      UStaticMeshComponent* m_Mesh;
 
 
+	UPROPERTY(EditAnywhere)
+     UStaticMeshComponent* Selector;
+
 	bool TurretSpotOccupied;
 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	virtual void TurnSelectorOn();
+	virtual void TurnSelectorOff();
+	
 	virtual void SpawnTurret(TSubclassOf<AActor> aTurret);
 
 };

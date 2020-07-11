@@ -152,11 +152,23 @@ void ATurret::CalculateClosestEnemy()
 	{
 		for (int i = 0; i < EnemyInRange.Num(); i++)
 		{
+			
+		
 			AEnemy_Base* IterativeEnemy = Cast<AEnemy_Base>(EnemyInRange[i]);
+
+			if(IterativeEnemy->WaypointsAreSet == false)
+			{
+				continue;
+			}
 
 
 			float EnemyA = abs(IterativeEnemy->DistanceLeftInLevel);
 			float EnemyB = abs(EnemyTemp->DistanceLeftInLevel);
+
+			if(EnemyA == 0 || EnemyB == 0 )
+			{
+				continue;
+			}
 			
 			if(EnemyA < EnemyB )
 			{

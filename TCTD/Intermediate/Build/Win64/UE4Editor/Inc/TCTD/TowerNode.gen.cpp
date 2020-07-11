@@ -33,6 +33,10 @@ void EmptyLinkFunctionForGeneratedCodeTowerNode() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Selector_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Selector;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_Mesh_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_Mesh;
@@ -51,6 +55,14 @@ void EmptyLinkFunctionForGeneratedCodeTowerNode() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATowerNode_Statics::NewProp_Selector_MetaData[] = {
+		{ "Category", "TowerNode" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "TowerNode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATowerNode_Statics::NewProp_Selector = { "Selector", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATowerNode, Selector), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATowerNode_Statics::NewProp_Selector_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATowerNode_Statics::NewProp_Selector_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATowerNode_Statics::NewProp_m_Mesh_MetaData[] = {
 		{ "Category", "TowerNode" },
 		{ "EditInline", "true" },
@@ -59,6 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeTowerNode() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATowerNode_Statics::NewProp_m_Mesh = { "m_Mesh", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATowerNode, m_Mesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATowerNode_Statics::NewProp_m_Mesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATowerNode_Statics::NewProp_m_Mesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATowerNode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATowerNode_Statics::NewProp_Selector,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATowerNode_Statics::NewProp_m_Mesh,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ATowerNode_Statics::StaticCppClassTypeInfo = {
@@ -88,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeTowerNode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATowerNode, 3888011160);
+	IMPLEMENT_CLASS(ATowerNode, 1580172146);
 	template<> TCTD_API UClass* StaticClass<ATowerNode>()
 	{
 		return ATowerNode::StaticClass();

@@ -8,14 +8,18 @@ AEnemy_Standard::AEnemy_Standard()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	
 }
 
 // Called when the game starts or when spawned
 void AEnemy_Standard::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	MaxHealth = 50;
+	CurrentHealth = MaxHealth;
+
+
+	EnemySpeed = 45.0f;
 }
 
 // Called every frame

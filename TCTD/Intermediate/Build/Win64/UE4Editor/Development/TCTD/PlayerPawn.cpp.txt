@@ -141,7 +141,15 @@ F:\TCTD\TCTD\Source\TCTD\Projectile.h
 F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Inc\TCTD\Projectile.generated.h
 F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Inc\TCTD\Turret.generated.h
 F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Inc\TCTD\TowerNode.generated.h
+F:\TCTD\TCTD\Source\TCTD\TextWidget.h
+F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Inc\TCTD\TextWidget.generated.h
+F:\UE_4.25\Engine\Source\Runtime\UMG\Public\Components/TextBlock.h
+F:\UE_4.25\Engine\Source\Runtime\UMG\Public\Components/TextWidgetTypes.h
+F:\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\TextWidgetTypes.generated.h
+F:\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\TextBlock.generated.h
 F:\TCTD\TCTD\Intermediate\Build\Win64\UE4Editor\Inc\TCTD\PlayerPawn.generated.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.25.28610\INCLUDE\string
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.25.28610\INCLUDE\cctype
 F:\UE_4.25\Engine\Source\Runtime\PhysicsCore\Public\ChaosInterfaceWrapperCore.h
 F:\UE_4.25\Engine\Source\Runtime\PhysicsCore\Public\ChaosSQTypes.h
 F:\UE_4.25\Engine\Source\Runtime\PhysicsCore\Public\PhysicsInterfaceWrapperShared.h

@@ -11,15 +11,11 @@ AEnemy_Base::AEnemy_Base()
 	PrimaryActorTick.bCanEverTick = true;
 	BaseMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("EnemyStaticMesh"));
 
-	MaxHealth = 50;
-	CurrentHealth = MaxHealth;
-	
 	WaypointsAreSet = false;
-	
-	EnemySpeed = 45.0f;
 
 	DistanceToNextWaypoint = 9999999999999.0f;
 	AllWaypointDistances = 9999999999999.0f;
+	
 }
 
 // Called when the game starts or when spawned
@@ -126,6 +122,7 @@ void AEnemy_Base::SetUpHealthbar()
 {
 	TArray<UWidgetComponent*> EnemyUi;
 	GetComponents<UWidgetComponent>(EnemyUi);
+
 	if(EnemyUi.IsValidIndex(0) == true)
 	{
 		Healthbar = EnemyUi[0];
