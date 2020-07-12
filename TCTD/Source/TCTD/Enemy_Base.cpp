@@ -83,8 +83,7 @@ void AEnemy_Base::SetWaypoints(TArray<FVector> aWaypointList)
 
 void AEnemy_Base::EnemyGotToGoal()
 {
-	PrimaryActorTick.bCanEverTick = false;
-	//Death();
+	DeActivate();
 }
 
 
@@ -104,7 +103,7 @@ void AEnemy_Base::DeActivate()
 	EnemyDeathEvent.Broadcast(GetName());
 	SetActorHiddenInGame(true);
 	SetActorTickEnabled(false);
-
+	DistanceToNextWaypoint = 9999999999999.0f;
 	for(int i = Waypoints.Num() - 1 ; i < 0;i--)
 	{
 		Waypoints.RemoveAt(i);
@@ -113,7 +112,7 @@ void AEnemy_Base::DeActivate()
 
 void AEnemy_Base::Activate()
 {
-	DistanceToNextWaypoint = 9999999999999.0f;
+	
 	SetActorHiddenInGame(false);
 	SetActorTickEnabled(true);
 }

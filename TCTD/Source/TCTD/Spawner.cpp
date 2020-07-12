@@ -18,13 +18,22 @@ ASpawner::ASpawner()
 void ASpawner::BeginPlay()
 {
     Super::BeginPlay();
-    
+
+	CurrentWave.AddDynamic(this,	&ASpawner::Wave1);
+	CurrentWave.Broadcast();
+	
     UWorld* world = GetWorld();
-    
+
+
+	//Setting up some default values
+
+
+
+	
     FTimerHandle handle;
 
-    world->GetTimerManager().SetTimer(handle,this,&ASpawner::SpawnEnemy,5.0f,true);
-	Wave1();
+    world->GetTimerManager().SetTimer(handle,this,&ASpawner::SpawnEnemy,TimeBeforeEnemySpawns,true);
+	
 }
 
 // Called every frame
@@ -32,6 +41,11 @@ void ASpawner::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void ASpawner::StartNextWave()
+{
+	CurrentWave.Broadcast();
 }
 
 void ASpawner::SpawnEnemy()
@@ -56,16 +70,51 @@ void ASpawner::SpawnEnemy()
 
 	WaveList.RemoveAt(0);
 	m_EnemyToSpawn->SetWaypoints(Waypoints);
+
+	
+	//GetWorld()->GetTimerManager().SetTimer(handle,this,&ASpawner::SpawnEnemy,TimeBeforeEnemySpawns,false);
 }
+
 
 void ASpawner::Wave1()
 {
-	WaveList.Add(Enemy_Large);
-	WaveList.Add(Enemy_Speed);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Standard);
 	WaveList.Add(Enemy_Standard);
 	WaveList.Add(Enemy_Speed);
-	WaveList.Add(Enemy_Speed);
-	WaveList.Add(Enemy_Large);
-	WaveList.Add(Enemy_Large);
+
+
+
+	CurrentWave.RemoveDynamic(this,&ASpawner::Wave1);
+	CurrentWave.AddDynamic(this,&ASpawner::Wave2);
+	FTimerHandle handle;
+	GetWorld()->GetTimerManager().SetTimer(handle,
+		this,&ASpawner::StartNextWave,WaveList.Num() * TimeBeforeEnemySpawns + TimeBeforeNextWave,false);
+}
+
+
+void ASpawner::Wave2()
+{
 	
+	WaveList.Add(Enemy_Speed);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Speed);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Large);
+
+	
+	CurrentWave.RemoveDynamic(this,&ASpawner::Wave2);
+	CurrentWave.AddDynamic(this,&ASpawner::Wave3);
+	FTimerHandle handle;
+	GetWorld()->GetTimerManager().SetTimer(handle,
+        this,&ASpawner::StartNextWave,WaveList.Num() * TimeBeforeEnemySpawns + TimeBeforeNextWave,false);
+}
+
+void ASpawner::Wave3()
+{
 }

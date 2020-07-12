@@ -14,7 +14,7 @@
 APlayerPawn::APlayerPawn()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 	PlayerCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("PlayerCamera"));
 
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
@@ -35,9 +35,9 @@ void APlayerPawn::BeginPlay()
 		PlayerController->bShowMouseCursor = true; 
 		PlayerController->bEnableClickEvents = true; 
 		PlayerController->bEnableMouseOverEvents = true;
-	//		PlayerController->GetHUD();
 	}
 
+	
 	TArray<UWidgetComponent*> TextWidgets;
 	GetComponents<UWidgetComponent>(TextWidgets);
 	TextWidget = TextWidgets[0];
@@ -53,23 +53,17 @@ void APlayerPawn::BeginPlay()
 	GetWorld()->GetGameViewport()->GetMousePosition(CurrentPosition);
 
 	OldPosition = CurrentPosition;
-	//TextWidget->SetDisplayText();
+
+	FTimerHandle handle;
+
+	GetWorld()->GetTimerManager().SetTimer(handle,this,&APlayerPawn::MoneyAddTimer,5.0f,true);
+	
 }
 
 // Called every frame
 void APlayerPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	UpdateMoney();
-
-	//if(CurrentPosition != OldPosition)
-	//{
-	//	OldPosition = CurrentPosition;
-//
-	//	RaycastToCheckIfNodeIsFree();
-	//}
-
-	
 }
 
 // Called to bind functionality to input
@@ -88,6 +82,18 @@ void APlayerPawn::UpdateMoney()
 		FString TempMoney = FString::Printf(TEXT("%d"), CurrentMoney);
 		FText Money = FText::FromString(TempMoney);
 		MoneyText->SetText(Money);
+}
+
+void APlayerPawn::MoneyAddTimer()
+{
+	AddMoney(5);
+	
+}
+
+void APlayerPawn::AddMoney(float IncrementMoney)
+{
+	CurrentMoney += IncrementMoney;
+	UpdateMoney();
 }
 
 void APlayerPawn::RaycastToCheckIfNodeIsFree()
@@ -131,16 +137,16 @@ void APlayerPawn::RaycastToCheckIfNodeIsFree()
 		
 		if(CurrentMoney >= 50)
 		{
-			
-			
 			ATowerNode* TowerNodeTemp =  Cast<ATowerNode>(tempActor);
 			if(TowerNodeTemp != nullptr)
 			{
-				TowerNodeTemp->SpawnTurret(ToSpawn);
-				CurrentMoney -= 50;
+				if(TowerNodeTemp->CheckIfNodeIsFree())
+				{
+					TowerNodeTemp->SpawnTurret(ToSpawn);
+					CurrentMoney -= 50;
+					UpdateMoney();
+				}
 			}
-
-		
 		}	
 	
 	}

@@ -15,7 +15,7 @@ AEnemy_Standard::AEnemy_Standard()
 void AEnemy_Standard::BeginPlay()
 {
 	Super::BeginPlay();
-	MaxHealth = 50;
+	MaxHealth = 25;
 	CurrentHealth = MaxHealth;
 
 

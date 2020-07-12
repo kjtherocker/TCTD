@@ -62,7 +62,10 @@ public:
 
 
 	void UpdateMoney();
+
+	void MoneyAddTimer();
 	
+	void AddMoney(float IncrementMoney);
 	
 	virtual void RaycastToCheckIfNodeIsFree();
 

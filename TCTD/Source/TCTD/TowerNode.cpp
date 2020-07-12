@@ -38,13 +38,6 @@ void ATowerNode::Tick(float DeltaTime)
 
 void ATowerNode::SpawnTurret(TSubclassOf<AActor> aTurret)
 {
-
-	if(TurretSpotOccupied == true)
-	{
-		return;
-	}
-	
-
 	UWorld* world = GetWorld();
 
 	if(world)
@@ -72,4 +65,14 @@ void ATowerNode::TurnSelectorOn()
 void ATowerNode::TurnSelectorOff()
 {
 	Selector->SetVisibility(false);	
+}
+
+bool ATowerNode::CheckIfNodeIsFree()
+{
+	if(TurretSpotOccupied == true)
+	{
+		return false;
+	}
+
+	return true;	
 }

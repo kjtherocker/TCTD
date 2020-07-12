@@ -12,6 +12,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTCTD_init() {}
 	TCTD_API UFunction* Z_Construct_UDelegateFunction_TCTD_EnemyDeath__DelegateSignature();
+	TCTD_API UFunction* Z_Construct_UDelegateFunction_TCTD_Wave__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_TCTD()
 	{
 		static UPackage* ReturnPackage = nullptr;
@@ -19,14 +20,15 @@ void EmptyLinkFunctionForGeneratedCodeTCTD_init() {}
 		{
 			static UObject* (*const SingletonFuncArray[])() = {
 				(UObject* (*)())Z_Construct_UDelegateFunction_TCTD_EnemyDeath__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_TCTD_Wave__DelegateSignature,
 			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/TCTD",
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x5892A165,
-				0x83B580D3,
+				0xA8740BC3,
+				0xD3E881A7,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

@@ -37,6 +37,8 @@ public:
 
 	virtual void TurnSelectorOn();
 	virtual void TurnSelectorOff();
+
+	virtual bool CheckIfNodeIsFree();
 	
 	virtual void SpawnTurret(TSubclassOf<AActor> aTurret);
 
