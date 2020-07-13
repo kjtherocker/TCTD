@@ -9,37 +9,29 @@
 #include "TowerNode.generated.h"
 
 UCLASS()
-class TCTD_API ATowerNode : public AActor
+class UNREALTOWERDEFENCE2_API ATowerNode : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
-    // Sets default values for this actor's properties
-    ATowerNode();
+	// Sets default values for this actor's properties
+	ATowerNode();
 
-	protected:
-        // Called when the game starts or when spawned
-        virtual void BeginPlay() override;
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
 
-	public:
+public:
 
-        UPROPERTY(VisibleAnywhere)
-     UStaticMeshComponent* m_Mesh;
+	UPROPERTY(VisibleAnywhere)
+ UStaticMeshComponent* m_Mesh;
 
-
-	UPROPERTY(EditAnywhere)
-     UStaticMeshComponent* Selector;
 
 	bool TurretSpotOccupied;
 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	virtual void TurnSelectorOn();
-	virtual void TurnSelectorOff();
-
-	virtual bool CheckIfNodeIsFree();
-	
 	virtual void SpawnTurret(TSubclassOf<AActor> aTurret);
 
 };

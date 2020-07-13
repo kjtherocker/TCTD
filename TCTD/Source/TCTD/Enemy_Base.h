@@ -3,18 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Components/WidgetComponent.h"
-#include "Components/ProgressBar.h"
-#include "Blueprint/UserWidget.h"
 #include "GameFramework/Actor.h"
 #include "Enemy_Base.generated.h"
 
 class ATurret;
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FEnemyDeath, FString , Enemyname);
-
-
 UCLASS()
-class TCTD_API AEnemy_Base : public AActor
+class UNREALTOWERDEFENCE2_API AEnemy_Base : public AActor
 {
 	GENERATED_BODY()
 	
@@ -38,42 +32,27 @@ protected:
 	virtual void Tick(float DeltaTime) override;
 
 
+	virtual void SetTurretReferences(ATurret* aAddToList);	
+	virtual void Death();
 
-	virtual void DeActivate();
+	int MaxHealth;
 
-	virtual void Activate();
-
-	virtual void SetUpHealthbar();
-	
-	virtual float CalculateDistanceFromStartToEnd();
-    
-    UWidgetComponent* Healthbar;
-	UProgressBar* ProgressBar;	
-
-	
-	
 
 public:	
 
-
 	
-	UPROPERTY()
-	FEnemyDeath EnemyDeathEvent;
-
-	float MaxHealth;
+     TArray<ATurret*> TowersAttackingEnemys;
 	
     UPROPERTY(VisibleAnywhere)
-    float CurrentHealth;
-	
-	UPROPERTY(VisibleAnywhere)
+    int CurrentHealth;
+
 	TArray<FVector> Waypoints;
 
-	UPROPERTY(VisibleAnywhere)
-	float DistanceToNextWaypoint;
-	
-	
 	UPROPERTY(EditAnywhere)
     FVector GoToWaypoint;
+
+	UPROPERTY(VisibleAnywhere)
+    FVector Testo;
 
 	UPROPERTY(EditAnywhere)
     float EnemySpeed;
@@ -81,19 +60,12 @@ public:
 	UPROPERTY(VisibleAnywhere)
      UStaticMeshComponent* BaseMesh;
 	
+	UPROPERTY(EditAnywhere)
     float AngleToWaypoint;
-	
-	UPROPERTY(VisibleAnywhere)
-	float AllWaypointDistances;
-	
-	UPROPERTY(VisibleAnywhere)
-    float DistanceLeftInLevel;
 
-	bool WaypointsAreSet;
-	
 	UFUNCTION()
     virtual void TakeDamage(int aDamageTaken);
 	
-
+	bool WaypointsAreSet;
 
 };

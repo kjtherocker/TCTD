@@ -10,7 +10,7 @@
 #include "Turret.generated.h"
 
 UCLASS()
-class TCTD_API ATurret : public AActor
+class UNREALTOWERDEFENCE2_API ATurret : public AActor
 {
 	GENERATED_BODY()
 	
@@ -32,15 +32,6 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	AEnemy_Base* EnemyToAttack;
-
-	UPROPERTY()
-	FEnemyDeath EnemyDeathEvent;
-
-	TArray<AProjectile*> ProjectilePool; 
-
-	int NumberOfProjectiles;
-
-	int Cost;
 	
 protected:
 	// Called when the game starts or when spawned
@@ -62,16 +53,6 @@ public:
 	UFUNCTION()
 	virtual void OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 		int32 OtherBodyIndex);
-
-
-	void AddEnemyInRange(AEnemy_Base* Enemy);
 	
-	AProjectile* AddProjectileToPool();
-
-	AProjectile* GetProjectileFormPool();
-	
-	void DeActivateProjectile();
-
-	void CalculateClosestEnemy();
 	
 };

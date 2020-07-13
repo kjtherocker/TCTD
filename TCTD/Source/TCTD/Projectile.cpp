@@ -11,7 +11,7 @@ AProjectile::AProjectile()
 	ProjectileSpeed = 500.0f;
 	ProjectileDamage = 4;
 	m_Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mainmesh"));
-	SetActorTickEnabled(false);
+	ProjectileState = true;
 }
 
 // Called when the game starts or when spawned
@@ -32,23 +32,23 @@ void AProjectile::Tick(float DeltaTime)
 
 void AProjectile::GoToEnemy(float aDeltatime)
 {
-	if(EnemyToAttack == nullptr)
-	{
-		Deactivate();
-		return;
-	}
+	//if(EnemyToAttack == nullptr)
+	//{
+	//	Deactivate();
+	//	return;
+	//}
 	
 	FVector CurrentPosition = GetActorLocation();
 
-	FVector EnemyPosition = EnemyToAttack->GetActorLocation();
-	
-	float deltaX = EnemyPosition.X - CurrentPosition.X;
-	float deltaY = EnemyPosition.Y - CurrentPosition.Y;
+	//FVector EnemyPosition = EnemyToAttack->GetActorLocation();
+	//
+	//float deltaX = EnemyPosition.X - CurrentPosition.X;
+	//float deltaY = EnemyPosition.Y - CurrentPosition.Y;
 
-	float AngleToWaypoint = atan2(deltaX,deltaY);
-	
-	CurrentPosition.X += sin(AngleToWaypoint) * ProjectileSpeed * aDeltatime;
-	CurrentPosition.Y += cos(AngleToWaypoint) * ProjectileSpeed * aDeltatime;
+	//float AngleToWaypoint = atan2(deltaX,deltaY);
+	//
+	//CurrentPosition.X += sin(AngleToWaypoint) * ProjectileSpeed * aDeltatime;
+	//CurrentPosition.Y += cos(AngleToWaypoint) * ProjectileSpeed * aDeltatime;
 	
 	
 	SetActorLocation(CurrentPosition);
@@ -57,19 +57,19 @@ void AProjectile::GoToEnemy(float aDeltatime)
 void AProjectile::Activate(AEnemy_Base* aEnemy)
 {
 
-	EnemyToAttack = aEnemy;
+	//EnemyToAttack = aEnemy;
 	
 	SetActorHiddenInGame(false);
-	SetActorTickEnabled(true);
+	PrimaryActorTick.bCanEverTick = true;
 	ProjectileState = true;
 }
 
 void AProjectile::Deactivate()
 {
-	EnemyToAttack = nullptr;
 	SetActorHiddenInGame(true);
 	ProjectileState = false;
-	SetActorTickEnabled(false);
+	PrimaryActorTick.bCanEverTick = false;
+	GEngine->AddOnScreenDebugMessage(-1,5.f, FColor::Green,  TEXT("DeActivate"));
 }
 
 void AProjectile::OnBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
@@ -81,17 +81,18 @@ void AProjectile::OnBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* Ot
 		return;
 	}
 
-	if(OtherActor != EnemyToAttack)
-	{
-		return;
-	}
+	//if(OtherActor != EnemyToAttack)
+	//{
+	//	return;
+	//}
 
-
+	
+	GEngine->AddOnScreenDebugMessage(-1,5.f, FColor::Green,  TEXT("ProjectileOverlap"));
 	if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr))
 	{
-		
-		Cast<AEnemy_Base>(OtherActor)->TakeDamage(ProjectileDamage);
 		Deactivate();
+		//Cast<AEnemy_Base>(OtherActor)->TakeDamage(ProjectileDamage);
+		
 	}
 
 }
