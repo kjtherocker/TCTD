@@ -13,10 +13,20 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TCTD_PlayerPawn_generated_h
 
-#define TCTD_Source_TCTD_PlayerPawn_h_19_SPARSE_DATA
-#define TCTD_Source_TCTD_PlayerPawn_h_19_RPC_WRAPPERS
-#define TCTD_Source_TCTD_PlayerPawn_h_19_RPC_WRAPPERS_NO_PURE_DECLS
-#define TCTD_Source_TCTD_PlayerPawn_h_19_INCLASS_NO_PURE_DECLS \
+#define TCTD_Source_TCTD_PlayerPawn_h_21_SPARSE_DATA
+#define TCTD_Source_TCTD_PlayerPawn_h_21_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execAddMoney); \
+	DECLARE_FUNCTION(execEnemyWon);
+
+
+#define TCTD_Source_TCTD_PlayerPawn_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execAddMoney); \
+	DECLARE_FUNCTION(execEnemyWon);
+
+
+#define TCTD_Source_TCTD_PlayerPawn_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerPawn(); \
 	friend struct Z_Construct_UClass_APlayerPawn_Statics; \
@@ -25,7 +35,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerPawn)
 
 
-#define TCTD_Source_TCTD_PlayerPawn_h_19_INCLASS \
+#define TCTD_Source_TCTD_PlayerPawn_h_21_INCLASS \
 private: \
 	static void StaticRegisterNativesAPlayerPawn(); \
 	friend struct Z_Construct_UClass_APlayerPawn_Statics; \
@@ -34,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerPawn)
 
 
-#define TCTD_Source_TCTD_PlayerPawn_h_19_STANDARD_CONSTRUCTORS \
+#define TCTD_Source_TCTD_PlayerPawn_h_21_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APlayerPawn(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APlayerPawn) \
@@ -47,7 +57,7 @@ private: \
 public:
 
 
-#define TCTD_Source_TCTD_PlayerPawn_h_19_ENHANCED_CONSTRUCTORS \
+#define TCTD_Source_TCTD_PlayerPawn_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APlayerPawn(APlayerPawn&&); \
@@ -58,28 +68,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APlayerPawn); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APlayerPawn)
 
 
-#define TCTD_Source_TCTD_PlayerPawn_h_19_PRIVATE_PROPERTY_OFFSET
-#define TCTD_Source_TCTD_PlayerPawn_h_16_PROLOG
-#define TCTD_Source_TCTD_PlayerPawn_h_19_GENERATED_BODY_LEGACY \
+#define TCTD_Source_TCTD_PlayerPawn_h_21_PRIVATE_PROPERTY_OFFSET
+#define TCTD_Source_TCTD_PlayerPawn_h_18_PROLOG
+#define TCTD_Source_TCTD_PlayerPawn_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TCTD_Source_TCTD_PlayerPawn_h_19_PRIVATE_PROPERTY_OFFSET \
-	TCTD_Source_TCTD_PlayerPawn_h_19_SPARSE_DATA \
-	TCTD_Source_TCTD_PlayerPawn_h_19_RPC_WRAPPERS \
-	TCTD_Source_TCTD_PlayerPawn_h_19_INCLASS \
-	TCTD_Source_TCTD_PlayerPawn_h_19_STANDARD_CONSTRUCTORS \
+	TCTD_Source_TCTD_PlayerPawn_h_21_PRIVATE_PROPERTY_OFFSET \
+	TCTD_Source_TCTD_PlayerPawn_h_21_SPARSE_DATA \
+	TCTD_Source_TCTD_PlayerPawn_h_21_RPC_WRAPPERS \
+	TCTD_Source_TCTD_PlayerPawn_h_21_INCLASS \
+	TCTD_Source_TCTD_PlayerPawn_h_21_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TCTD_Source_TCTD_PlayerPawn_h_19_GENERATED_BODY \
+#define TCTD_Source_TCTD_PlayerPawn_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TCTD_Source_TCTD_PlayerPawn_h_19_PRIVATE_PROPERTY_OFFSET \
-	TCTD_Source_TCTD_PlayerPawn_h_19_SPARSE_DATA \
-	TCTD_Source_TCTD_PlayerPawn_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	TCTD_Source_TCTD_PlayerPawn_h_19_INCLASS_NO_PURE_DECLS \
-	TCTD_Source_TCTD_PlayerPawn_h_19_ENHANCED_CONSTRUCTORS \
+	TCTD_Source_TCTD_PlayerPawn_h_21_PRIVATE_PROPERTY_OFFSET \
+	TCTD_Source_TCTD_PlayerPawn_h_21_SPARSE_DATA \
+	TCTD_Source_TCTD_PlayerPawn_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	TCTD_Source_TCTD_PlayerPawn_h_21_INCLASS_NO_PURE_DECLS \
+	TCTD_Source_TCTD_PlayerPawn_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

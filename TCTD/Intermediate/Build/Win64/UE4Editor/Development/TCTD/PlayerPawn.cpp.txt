@@ -431,3 +431,14 @@ F:\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\legacy\ModuleLegacy.
 F:\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\nvparameterized\NvParamUtils.h
 F:\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\nvparameterized\NvParamUtils.inl
 F:\UE_4.25\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
+F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+F:\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/CollisionProfile.h
+F:\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CollisionProfile.generated.h
+F:\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+F:\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+F:\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+F:\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+F:\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h

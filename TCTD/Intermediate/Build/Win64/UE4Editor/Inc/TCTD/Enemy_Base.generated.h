@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TCTD_Enemy_Base_generated_h
 
-#define TCTD_Source_TCTD_Enemy_Base_h_13_DELEGATE \
+#define TCTD_Source_TCTD_Enemy_Base_h_16_DELEGATE \
 struct _Script_TCTD_eventEnemyDeath_Parms \
 { \
 	FString Enemyname; \
@@ -26,18 +26,38 @@ static inline void FEnemyDeath_DelegateWrapper(const FMulticastScriptDelegate& E
 }
 
 
-#define TCTD_Source_TCTD_Enemy_Base_h_19_SPARSE_DATA
-#define TCTD_Source_TCTD_Enemy_Base_h_19_RPC_WRAPPERS \
+#define TCTD_Source_TCTD_Enemy_Base_h_15_DELEGATE \
+static inline void FEnemyGotToGoal_DelegateWrapper(const FMulticastScriptDelegate& EnemyGotToGoal) \
+{ \
+	EnemyGotToGoal.ProcessMulticastDelegate<UObject>(NULL); \
+}
+
+
+#define TCTD_Source_TCTD_Enemy_Base_h_14_DELEGATE \
+struct _Script_TCTD_eventEnemyMoney_Parms \
+{ \
+	float Enemymoney; \
+}; \
+static inline void FEnemyMoney_DelegateWrapper(const FMulticastScriptDelegate& EnemyMoney, float Enemymoney) \
+{ \
+	_Script_TCTD_eventEnemyMoney_Parms Parms; \
+	Parms.Enemymoney=Enemymoney; \
+	EnemyMoney.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define TCTD_Source_TCTD_Enemy_Base_h_23_SPARSE_DATA
+#define TCTD_Source_TCTD_Enemy_Base_h_23_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execTakeDamage);
 
 
-#define TCTD_Source_TCTD_Enemy_Base_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+#define TCTD_Source_TCTD_Enemy_Base_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execTakeDamage);
 
 
-#define TCTD_Source_TCTD_Enemy_Base_h_19_INCLASS_NO_PURE_DECLS \
+#define TCTD_Source_TCTD_Enemy_Base_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAEnemy_Base(); \
 	friend struct Z_Construct_UClass_AEnemy_Base_Statics; \
@@ -46,7 +66,7 @@ public: \
 	DECLARE_SERIALIZER(AEnemy_Base)
 
 
-#define TCTD_Source_TCTD_Enemy_Base_h_19_INCLASS \
+#define TCTD_Source_TCTD_Enemy_Base_h_23_INCLASS \
 private: \
 	static void StaticRegisterNativesAEnemy_Base(); \
 	friend struct Z_Construct_UClass_AEnemy_Base_Statics; \
@@ -55,7 +75,7 @@ public: \
 	DECLARE_SERIALIZER(AEnemy_Base)
 
 
-#define TCTD_Source_TCTD_Enemy_Base_h_19_STANDARD_CONSTRUCTORS \
+#define TCTD_Source_TCTD_Enemy_Base_h_23_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AEnemy_Base(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AEnemy_Base) \
@@ -68,7 +88,7 @@ private: \
 public:
 
 
-#define TCTD_Source_TCTD_Enemy_Base_h_19_ENHANCED_CONSTRUCTORS \
+#define TCTD_Source_TCTD_Enemy_Base_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AEnemy_Base(AEnemy_Base&&); \
@@ -79,28 +99,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEnemy_Base); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AEnemy_Base)
 
 
-#define TCTD_Source_TCTD_Enemy_Base_h_19_PRIVATE_PROPERTY_OFFSET
-#define TCTD_Source_TCTD_Enemy_Base_h_16_PROLOG
-#define TCTD_Source_TCTD_Enemy_Base_h_19_GENERATED_BODY_LEGACY \
+#define TCTD_Source_TCTD_Enemy_Base_h_23_PRIVATE_PROPERTY_OFFSET
+#define TCTD_Source_TCTD_Enemy_Base_h_20_PROLOG
+#define TCTD_Source_TCTD_Enemy_Base_h_23_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TCTD_Source_TCTD_Enemy_Base_h_19_PRIVATE_PROPERTY_OFFSET \
-	TCTD_Source_TCTD_Enemy_Base_h_19_SPARSE_DATA \
-	TCTD_Source_TCTD_Enemy_Base_h_19_RPC_WRAPPERS \
-	TCTD_Source_TCTD_Enemy_Base_h_19_INCLASS \
-	TCTD_Source_TCTD_Enemy_Base_h_19_STANDARD_CONSTRUCTORS \
+	TCTD_Source_TCTD_Enemy_Base_h_23_PRIVATE_PROPERTY_OFFSET \
+	TCTD_Source_TCTD_Enemy_Base_h_23_SPARSE_DATA \
+	TCTD_Source_TCTD_Enemy_Base_h_23_RPC_WRAPPERS \
+	TCTD_Source_TCTD_Enemy_Base_h_23_INCLASS \
+	TCTD_Source_TCTD_Enemy_Base_h_23_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TCTD_Source_TCTD_Enemy_Base_h_19_GENERATED_BODY \
+#define TCTD_Source_TCTD_Enemy_Base_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TCTD_Source_TCTD_Enemy_Base_h_19_PRIVATE_PROPERTY_OFFSET \
-	TCTD_Source_TCTD_Enemy_Base_h_19_SPARSE_DATA \
-	TCTD_Source_TCTD_Enemy_Base_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	TCTD_Source_TCTD_Enemy_Base_h_19_INCLASS_NO_PURE_DECLS \
-	TCTD_Source_TCTD_Enemy_Base_h_19_ENHANCED_CONSTRUCTORS \
+	TCTD_Source_TCTD_Enemy_Base_h_23_PRIVATE_PROPERTY_OFFSET \
+	TCTD_Source_TCTD_Enemy_Base_h_23_SPARSE_DATA \
+	TCTD_Source_TCTD_Enemy_Base_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	TCTD_Source_TCTD_Enemy_Base_h_23_INCLASS_NO_PURE_DECLS \
+	TCTD_Source_TCTD_Enemy_Base_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

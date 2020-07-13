@@ -15,6 +15,8 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 // Cross Module References
 	TCTD_API UFunction* Z_Construct_UDelegateFunction_TCTD_EnemyDeath__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_TCTD();
+	TCTD_API UFunction* Z_Construct_UDelegateFunction_TCTD_EnemyGotToGoal__DelegateSignature();
+	TCTD_API UFunction* Z_Construct_UDelegateFunction_TCTD_EnemyMoney__DelegateSignature();
 	TCTD_API UClass* Z_Construct_UClass_AEnemy_Base_NoRegister();
 	TCTD_API UClass* Z_Construct_UClass_AEnemy_Base();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
@@ -50,6 +52,60 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_TCTD_EnemyDeath__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_TCTD_EnemyGotToGoal__DelegateSignature_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_TCTD_EnemyGotToGoal__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Enemy_Base.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_TCTD_EnemyGotToGoal__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_TCTD, nullptr, "EnemyGotToGoal__DelegateSignature", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_TCTD_EnemyGotToGoal__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_TCTD_EnemyGotToGoal__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_TCTD_EnemyGotToGoal__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_TCTD_EnemyGotToGoal__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UDelegateFunction_TCTD_EnemyMoney__DelegateSignature_Statics
+	{
+		struct _Script_TCTD_eventEnemyMoney_Parms
+		{
+			float Enemymoney;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Enemymoney;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_TCTD_EnemyMoney__DelegateSignature_Statics::NewProp_Enemymoney = { "Enemymoney", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_TCTD_eventEnemyMoney_Parms, Enemymoney), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_TCTD_EnemyMoney__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_TCTD_EnemyMoney__DelegateSignature_Statics::NewProp_Enemymoney,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_TCTD_EnemyMoney__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Enemy_Base.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_TCTD_EnemyMoney__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_TCTD, nullptr, "EnemyMoney__DelegateSignature", nullptr, nullptr, sizeof(_Script_TCTD_eventEnemyMoney_Parms), Z_Construct_UDelegateFunction_TCTD_EnemyMoney__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_TCTD_EnemyMoney__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_TCTD_EnemyMoney__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_TCTD_EnemyMoney__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_TCTD_EnemyMoney__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_TCTD_EnemyMoney__DelegateSignature_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -146,6 +202,14 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_CurrentHealth;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EnemyGoalEvent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_EnemyGoalEvent;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EnemyMoneyEvent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_EnemyMoneyEvent;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EnemyDeathEvent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_EnemyDeathEvent;
@@ -225,8 +289,22 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_CurrentHealth = { "CurrentHealth", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, CurrentHealth), METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_CurrentHealth_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_CurrentHealth_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyDeathEvent_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyGoalEvent_MetaData[] = {
 		{ "ModuleRelativePath", "Enemy_Base.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyGoalEvent = { "EnemyGoalEvent", nullptr, (EPropertyFlags)0x0010000000080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, EnemyGoalEvent), Z_Construct_UDelegateFunction_TCTD_EnemyGotToGoal__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyGoalEvent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyGoalEvent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyMoneyEvent_MetaData[] = {
+		{ "ModuleRelativePath", "Enemy_Base.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyMoneyEvent = { "EnemyMoneyEvent", nullptr, (EPropertyFlags)0x0010000000080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, EnemyMoneyEvent), Z_Construct_UDelegateFunction_TCTD_EnemyMoney__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyMoneyEvent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyMoneyEvent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyDeathEvent_MetaData[] = {
+		{ "Comment", "//Event\x09\n" },
+		{ "ModuleRelativePath", "Enemy_Base.h" },
+		{ "ToolTip", "Event" },
 	};
 #endif
 	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyDeathEvent = { "EnemyDeathEvent", nullptr, (EPropertyFlags)0x0010000000080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, EnemyDeathEvent), Z_Construct_UDelegateFunction_TCTD_EnemyDeath__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyDeathEvent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyDeathEvent_MetaData)) };
@@ -240,6 +318,8 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Waypoints,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_Waypoints_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_CurrentHealth,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyGoalEvent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyMoneyEvent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_EnemyDeathEvent,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AEnemy_Base_Statics::StaticCppClassTypeInfo = {
@@ -269,7 +349,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy_Base, 3410338410);
+	IMPLEMENT_CLASS(AEnemy_Base, 811931017);
 	template<> TCTD_API UClass* StaticClass<AEnemy_Base>()
 	{
 		return AEnemy_Base::StaticClass();
