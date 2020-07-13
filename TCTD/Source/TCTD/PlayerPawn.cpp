@@ -2,6 +2,9 @@
 
 
 #include "PlayerPawn.h"
+
+#include <string>
+
 #include "Engine/World.h"
 #include "ChaosInterfaceWrapperCore.h"
 #include "DrawDebugHelpers.h"
@@ -11,11 +14,13 @@
 APlayerPawn::APlayerPawn()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 	PlayerCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("PlayerCamera"));
 
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
-	
+	CurrentMoney = 100;
+
+
 }
 
 // Called when the game starts or when spawned
@@ -31,26 +36,34 @@ void APlayerPawn::BeginPlay()
 		PlayerController->bEnableClickEvents = true; 
 		PlayerController->bEnableMouseOverEvents = true;
 	}
+
+	
+	TArray<UWidgetComponent*> TextWidgets;
+	GetComponents<UWidgetComponent>(TextWidgets);
+	TextWidget = TextWidgets[0];
+
+	if(UUserWidget* widget = TextWidget->GetUserWidgetObject())
+	{
+		MoneyText = Cast<UTextBlock>(widget->GetWidgetFromName("Money"));
+		FString TempMoney = FString::Printf(TEXT("%d"), CurrentMoney);
+		FText Money = FText::FromString(TempMoney);
+		MoneyText->SetText(Money);
+	}
 	
 	GetWorld()->GetGameViewport()->GetMousePosition(CurrentPosition);
 
 	OldPosition = CurrentPosition;
+
+	FTimerHandle handle;
+
+	GetWorld()->GetTimerManager().SetTimer(handle,this,&APlayerPawn::MoneyAddTimer,5.0f,true);
+	
 }
 
 // Called every frame
 void APlayerPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-
-	//if(CurrentPosition != OldPosition)
-	//{
-	//	OldPosition = CurrentPosition;
-//
-	//	RaycastToCheckIfNodeIsFree();
-	//}
-
-	
 }
 
 // Called to bind functionality to input
@@ -59,18 +72,34 @@ void APlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	//InputComponent->BindAxis("MoveUp", this, &ACharacter::MoveUp);
-	//InputComponent->BindAxis("MoveRight", this, );
+	//InputComponent->BindAxis("MoveRight", this, );S
 	InputComponent->BindAction("Spawn", IE_Pressed, this, &APlayerPawn::RaycastToCheckIfNodeIsFree);
 
+}
+
+void APlayerPawn::UpdateMoney()
+{
+		FString TempMoney = FString::Printf(TEXT("%d"), CurrentMoney);
+		FText Money = FText::FromString(TempMoney);
+		MoneyText->SetText(Money);
+}
+
+void APlayerPawn::MoneyAddTimer()
+{
+	AddMoney(5);
+	
+}
+
+void APlayerPawn::AddMoney(float IncrementMoney)
+{
+	CurrentMoney += IncrementMoney;
+	UpdateMoney();
 }
 
 void APlayerPawn::RaycastToCheckIfNodeIsFree()
 {
 	//GEngine->AddOnScreenDebugMessage(-1,5.f, FColor::Green,  TEXT("MouseClicked"));
 	UWorld* world = GetWorld();
-
-
-	//This is just a reimplementation of FMath::LinePlaneIntersection that just takes certain shortcuts because the plane's normal is (0,0,1):
 
     FVector WorldLocation;
 	FVector WorldDirection;
@@ -91,39 +120,36 @@ void APlayerPawn::RaycastToCheckIfNodeIsFree()
                 PlaneOrigin,
                 FVector::UpVector);
 
-
-
-
 	FCollisionQueryParams * TraceParams = new FCollisionQueryParams();
 
-	if(GetWorld()->LineTraceSingleByChannel(*hitResult, StartPoint, EndPoint, ECC_Visibility, * TraceParams))
+	const FName TraceTag("MyTraceTag");
+ 
+	world->DebugDrawTraceTag = TraceTag;
+	
+	TraceParams->TraceTag = TraceTag;
+
+	if(world->LineTraceSingleByChannel(*hitResult, StartPoint, EndPoint, ECC_Visibility, * TraceParams))
 	{
 		GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Blue,
 			FString::Printf(TEXT("You Hit: %s"), *hitResult->Actor->GetName()));
 
+		AActor* tempActor = hitResult->GetActor();
 		
-
-			 ATowerNode* TowerNodeTemp =  Cast<ATowerNode>(hitResult->Actor);
-		 	 TowerNodeTemp->SpawnTurret(ToSpawn);
-		 	
-		 
-	}
-}
-
-void APlayerPawn::SpawnTurret(FVector aPostion)
-{
-
-	UWorld* world = GetWorld();
-
-	if(world)
-	{	
-		FVector m_SpawnPos = aPostion;
-		FRotator m_Rotator = GetActorRotation();
-
-		AEnemy_Base* m_EnemyToSpawn;
-		m_EnemyToSpawn = Cast<AEnemy_Base>(world->SpawnActor<AActor>(ToSpawn, m_SpawnPos, m_Rotator));
-		m_EnemyToSpawn->SetActorLocation(aPostion);
-	}
+		if(CurrentMoney >= 50)
+		{
+			ATowerNode* TowerNodeTemp =  Cast<ATowerNode>(tempActor);
+			if(TowerNodeTemp != nullptr)
+			{
+				if(TowerNodeTemp->CheckIfNodeIsFree())
+				{
+					TowerNodeTemp->SpawnTurret(ToSpawn);
+					CurrentMoney -= 50;
+					UpdateMoney();
+				}
+			}
+		}	
 	
+	}
 }
+
 

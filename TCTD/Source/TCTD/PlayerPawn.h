@@ -7,11 +7,14 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
 #include "TowerNode.h"
+#include "TextWidget.h"
+#include "Internationalization/Text.h"
+#include "Components/TextBlock.h"
 #include "PlayerPawn.generated.h"
 
 
 UCLASS()
-class UNREALTOWERDEFENCE2_API APlayerPawn : public APawn
+class TCTD_API APlayerPawn : public APawn
 {
 	GENERATED_BODY()
 
@@ -31,24 +34,40 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	UCameraComponent* PlayerCamera;
 
+	UPROPERTY(EditAnywhere)
+	UWidgetComponent* TextWidget;
 
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> ToSpawn;
 
+	UPROPERTY(EditAnywhere)
+    AActor* BasicTurret;
+
+	UPROPERTY(EditAnywhere)
+	UTextBlock* MoneyText;
+	
 	UPROPERTY(VisibleAnywhere)
 	FVector2D CurrentPosition;
 	FVector2D OldPosition; 
 
+	UPROPERTY(EditAnywhere)
+	int CurrentMoney;
 
 	APlayerController* PlayerController;
+	
+	ATowerNode* TowerNodeCursor;
 	
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 
-	virtual void RaycastToCheckIfNodeIsFree();
-	
+	void UpdateMoney();
 
-	virtual void SpawnTurret(FVector aPosition);
+	void MoneyAddTimer();
+	
+	void AddMoney(float IncrementMoney);
+	
+	virtual void RaycastToCheckIfNodeIsFree();
+
 	
 };

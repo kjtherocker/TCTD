@@ -8,7 +8,7 @@
 #include "Projectile.generated.h"
 
 UCLASS()
-class UNREALTOWERDEFENCE2_API AProjectile : public AActor
+class TCTD_API AProjectile : public AActor
 {
 	GENERATED_BODY()
 	
@@ -21,8 +21,8 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
-	//UPROPERTY(EditAnywhere)
-	//AEnemy* EnemyToAttack; 
+	UPROPERTY(EditAnywhere)
+	AEnemy_Base* EnemyToAttack; 
 
 	UPROPERTY(EditAnywhere)
 	int ProjectileDamage;

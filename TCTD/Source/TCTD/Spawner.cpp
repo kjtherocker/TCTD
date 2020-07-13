@@ -18,18 +18,21 @@ ASpawner::ASpawner()
 void ASpawner::BeginPlay()
 {
     Super::BeginPlay();
-    
+
+	CurrentWave.AddDynamic(this,	&ASpawner::Wave1);
+	CurrentWave.Broadcast();
+	
     UWorld* world = GetWorld();
-    
+
+
+	//Setting up some default values
+
+
+
+	
     FTimerHandle handle;
 
-	//UClass * Temp = EnemySpawnList->GetClass();
-
-	//EnemySpawnlist->SetEnemyReferences(*this);
-	//EnemySpawnlist->WaveSetup();
-	
-    world->GetTimerManager().SetTimer(handle,this,&ASpawner::SpawnEnemy,5.0f,true);
-
+    world->GetTimerManager().SetTimer(handle,this,&ASpawner::SpawnEnemy,TimeBeforeEnemySpawns,true);
 	
 }
 
@@ -40,36 +43,78 @@ void ASpawner::Tick(float DeltaTime)
 
 }
 
-void ASpawner::SpawnEnemy()
+void ASpawner::StartNextWave()
 {
-//	UWorld* world = GetWorld();
-
-
-//if(EnemySpawnlist == nullptr)
-//{
-//	return;
-//}
-//
-//if(EnemySpawnlist->ListOfEnemys.Num() == 0)
-//{
-//	return;	
-//}
-	
-	//if(world == nullptr)
-	//{
-	//	return;
-	//}
-//
-	//
-	//SpawnEnemyPosition = GetActorLocation();
-	//FRotator m_Rotator = GetActorRotation();
-
-	//AEnemy* m_EnemyToSpawn;
-
-	//m_EnemyToSpawn = Cast<AEnemy>(world->SpawnActor<AActor>(EnemySpawnlist->ListOfEnemys[0], SpawnEnemyPosition, m_Rotator));
-	//EnemySpawnlist->ListOfEnemys.RemoveAt(0);
-	//m_EnemyToSpawn->SetWaypoints(Waypoints);
-	
-	
+	CurrentWave.Broadcast();
 }
 
+void ASpawner::SpawnEnemy()
+{
+
+	if(!WaveList.IsValidIndex(0))
+	{
+		return;
+	}
+	
+	FVector ActorSpawnPosition = GetActorLocation() + SpawnEnemyPosition;
+	FRotator m_Rotator = GetActorRotation();
+
+	AEnemy_Base* m_EnemyToSpawn;
+
+	m_EnemyToSpawn = Cast<AEnemy_Base>(GetWorld()->SpawnActor<AActor>(WaveList[0], ActorSpawnPosition, m_Rotator));
+
+	if(m_EnemyToSpawn == nullptr)
+	{
+		return;
+	}
+
+	WaveList.RemoveAt(0);
+	m_EnemyToSpawn->SetWaypoints(Waypoints);
+
+	
+	//GetWorld()->GetTimerManager().SetTimer(handle,this,&ASpawner::SpawnEnemy,TimeBeforeEnemySpawns,false);
+}
+
+
+void ASpawner::Wave1()
+{
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Speed);
+
+
+
+	CurrentWave.RemoveDynamic(this,&ASpawner::Wave1);
+	CurrentWave.AddDynamic(this,&ASpawner::Wave2);
+	FTimerHandle handle;
+	GetWorld()->GetTimerManager().SetTimer(handle,
+		this,&ASpawner::StartNextWave,WaveList.Num() * TimeBeforeEnemySpawns + TimeBeforeNextWave,false);
+}
+
+
+void ASpawner::Wave2()
+{
+	
+	WaveList.Add(Enemy_Speed);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Speed);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Standard);
+	WaveList.Add(Enemy_Large);
+
+	
+	CurrentWave.RemoveDynamic(this,&ASpawner::Wave2);
+	CurrentWave.AddDynamic(this,&ASpawner::Wave3);
+	FTimerHandle handle;
+	GetWorld()->GetTimerManager().SetTimer(handle,
+        this,&ASpawner::StartNextWave,WaveList.Num() * TimeBeforeEnemySpawns + TimeBeforeNextWave,false);
+}
+
+void ASpawner::Wave3()
+{
+}
