@@ -10,6 +10,8 @@
 #include "TextWidget.h"
 #include "Internationalization/Text.h"
 #include "Components/TextBlock.h"
+#include "UObject/ObjectMacros.h"
+
 #include "PlayerPawn.generated.h"
 
 
@@ -32,6 +34,9 @@ public:
 
 
 	UPROPERTY(VisibleAnywhere)
+	bool GameHasEnded;
+	
+	UPROPERTY(VisibleAnywhere)
 	UCameraComponent* PlayerCamera;
 
 	UPROPERTY(EditAnywhere)
@@ -45,6 +50,9 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	UTextBlock* MoneyText;
+
+	UPROPERTY(EditAnywhere)
+	UTextBlock* DisplayText;
 	
 	UPROPERTY(VisibleAnywhere)
 	FVector2D CurrentPosition;
@@ -60,11 +68,20 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UFUNCTION()
+	void EnemyWon();
 
+	void ResetGame();
+
+	FText ConvertFStringToFText(FString Text);
+	
+	//Money
 	void UpdateMoney();
 
 	void MoneyAddTimer();
-	
+
+
+	UFUNCTION()
 	void AddMoney(float IncrementMoney);
 	
 	virtual void RaycastToCheckIfNodeIsFree();

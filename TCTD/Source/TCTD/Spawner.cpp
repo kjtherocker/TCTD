@@ -63,6 +63,11 @@ void ASpawner::SpawnEnemy()
 
 	m_EnemyToSpawn = Cast<AEnemy_Base>(GetWorld()->SpawnActor<AActor>(WaveList[0], ActorSpawnPosition, m_Rotator));
 
+
+	
+
+	m_EnemyToSpawn->EnemyMoneyEvent.AddDynamic(PlayerPawn, &APlayerPawn::AddMoney );
+	m_EnemyToSpawn->EnemyGoalEvent.AddDynamic(PlayerPawn, &APlayerPawn::EnemyWon );
 	if(m_EnemyToSpawn == nullptr)
 	{
 		return;

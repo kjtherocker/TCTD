@@ -15,10 +15,11 @@ AEnemy_Large::AEnemy_Large()
 void AEnemy_Large::BeginPlay()
 {
 	Super::BeginPlay();
-	MaxHealth = 400;
+	MaxHealth = 100;
 	CurrentHealth = MaxHealth;
 
-
+	MoneyOnDeath = 140.0f;
+	
 	EnemySpeed = 30.0f;
 }
 

@@ -83,6 +83,7 @@ void AEnemy_Base::SetWaypoints(TArray<FVector> aWaypointList)
 
 void AEnemy_Base::EnemyGotToGoal()
 {
+	EnemyGoalEvent.Broadcast();
 	DeActivate();
 }
 
@@ -95,6 +96,11 @@ void AEnemy_Base::Tick(float DeltaTime)
 	MoveToWaypoint(DeltaTime);
 }
 
+void AEnemy_Base::Death()
+{
+	EnemyMoneyEvent.Broadcast(MoneyOnDeath);
+	DeActivate();
+}
 
 
 void AEnemy_Base::DeActivate()
@@ -104,9 +110,13 @@ void AEnemy_Base::DeActivate()
 	SetActorHiddenInGame(true);
 	SetActorTickEnabled(false);
 	DistanceToNextWaypoint = 9999999999999.0f;
-	for(int i = Waypoints.Num() - 1 ; i < 0;i--)
+
+	if(Waypoints.IsValidIndex(0))
 	{
-		Waypoints.RemoveAt(i);
+		for(int i = Waypoints.Num() - 1 ; i < 0;i--)
+		{
+			Waypoints.RemoveAt(i);
+		}
 	}
 }
 
@@ -149,7 +159,7 @@ void AEnemy_Base::TakeDamage(int aDamageTaken)
 
 	if(CurrentHealth <= 0)
 	{
-		DeActivate();
+		Death();
 	}
 }
 

@@ -18,6 +18,7 @@ void AEnemy_Standard::BeginPlay()
 	MaxHealth = 25;
 	CurrentHealth = MaxHealth;
 
+	MoneyOnDeath = 25.0f;
 
 	EnemySpeed = 45.0f;
 }

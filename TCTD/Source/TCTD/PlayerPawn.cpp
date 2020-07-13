@@ -8,6 +8,7 @@
 #include "Engine/World.h"
 #include "ChaosInterfaceWrapperCore.h"
 #include "DrawDebugHelpers.h"
+#include "Kismet/GameplayStatics.h"
 
 
 // Sets default values
@@ -16,17 +17,16 @@ APlayerPawn::APlayerPawn()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
 	PlayerCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("PlayerCamera"));
-
-	AutoPossessPlayer = EAutoReceiveInput::Player0;
-	CurrentMoney = 100;
-
-
+	GameHasEnded = false;
 }
 
 // Called when the game starts or when spawned
 void APlayerPawn::BeginPlay()
 {
 	Super::BeginPlay();
+
+	AutoPossessPlayer = EAutoReceiveInput::Player0;
+	CurrentMoney = 100;
 	
 	PlayerController = Cast<APlayerController>(GetController());
 
@@ -45,9 +45,10 @@ void APlayerPawn::BeginPlay()
 	if(UUserWidget* widget = TextWidget->GetUserWidgetObject())
 	{
 		MoneyText = Cast<UTextBlock>(widget->GetWidgetFromName("Money"));
-		FString TempMoney = FString::Printf(TEXT("%d"), CurrentMoney);
-		FText Money = FText::FromString(TempMoney);
-		MoneyText->SetText(Money);
+		MoneyText->SetText(ConvertFStringToFText(FString::Printf(TEXT("%d"), CurrentMoney)));
+
+		DisplayText = Cast<UTextBlock>(widget->GetWidgetFromName("DisplayText"));
+		DisplayText->SetText(ConvertFStringToFText(FString::Printf(TEXT(""))));
 	}
 	
 	GetWorld()->GetGameViewport()->GetMousePosition(CurrentPosition);
@@ -58,6 +59,13 @@ void APlayerPawn::BeginPlay()
 
 	GetWorld()->GetTimerManager().SetTimer(handle,this,&APlayerPawn::MoneyAddTimer,5.0f,true);
 	
+}
+
+FText APlayerPawn::ConvertFStringToFText(FString Text)
+{
+	FString TempMoney = Text;
+	FText Money = FText::FromString(TempMoney);
+	return Money;
 }
 
 // Called every frame
@@ -74,8 +82,22 @@ void APlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	//InputComponent->BindAxis("MoveUp", this, &ACharacter::MoveUp);
 	//InputComponent->BindAxis("MoveRight", this, );S
 	InputComponent->BindAction("Spawn", IE_Pressed, this, &APlayerPawn::RaycastToCheckIfNodeIsFree);
+	InputComponent->BindAction("Reset", IE_Pressed, this, &APlayerPawn::ResetGame);
 
 }
+
+void APlayerPawn::EnemyWon()
+{
+	DisplayText->SetText(ConvertFStringToFText(FString::Printf(TEXT("Enemy Has won press R to restart"))));
+	GameHasEnded = true;
+}
+
+void APlayerPawn::ResetGame()
+{
+	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()));
+}
+
+
 
 void APlayerPawn::UpdateMoney()
 {
@@ -99,6 +121,13 @@ void APlayerPawn::AddMoney(float IncrementMoney)
 void APlayerPawn::RaycastToCheckIfNodeIsFree()
 {
 	//GEngine->AddOnScreenDebugMessage(-1,5.f, FColor::Green,  TEXT("MouseClicked"));
+
+	if(GameHasEnded)
+	{
+		return;
+	}
+
+	
 	UWorld* world = GetWorld();
 
     FVector WorldLocation;

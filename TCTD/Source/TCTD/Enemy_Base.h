@@ -10,7 +10,11 @@
 #include "Enemy_Base.generated.h"
 
 class ATurret;
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FEnemyMoney, float , Enemymoney);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FEnemyGotToGoal);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FEnemyDeath, FString , Enemyname);
+
 
 
 UCLASS()
@@ -37,7 +41,7 @@ protected:
 	
 	virtual void Tick(float DeltaTime) override;
 
-
+	virtual void Death();
 
 	virtual void DeActivate();
 
@@ -56,10 +60,23 @@ protected:
 public:	
 
 
-	
+	//Event	
 	UPROPERTY()
 	FEnemyDeath EnemyDeathEvent;
+	
+	UPROPERTY()
+    FEnemyMoney EnemyMoneyEvent;
+    	
+    UPROPERTY()
+    FEnemyGotToGoal EnemyGoalEvent;
 
+
+
+	float MoneyOnDeath;
+	
+
+	//Health
+	
 	float MaxHealth;
 	
     UPROPERTY(VisibleAnywhere)
